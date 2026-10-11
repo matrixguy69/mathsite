@@ -18,17 +18,36 @@
     else io.observe(el);
   });
 
+  const revealH = (box, el) => {
+    if (box.scrollWidth <= box.clientWidth + 4) return;
+    const br = box.getBoundingClientRect();
+    const er = el.getBoundingClientRect();
+    if (er.left < br.left + 8) box.scrollLeft += er.left - br.left - 12;
+    else if (er.right > br.right - 8)
+      box.scrollLeft += er.right - br.right + 12;
+  };
+
+  const currentNav = document.querySelector(
+    ".nav-links a[aria-current='page']"
+  );
+  if (currentNav) revealH(currentNav.parentElement, currentNav);
+
   const tocLinks = [...document.querySelectorAll(".toc a")];
   if (tocLinks.length) {
     const sections = tocLinks
       .map((a) => document.querySelector(a.getAttribute("href")))
       .filter(Boolean);
+    let last = -1;
     const spy = () => {
       let cur = 0;
       sections.forEach((s, i) => {
         if (s.getBoundingClientRect().top <= 120) cur = i;
       });
       tocLinks.forEach((a, i) => a.classList.toggle("active", i === cur));
+      if (cur !== last) {
+        last = cur;
+        revealH(tocLinks[cur].parentElement, tocLinks[cur]);
+      }
     };
     addEventListener("scroll", spy, { passive: true });
     spy();
@@ -36,6 +55,13 @@
 
   document.querySelectorAll("details").forEach((d) => {
     d.classList.add("q");
+  });
+  document.querySelectorAll("table").forEach((t) => {
+    if (t.parentElement && t.parentElement.classList.contains("tscroll")) return;
+    const wrap = document.createElement("div");
+    wrap.className = "tscroll";
+    t.replaceWith(wrap);
+    wrap.appendChild(t);
   });
   addEventListener("beforeprint", () =>
     document.querySelectorAll("details").forEach((d) => (d.open = true))
