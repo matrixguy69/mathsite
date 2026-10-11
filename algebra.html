@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Algebra · Maths Notes</title>
+<meta name="description" content="O Level algebra notes: brackets, expanding, factorising, linear equations, subject of a formula, simultaneous equations, quadratics, indices, inequalities and proportionality.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,750&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav glass">
+  <a class="brand" href="index.html"><span class="mark">∑</span><span class="word">Maths Notes</span></a>
+  <nav class="nav-links">
+    <a href="statistics.html">Statistics</a>
+    <a href="trigonometry.html">Trigonometry</a>
+    <a href="algebra.html" aria-current="page">Algebra</a>
+    <a href="coordinate-geometry.html">Coordinate Geometry</a>
+  </nav>
+  <button class="nav-calc" data-calc-open>Calculator</button>
+</header>
+
+<div class="page">
+<aside class="toc glass" aria-label="Chapter contents">
+  <div class="toc-title">On this page</div>
+  <a href="#notation">1. Notation &amp; like terms</a>
+  <a href="#expand">2. Expanding brackets</a>
+  <a href="#factorise">3. Factorising</a>
+  <a href="#linear">4. Linear equations</a>
+  <a href="#formula">5. Subject of a formula</a>
+  <a href="#simultaneous">6. Simultaneous equations</a>
+  <a href="#quadratics">7. Quadratics</a>
+  <a href="#indices">8. Indices</a>
+  <a href="#inequalities">9. Inequalities</a>
+  <a href="#proportion">10. Proportionality</a>
+  <a href="#practice">11. Practice &amp; answers</a>
+  <a href="#checklist">12. Exam checklist</a>
+</aside>
+
+<main class="chapter">
+  <div class="chapter-hero glass" data-reveal>
+    <span class="eyebrow">Chapter 03 · Algebra</span>
+    <h1>Brackets, equations, quadratics and indices</h1>
+    <p class="meta">The full algebra syllabus from the 91-minute Zainematics syllabus video (Cambridge 4024 / 0580), worked in full: simplifying, expanding, factorising, solving linear and simultaneous equations, making the subject, quadratics, indices, inequalities and proportionality.</p>
+    <div class="chips">
+      <a class="chip" href="https://www.youtube.com/live/Bd0Mr7AVvZ8">Live lesson · 91 min</a>
+      <a class="chip" href="https://www.youtube.com/live/Bd0Mr7AVvZ8">Simplifying</a>
+      <a class="chip" href="https://www.youtube.com/live/Bd0Mr7AVvZ8">Factorising</a>
+      <a class="chip" href="https://www.youtube.com/live/Bd0Mr7AVvZ8">Linear equations</a>
+      <a class="chip" href="https://www.youtube.com/live/Bd0Mr7AVvZ8">Subject of formula</a>
+      <a class="chip" href="https://www.youtube.com/live/Bd0Mr7AVvZ8">Simultaneous equations</a>
+      <a class="chip" href="https://www.youtube.com/live/Bd0Mr7AVvZ8">Quadratics</a>
+      <a class="chip" href="https://www.youtube.com/live/Bd0Mr7AVvZ8">Indices</a>
+      <a class="chip" href="https://www.youtube.com/live/Bd0Mr7AVvZ8">Inequalities</a>
+      <a class="chip" href="https://www.youtube.com/live/Bd0Mr7AVvZ8">Proportionality</a>
+    </div>
+  </div>
+
+  <section id="notation" data-reveal>
+    <h2>1. Algebraic notation and like terms</h2>
+    <p>Letters in algebra stand for numbers we do not know yet. Every rule of arithmetic still applies, so you can add, subtract, multiply and divide expressions exactly as you would with ordinary numbers, once you respect one rule: <strong>only like terms can be collected</strong>.</p>
+    <table>
+      <tr><th>Shorthand</th><th>Means</th></tr>
+      <tr><td><span class="m">3x</span></td><td>3 times x</td></tr>
+      <tr><td><span class="m">x²</span></td><td>x times x</td></tr>
+      <tr><td><span class="m">5ab</span></td><td>5 times a times b</td></tr>
+      <tr><td><span class="m">x/4</span> or <span class="m">¼x</span></td><td>x divided by 4</td></tr>
+      <tr><td><span class="m">2(x + 3)</span></td><td>2 times everything in the bracket</td></tr>
+    </table>
+
+    <h3>1.1 Like and unlike terms</h3>
+    <p><strong>Like terms</strong> have exactly the same letters with the same powers. <strong>Unlike terms</strong> do not, and they can never be merged.</p>
+    <div class="formula"><code>3x + 2x = 5x  ·  3x + 2y stays as it is  ·  4x² + 3x² = 7x²  ·  4x² + 4x is NOT 8x²</code></div>
+    <p>Terms with different powers are also unlike: <span class="m">x² + x</span> cannot be simplified further, and neither can <span class="m">3x + 3x²</span>.</p>
+
+    <h3>1.2 Substituting values</h3>
+    <p>To substitute, replace every letter with its value in a bracket, then use <strong>order of operations</strong> (brackets, then powers, then multiply and divide, then add and subtract). A negative number in a bracket needs care with its power.</p>
+    <div class="example glass">
+      <span class="label">Worked example 1</span>
+      <p>Simplify <span class="m">3x + 2x − 4y + 7y + 2x²</span>.</p>
+      <ol class="steps">
+        <li>Circle the like terms: <span class="m">3x</span> and <span class="m">2x</span> are both "x" terms; <span class="m">−4y</span> and <span class="m">7y</span> are both "y" terms.</li>
+        <li><span class="m">3x + 2x = 5x</span></li>
+        <li><span class="m">−4y + 7y = 3y</span></li>
+        <li><span class="m">2x²</span> has no partner, so it stays alone.</li>
+      </ol>
+      <p class="answer"><span class="m">5x + 3y + 2x²</span></p>
+    </div>
+    <div class="example glass">
+      <span class="label">Worked example 2</span>
+      <p>Given <span class="m">x = −2</span> and <span class="m">y = 5</span>, evaluate <span class="m">3x² − 4x + 1</span> and <span class="m">2y − 3x</span>.</p>
+      <ol class="steps">
+        <li>Substitute with brackets: <span class="m">3(−2)² − 4(−2) + 1</span></li>
+        <li>Powers first: <span class="m">(−2)² = 4</span>, so <span class="m">3 × 4 = 12</span></li>
+        <li>Then <span class="m">−4(−2) = +8</span>, so <span class="m">12 + 8 + 1 = 21</span></li>
+        <li>Second expression: <span class="m">2(5) − 3(−2) = 10 + 6 = 16</span></li>
+      </ol>
+      <p class="answer"><span class="m">3x² − 4x + 1 = 21</span> and <span class="m">2y − 3x = 16</span></p>
+    </div>
+    <div class="box warn"><span class="label">Exam trap</span><span class="m">(−2)² = 4</span> but <span class="m">−2² = −4</span>. The bracket decides whether the negative is inside the power. Also <span class="m">3x²</span> means <span class="m">3 × x × x</span>, never <span class="m">(3x)²</span>.</div>
+    <div class="box good"><span class="label">Exam tip</span>Write <span class="m">2a</span> not <span class="m">a2</span>, and put terms in order of decreasing power: <span class="m">2x² + 5x − 1</span>. Examiners award method marks for tidy, ordered working.</div>
+  </section>
+
+  <section id="expand" data-reveal>
+    <h2>2. Expanding brackets</h2>
+    <p>Expanding means <strong>removing the brackets</strong> by multiplying everything inside by whatever is outside. The law that makes it work is the distributive law:</p>
+    <div class="formula"><code>a(b + c) = ab + ac  ·  a(b + c + d) = ab + ac + ad</code></div>
+
+    <h3>2.1 Single brackets</h3>
+    <div class="example glass">
+      <span class="label">Worked example 3</span>
+      <p>Expand <span class="m">3(x + 5)</span>, <span class="m">−2(4 − 3x)</span> and <span class="m">4x(2x − 3)</span>.</p>
+      <ol class="steps">
+        <li><span class="m">3(x + 5) = 3x + 15</span></li>
+        <li><span class="m">−2(4 − 3x) = −8 + 6x</span>, tidied to <span class="m">6x − 8</span></li>
+        <li><span class="m">4x(2x − 3) = 8x² − 12x</span></li>
+      </ol>
+      <p class="answer"><span class="m">3x + 15</span>, <span class="m">6x − 8</span>, <span class="m">8x² − 12x</span></p>
+    </div>
+
+    <h3>2.2 Double brackets (FOIL)</h3>
+    <p>Two brackets multiply as <strong>F</strong>irst, <strong>O</strong>uter, <strong>I</strong>nner, <strong>L</strong>ast: multiply every term in the first bracket by every term in the second, then collect like terms.</p>
+    <div class="formula"><code>(x + a)(x + b) = x² + (a + b)x + ab</code></div>
+    <div class="example glass">
+      <span class="label">Worked example 4</span>
+      <p>Expand and simplify <span class="m">(x + 3)(x + 4)</span>, then <span class="m">(2x − 1)(x + 5)</span>.</p>
+      <ol class="steps">
+        <li>First: <span class="m">x × x = x²</span></li>
+        <li>Outer and inner: <span class="m">4x + 3x = 7x</span></li>
+        <li>Last: <span class="m">3 × 4 = 12</span>, so <span class="m">(x + 3)(x + 4) = x² + 7x + 12</span></li>
+        <li>Second: <span class="m">2x² + 10x − x − 5 = 2x² + 9x − 5</span></li>
+      </ol>
+      <p class="answer"><span class="m">x² + 7x + 12</span> and <span class="m">2x² + 9x − 5</span></p>
+    </div>
+
+    <h3>2.3 Perfect squares and difference of squares</h3>
+    <div class="formula"><code>(x + a)² = x² + 2ax + a²  ·  (a + b)(a − b) = a² − b²</code></div>
+    <p>A perfect square is a double bracket with the same bracket twice. It gives <strong>three</strong> terms: square the first, double the product, square the last. The difference of squares gives <strong>two</strong> terms, because the middle term cancels.</p>
+    <div class="example glass">
+      <span class="label">Worked example 5</span>
+      <p>Expand <span class="m">(x + 5)²</span> and <span class="m">(3x + 2)(3x − 2)</span>.</p>
+      <ol class="steps">
+        <li>Perfect square: <span class="m">x² + 2(5)x + 5² = x² + 10x + 25</span></li>
+        <li>Difference of squares with <span class="m">a = 3x</span>, <span class="m">b = 2</span>: <span class="m">(3x)² − 2² = 9x² − 4</span></li>
+        <li>Check the middle really cancels: <span class="m">9x² − 6x + 6x − 4 = 9x² − 4</span></li>
+      </ol>
+      <p class="answer"><span class="m">x² + 10x + 25</span> and <span class="m">9x² − 4</span></p>
+    </div>
+    <div class="box warn"><span class="label">Exam trap</span><span class="m">(x + 4)² = x² + 8x + 16</span>, never <span class="m">x² + 16</span>. Writing <span class="m">(x + a)²</span> as <span class="m">x² + a²</span> is one of the most common errors in the whole paper.</div>
+    <div class="box good"><span class="label">Exam tip</span>Expand first, then simplify. If the question says "expand and simplify", the mark scheme wants the brackets gone <em>and</em> like terms collected in one line of working.</div>
+  </section>
+
+  <section id="factorise" data-reveal>
+    <h2>3. Factorising</h2>
+    <p>Factorising is <strong>expanding in reverse</strong>: you are writing an expression as a product of brackets. Always try in this order: common factor first, then a pattern (difference of squares), then a quadratic pair of brackets.</p>
+    <div class="box"><span class="label">Factorise or solve?</span><strong>Factorise</strong> means "write it as brackets" and the answer is an expression, e.g. <span class="m">x² + 5x + 6 = (x + 2)(x + 3)</span>. <strong>Solve</strong> means "find the value of x" and the answer is numbers, e.g. <span class="m">x = −2</span> or <span class="m">x = −3</span>. Read the command word carefully, marks depend on it.</div>
+
+    <h3>3.1 Common factor</h3>
+    <div class="formula"><code>6x + 9 = 3(2x + 3)  ·  4x² − 10x = 2x(2x − 5)</code></div>
+    <p>Take out the biggest number that divides every term, and every letter that appears in every term.</p>
+
+    <h3>3.2 Factorising x² + bx + c</h3>
+    <div class="formula"><code>x² + bx + c = (x + p)(x + q) where p + q = b and p × q = c</code></div>
+    <p>Find two numbers that <strong>multiply to give c</strong> and <strong>add to give b</strong>. Watch the signs: if <span class="m">c</span> is positive the two numbers have the same sign; if <span class="m">c</span> is negative they have opposite signs.</p>
+
+    <h3>3.3 Non-monic: ax² + bx + c</h3>
+    <p>When the <span class="m">x²</span> term has a number in front, multiply <span class="m">a × c</span>, find two numbers that multiply to <span class="m">ac</span> and add to <span class="m">b</span>, <strong>split the middle term</strong>, then factorise in pairs.</p>
+
+    <h3>3.4 Difference of squares</h3>
+    <div class="formula"><code>x² − a² = (x − a)(x + a)  ·  4x² − 25 = (2x − 5)(2x + 5)</code></div>
+
+    <div class="example glass">
+      <span class="label">Worked example 6</span>
+      <p>Factorise fully: <span class="m">6x + 9</span>, <span class="m">x² + 7x + 12</span>, <span class="m">x² − 25</span>.</p>
+      <ol class="steps">
+        <li>Common factor: highest common factor of 6 and 9 is 3, so <span class="m">6x + 9 = 3(2x + 3)</span></li>
+        <li>Quadratic: two numbers multiplying to 12 and adding to 7 are 3 and 4, so <span class="m">x² + 7x + 12 = (x + 3)(x + 4)</span></li>
+        <li>Pattern: it is <span class="m">x² − 5²</span>, so <span class="m">x² − 25 = (x − 5)(x + 5)</span></li>
+      </ol>
+      <p class="answer"><span class="m">3(2x + 3)</span>, <span class="m">(x + 3)(x + 4)</span>, <span class="m">(x − 5)(x + 5)</span></p>
+    </div>
+
+    <div class="example glass">
+      <span class="label">Worked example 7</span>
+      <p>Factorise <span class="m">6x² + 7x − 3</span>.</p>
+      <ol class="steps">
+        <li><span class="m">a × c = 6 × (−3) = −18</span>. Find two numbers multiplying to −18 and adding to +7: <span class="m">+9</span> and <span class="m">−2</span></li>
+        <li>Split the middle term: <span class="m">6x² + 9x − 2x − 3</span></li>
+        <li>Factorise in pairs: <span class="m">3x(2x + 3) − 1(2x + 3)</span></li>
+        <li>Take out the common bracket: <span class="m">(2x + 3)(3x − 1)</span></li>
+        <li>Check by expanding: <span class="m">6x² − 2x + 9x − 3 = 6x² + 7x − 3</span> ✓</li>
+      </ol>
+      <p class="answer"><span class="m">6x² + 7x − 3 = (2x + 3)(3x − 1)</span></p>
+    </div>
+
+    <div class="example glass">
+      <span class="label">Worked example 8</span>
+      <p>Factorise fully: <span class="m">3x² − 48</span> and <span class="m">2x² − 7x + 3</span>.</p>
+      <ol class="steps">
+        <li>Common factor first: <span class="m">3x² − 48 = 3(x² − 16) = 3(x − 4)(x + 4)</span></li>
+        <li>For <span class="m">2x² − 7x + 3</span>: <span class="m">a × c = 6</span>, numbers adding to −7 are <span class="m">−6</span> and <span class="m">−1</span></li>
+        <li>Split: <span class="m">2x² − 6x − x + 3 = 2x(x − 3) − 1(x − 3)</span></li>
+        <li>Result: <span class="m">(2x − 1)(x − 3)</span>. Check: <span class="m">2x² − 6x − x + 3</span> ✓</li>
+      </ol>
+      <p class="answer"><span class="m">3(x − 4)(x + 4)</span> and <span class="m">(2x − 1)(x − 3)</span></p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>"Factorise <strong>fully</strong>" means keep going until no common factor or pattern is left. <span class="m">3x² − 48</span> is not finished at <span class="m">3(x² − 16)</span>, and <span class="m">2x + 4</span> is not finished at <span class="m">2(x + 2)</span> if the question wants every number out.</div>
+    <div class="box warn"><span class="label">Exam trap</span><span class="m">x² + 5x + 6</span> needs a <em>+</em> in both brackets, <span class="m">x² − 5x + 6</span> needs a <em>−</em> in both, and <span class="m">x² + x − 6</span> needs one of each. The sign of <span class="m">b</span> and <span class="m">c</span> tells you which.</div>
+  </section>
+
+  <section id="linear" data-reveal>
+    <h2>4. Solving linear equations</h2>
+    <p>An equation is a balance. Whatever you do to one side, do to the other. The strategy is always: <strong>undo the operations in reverse order</strong>, collecting the unknown on one side and the numbers on the other.</p>
+    <div class="formula"><code>reverse order:  undo + and − last,  undo × and ÷ first,  brackets before anything inside them</code></div>
+
+    <h3>4.1 One bracket, or one unknown only</h3>
+    <div class="example glass">
+      <span class="label">Worked example 9</span>
+      <p>Solve <span class="m">3x + 7 = 22</span> and <span class="m">5(x − 2) = 3x + 4</span>.</p>
+      <ol class="steps">
+        <li>First equation: subtract 7 from both sides, <span class="m">3x = 15</span></li>
+        <li>Divide by 3: <span class="m">x = 5</span>. Check: <span class="m">3(5) + 7 = 22</span> ✓</li>
+        <li>Second equation: expand first, <span class="m">5x − 10 = 3x + 4</span></li>
+        <li>Subtract <span class="m">3x</span> and add 10: <span class="m">2x = 14</span>, so <span class="m">x = 7</span></li>
+        <li>Check: <span class="m">5(7 − 2) = 25</span> and <span class="m">3(7) + 4 = 25</span> ✓</li>
+      </ol>
+      <p class="answer"><span class="m">x = 5</span> and <span class="m">x = 7</span></p>
+    </div>
+
+    <h3>4.2 Unknown on both sides</h3>
+    <p>Collect every <span class="m">x</span> on one side and every number on the other, then divide once. Move the <em>smaller</em> <span class="m">x</span> term across if you want to keep the coefficient positive.</p>
+    <div class="example glass">
+      <span class="label">Worked example 10</span>
+      <p>Solve <span class="m">5x − 3 = 2x + 9</span>.</p>
+      <ol class="steps">
+        <li>Subtract <span class="m">2x</span> from both sides: <span class="m">3x − 3 = 9</span></li>
+        <li>Add 3 to both sides: <span class="m">3x = 12</span></li>
+        <li>Divide by 3: <span class="m">x = 4</span></li>
+        <li>Check both sides: <span class="m">5(4) − 3 = 17</span> and <span class="m">2(4) + 9 = 17</span> ✓</li>
+      </ol>
+      <p class="answer"><span class="m">x = 4</span></p>
+    </div>
+
+    <h3>4.3 Equations with fractions</h3>
+    <p>Find the <strong>lowest common denominator</strong> of every fraction in the equation and multiply <em>every term</em> (both sides, including ones with no fraction) by it. The fractions vanish.</p>
+    <div class="example glass">
+      <span class="label">Worked example 11</span>
+      <p>Solve <span class="m">(2x + 1)/3 = (x − 1)/2</span>.</p>
+      <ol class="steps">
+        <li>Lowest common denominator of 3 and 2 is 6. Multiply every term by 6</li>
+        <li><span class="m">2(2x + 1) = 3(x − 1)</span></li>
+        <li>Expand: <span class="m">4x + 2 = 3x − 3</span></li>
+        <li>Collect: <span class="m">x = −5</span></li>
+        <li>Check: LHS <span class="m">(2(−5) + 1)/3 = −9/3 = −3</span>; RHS <span class="m">(−5 − 1)/2 = −6/2 = −3</span> ✓</li>
+      </ol>
+      <p class="answer"><span class="m">x = −5</span></p>
+    </div>
+
+    <h3>4.4 Word problems</h3>
+    <div class="example glass">
+      <span class="label">Worked example 12</span>
+      <p>Three notebooks and two pens cost £4.10. One notebook and four pens cost £4.70. Find the price of each item.</p>
+      <ol class="steps">
+        <li>Let a notebook cost <span class="m">n</span> pence and a pen cost <span class="m">p</span> pence. Write 410 and 470 in pence</li>
+        <li><span class="m">3n + 2p = 410</span> and <span class="m">n + 4p = 470</span></li>
+        <li>From the second, <span class="m">n = 470 − 4p</span>. Substitute into the first: <span class="m">3(470 − 4p) + 2p = 410</span></li>
+        <li><span class="m">1410 − 12p + 2p = 410</span>, so <span class="m">−10p = −1000</span> and <span class="m">p = 100</span></li>
+        <li><span class="m">n = 470 − 400 = 70</span></li>
+      </ol>
+      <p class="answer">Notebook = 70p, pen = £1.00</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>Always substitute your answer back into the <em>original</em> equation. A check takes ten seconds and catches a sign error before the examiner does. For word problems, finish with a sentence and the units stated in the question.</div>
+    <div class="box warn"><span class="label">Exam trap</span>When you multiply through by an LCD, multiply <strong>every</strong> term, not just the fractions. And when you move a term across the equals sign, flip its sign: <span class="m">3x − 3 = 9</span> becomes <span class="m">3x = 12</span> by adding 3, not by writing 9 − 3 in the wrong place.</div>
+  </section>
+
+  <section id="formula" data-reveal>
+    <h2>5. Making the subject of a formula</h2>
+    <p>The <strong>subject</strong> is the letter standing alone on one side. To make a different letter the subject, undo the operations applied to it, in reverse, doing the same thing to both sides. The letter you want must end up alone.</p>
+    <div class="formula"><code>y = 3x + 5  →  y − 5 = 3x  →  x = <span class="frac"><span>y − 5</span><span>3</span></span></code></div>
+
+    <h3>5.1 One-step and two-step rearrangements</h3>
+    <div class="example glass">
+      <span class="label">Worked example 13</span>
+      <p>Make <span class="m">x</span> the subject of <span class="m">y = 3x + 5</span>, then of <span class="m">y = (x − 4)/2</span>.</p>
+      <ol class="steps">
+        <li>First: subtract 5, <span class="m">y − 5 = 3x</span></li>
+        <li>Divide by 3: <span class="m">x = (y − 5)/3</span></li>
+        <li>Second: multiply by 2 to clear the fraction, <span class="m">2y = x − 4</span></li>
+        <li>Add 4: <span class="m">x = 2y + 4</span></li>
+      </ol>
+      <p class="answer"><span class="m">x = (y − 5)/3</span> and <span class="m">x = 2y + 4</span></p>
+    </div>
+
+    <h3>5.2 The subject appears twice</h3>
+    <p>If the letter you want is in <strong>two places</strong>, you cannot collect it by adding. Expand first, then <strong>collect the subject terms on one side</strong>, then <strong>factorise the subject out</strong>, then divide.</p>
+    <div class="example glass">
+      <span class="label">Worked example 14</span>
+      <p>Make <span class="m">x</span> the subject of <span class="m">y = 2x/(x + 1)</span>.</p>
+      <ol class="steps">
+        <li>Multiply both sides by <span class="m">x + 1</span>: <span class="m">y(x + 1) = 2x</span></li>
+        <li>Expand: <span class="m">yx + y = 2x</span></li>
+        <li>Collect every <span class="m">x</span> term on one side: <span class="m">y = 2x − yx</span></li>
+        <li>Factorise <span class="m">x</span> out: <span class="m">y = x(2 − y)</span></li>
+        <li>Divide by the bracket: <span class="m">x = y/(2 − y)</span></li>
+        <li>Check with <span class="m">y = 1</span>: <span class="m">x = 1/(2 − 1) = 1</span>, and <span class="m">2(1)/(1 + 1) = 1</span> ✓</li>
+      </ol>
+      <p class="answer"><span class="m">x = y/(2 − y)</span></p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>The recipe for "x in two places": expand brackets, move all x terms to one side, factorise x out, divide. Never divide by x early, and never add the two x terms together as if they were like terms.</div>
+    <div class="box warn"><span class="label">Exam trap</span>Keep brackets around a substituted expression: <span class="m">x = (y − 5)/3</span> must be written with the numerator in brackets when you write it as a fraction. Dropping them turns <span class="m">(y − 5)/3</span> into <span class="m">y − 5/3</span>, which is a different thing entirely.</div>
+  </section>
+
+  <section id="simultaneous" data-reveal>
+    <h2>6. Simultaneous equations</h2>
+    <p>Two equations with two unknowns have one pair of values that satisfies <strong>both</strong> at once. There are two methods, and the question usually decides which is quicker.</p>
+    <table>
+      <tr><th>Method</th><th>Use it when</th><th>Move</th></tr>
+      <tr><td><strong>Elimination</strong></td><td>Both equations are in the form <span class="m">ax + by = c</span></td><td>Line them up, multiply so a coefficient matches, add or subtract</td></tr>
+      <tr><td><strong>Substitution</strong></td><td>One equation is already <span class="m">x = ...</span> or <span class="m">y = ...</span></td><td>Plug that expression into the other equation</td></tr>
+    </table>
+
+    <h3>6.1 Elimination</h3>
+    <div class="example glass">
+      <span class="label">Worked example 15</span>
+      <p>Solve <span class="m">2x + y = 11</span> and <span class="m">x − y = 1</span>.</p>
+      <ol class="steps">
+        <li>Line them up. The <span class="m">y</span> coefficients are already <span class="m">+1</span> and <span class="m">−1</span></li>
+        <li><strong>Add</strong> the equations: <span class="m">3x = 12</span>, so <span class="m">x = 4</span></li>
+        <li>Substitute into <span class="m">x − y = 1</span>: <span class="m">4 − y = 1</span>, so <span class="m">y = 3</span></li>
+        <li>Check in the first equation: <span class="m">2(4) + 3 = 11</span> ✓</li>
+      </ol>
+      <p class="answer"><span class="m">x = 4, y = 3</span></p>
+    </div>
+    <p>If the coefficients do not match, <strong>multiply one or both equations</strong> first. For <span class="m">3x + 2y = 16</span> and <span class="m">4x + 3y = 22</span>, multiply the first by 3 and the second by 2 to make both <span class="m">y</span> coefficients 6, then subtract: <span class="m">9x + 6y = 48</span> and <span class="m">8x + 6y = 44</span>, so <span class="m">x = 4</span>, then <span class="m">2y = 16 − 12</span> gives <span class="m">y = 2</span>.</p>
+
+    <h3>6.2 Substitution</h3>
+    <div class="example glass">
+      <span class="label">Worked example 16</span>
+      <p>Solve <span class="m">y = 2x − 1</span> and <span class="m">3x + y = 9</span>.</p>
+      <ol class="steps">
+        <li>The first equation already gives <span class="m">y</span>, so substitute it into the second</li>
+        <li><span class="m">3x + (2x − 1) = 9</span></li>
+        <li><span class="m">5x − 1 = 9</span>, so <span class="m">5x = 10</span> and <span class="m">x = 2</span></li>
+        <li><span class="m">y = 2(2) − 1 = 3</span></li>
+        <li>Check in both: <span class="m">3(2) + 3 = 9</span> ✓ and <span class="m">y = 3</span> ✓</li>
+      </ol>
+      <p class="answer"><span class="m">x = 2, y = 3</span></p>
+    </div>
+
+    <h3>6.3 Word problem, and what the answer means</h3>
+    <div class="example glass">
+      <span class="label">Worked example 17</span>
+      <p>Three coffees and two cakes cost £11.00. One coffee and four cakes cost £10.00. Find the price of a coffee and the price of a cake.</p>
+      <ol class="steps">
+        <li>Let coffee = <span class="m">c</span> pence, cake = <span class="m">k</span> pence: <span class="m">3c + 2k = 1100</span> and <span class="m">c + 4k = 1000</span></li>
+        <li>From the second, <span class="m">c = 1000 − 4k</span></li>
+        <li>Substitute: <span class="m">3(1000 − 4k) + 2k = 1100</span> → <span class="m">3000 − 12k + 2k = 1100</span></li>
+        <li><span class="m">−10k = −1900</span>, so <span class="m">k = 190</span></li>
+        <li><span class="m">c = 1000 − 760 = 240</span>. Check: <span class="m">3(240) + 2(190) = 720 + 380 = 1100</span> ✓</li>
+      </ol>
+      <p class="answer">Coffee = £2.40, cake = £1.90</p>
+    </div>
+    <div class="box"><span class="label">The graph meaning</span>The solution pair is the point where the two straight lines <strong>cross</strong>. If the lines are parallel there is no solution; if they are the same line there are infinitely many. This idea returns in coordinate geometry.</div>
+    <div class="box warn"><span class="label">Exam trap</span>Always check your pair in <strong>both</strong> original equations. A sign slip during elimination gives a pair that fixes the equation you used and breaks the other one. Also write answers as "x = 4, y = 3", not just "7 and 4".</div>
+  </section>
+
+  <section id="quadratics" data-reveal>
+    <h2>7. Quadratic equations and graphs</h2>
+    <p>A quadratic has an <span class="m">x²</span> term, so it can have <strong>two</strong> solutions, one, or none. In this syllabus you solve by <strong>factorising</strong> or by the <strong>quadratic formula</strong>. Completing the square is <strong>not</strong> needed and will not be examined.</p>
+
+    <h3>7.1 Solving by factorising</h3>
+    <div class="formula"><code>x² − 5x + 6 = 0  →  (x − 2)(x − 3) = 0  →  x = 2 or x = 3</code></div>
+    <p>If two brackets multiply to give zero, <strong>at least one bracket must be zero</strong>. Set each bracket equal to zero separately and you get both roots. Remember to set the equation to zero first: <span class="m">x² = 5x − 6</span> must become <span class="m">x² − 5x + 6 = 0</span>.</p>
+    <div class="example glass">
+      <span class="label">Worked example 18</span>
+      <p>Solve <span class="m">x² − 5x + 6 = 0</span>, then <span class="m">2x² + 5x = 3</span>.</p>
+      <ol class="steps">
+        <li>First: numbers multiplying to +6 and adding to −5 are −2 and −3, so <span class="m">(x − 2)(x − 3) = 0</span></li>
+        <li>Set each bracket to zero: <span class="m">x = 2</span> or <span class="m">x = 3</span></li>
+        <li>Second: subtract 3, <span class="m">2x² + 5x − 3 = 0</span></li>
+        <li><span class="m">a × c = −6</span>, numbers adding to 5 are 6 and −1: <span class="m">2x² + 6x − x − 3 = 0</span></li>
+        <li><span class="m">2x(x + 3) − 1(x + 3) = 0</span>, so <span class="m">(2x − 1)(x + 3) = 0</span></li>
+        <li><span class="m">x = ½</span> or <span class="m">x = −3</span></li>
+      </ol>
+      <p class="answer"><span class="m">x = 2</span> or <span class="m">x = 3</span>; and <span class="m">x = ½</span> or <span class="m">x = −3</span></p>
+    </div>
+
+    <h3>7.2 The quadratic formula</h3>
+    <p>When it will not factorise neatly, use the formula. Write the equation as <span class="m">ax² + bx + c = 0</span> first and read off <span class="m">a</span>, <span class="m">b</span> and <span class="m">c</span> <strong>with their signs</strong>.</p>
+    <div class="formula"><code>x = <span class="frac"><span>−b ± √(b² − 4ac)</span><span>2a</span></span></code></div>
+    <div class="example glass">
+      <span class="label">Worked example 19</span>
+      <p>Solve <span class="m">2x² + 3x − 5 = 0</span> using the formula.</p>
+      <ol class="steps">
+        <li><span class="m">a = 2, b = 3, c = −5</span></li>
+        <li><span class="m">b² − 4ac = 9 − 4(2)(−5) = 9 + 40 = 49</span></li>
+        <li><span class="m">√49 = 7</span></li>
+        <li><span class="m">x = (−3 ± 7) / 4</span></li>
+        <li>Take the plus: <span class="m">x = 4/4 = 1</span>. Take the minus: <span class="m">x = −10/4 = −2.5</span></li>
+        <li>Check: <span class="m">2(1)² + 3(1) − 5 = 0</span> ✓ and <span class="m">2(6.25) + 3(−2.5) − 5 = 12.5 − 7.5 − 5 = 0</span> ✓</li>
+      </ol>
+      <p class="answer"><span class="m">x = 1</span> or <span class="m">x = −2.5</span></p>
+    </div>
+
+    <h3>7.3 The discriminant</h3>
+    <p>The bit under the square root, <span class="m">b² − 4ac</span>, is the <strong>discriminant</strong>. It tells you how many real roots there are before you even finish the calculation.</p>
+    <table>
+      <tr><th>Discriminant</th><th>Meaning</th><th>Roots</th></tr>
+      <tr><td><span class="m">b² − 4ac &gt; 0</span></td><td>Positive, and a perfect square if the roots are rational</td><td><strong>Two distinct</strong> real roots</td></tr>
+      <tr><td><span class="m">b² − 4ac = 0</span></td><td>Zero, the square root vanishes</td><td><strong>One</strong> repeated root (the graph touches the x-axis)</td></tr>
+      <tr><td><span class="m">b² − 4ac &lt; 0</span></td><td>Negative, you cannot square-root it</td><td><strong>No real</strong> roots</td></tr>
+    </table>
+    <div class="example glass">
+      <span class="label">Worked example 20</span>
+      <p>How many real roots does <span class="m">x² + 2x + 5 = 0</span> have? And <span class="m">x² − 6x + 9 = 0</span>?</p>
+      <ol class="steps">
+        <li>First: <span class="m">b² − 4ac = 4 − 4(1)(5) = 4 − 20 = −16</span></li>
+        <li>It is negative, so <strong>no real roots</strong></li>
+        <li>Second: <span class="m">36 − 36 = 0</span>, so <strong>one repeated root</strong>, <span class="m">x = 3</span></li>
+      </ol>
+      <p class="answer">First: no real roots. Second: one root, <span class="m">x = 3</span></p>
+    </div>
+
+    <h3>7.4 Facts about the graph y = ax² + bx + c</h3>
+    <ul>
+      <li><strong>Opening:</strong> a parabola (U-shape). It <strong>opens upwards if <span class="m">a &gt; 0</span></strong> and downwards if <span class="m">a &lt; 0</span>.</li>
+      <li><strong>y-intercept:</strong> put <span class="m">x = 0</span>, the graph crosses at <span class="m">(0, c)</span>.</li>
+      <li><strong>x-intercepts:</strong> put <span class="m">y = 0</span>, these are the roots of the equation.</li>
+      <li><strong>Axis of symmetry:</strong> the vertical mirror line through the turning point,
+        <div class="formula" style="text-align:left"><code>x = <span class="frac"><span>−b</span><span>2a</span></span></code></div>
+      </li>
+    </ul>
+    <div class="example glass">
+      <span class="label">Worked example 21</span>
+      <p>For <span class="m">y = x² − 5x + 6</span>, state the y-intercept, the roots and the axis of symmetry.</p>
+      <ol class="steps">
+        <li><span class="m">a = 1 &gt; 0</span> so the parabola opens <strong>upwards</strong></li>
+        <li>y-intercept: <span class="m">c = 6</span>, so it crosses at <span class="m">(0, 6)</span></li>
+        <li>Roots: <span class="m">(x − 2)(x − 3) = 0</span> gives <span class="m">x = 2</span> and <span class="m">x = 3</span></li>
+        <li>Axis: <span class="m">x = −b/(2a) = 5/2 = 2.5</span>, halfway between the roots</li>
+      </ol>
+      <p class="answer">Opens up, crosses y-axis at 6, x-axis at 2 and 3, axis of symmetry <span class="m">x = 2.5</span></p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>The axis of symmetry always sits <strong>halfway between the two roots</strong>. Use that as a quick check of your answer. Always give <em>both</em> roots unless the question says "the positive root".</div>
+    <div class="box warn"><span class="label">Exam trap</span><span class="m">b</span> in the formula carries its own sign. In <span class="m">x² − 5x + 6</span> you have <span class="m">b = −5</span>, so <span class="m">−b = +5</span>. Also, a negative discriminant means "no <em>real</em> roots", not "no solutions".</div>
+  </section>
+
+  <section id="indices" data-reveal>
+    <h2>8. Indices laws</h2>
+    <p>Indices (powers) obey six laws. Learn them as a set: they turn messy multiplication into simple addition of powers.</p>
+    <div class="formula"><code>a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup>  ·  a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m−n</sup>  ·  (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup></code></div>
+    <div class="formula"><code>a<sup>0</sup> = 1  ·  a<sup>−n</sup> = 1 / a<sup>n</sup>  ·  a<sup>1/n</sup> = <sup>n</sup>√a  ·  a<sup>m/n</sup> = ( <sup>n</sup>√a )<sup>m</sup></code></div>
+    <table>
+      <tr><th>Law</th><th>Plain English</th><th>Example</th></tr>
+      <tr><td>Multiply</td><td>Add the powers</td><td><span class="m">x³ × x⁴ = x⁷</span></td></tr>
+      <tr><td>Divide</td><td>Subtract the powers</td><td><span class="m">x⁷ ÷ x³ = x⁴</span></td></tr>
+      <tr><td>Power of a power</td><td>Multiply the powers</td><td><span class="m">(x³)⁴ = x¹²</span></td></tr>
+      <tr><td>Power zero</td><td>Anything (non-zero) to the 0 is 1</td><td><span class="m">100⁰ = 1</span></td></tr>
+      <tr><td>Negative power</td><td>Flip it: reciprocal</td><td><span class="m">2⁻³ = 1/8</span></td></tr>
+      <tr><td>Fractional power</td><td>Denominator = root, numerator = power</td><td><span class="m">8<sup>2/3</sup> = (∛8)² = 4</span></td></tr>
+    </table>
+
+    <div class="example glass">
+      <span class="label">Worked example 22</span>
+      <p>Simplify <span class="m">(2x³y²)³ ÷ (4x³y)</span>.</p>
+      <ol class="steps">
+        <li>Power of a product: <span class="m">(2x³y²)³ = 2³x<sup>9</sup>y<sup>6</sup> = 8x⁹y⁶</span></li>
+        <li>Divide: <span class="m">8 ÷ 4 = 2</span></li>
+        <li>Subtract powers of x: <span class="m">x<sup>9−3</sup> = x⁶</span></li>
+        <li>Subtract powers of y: <span class="m">y<sup>6−1</sup> = y⁵</span></li>
+      </ol>
+      <p class="answer"><span class="m">2x⁶y⁵</span></p>
+    </div>
+
+    <div class="example glass">
+      <span class="label">Worked example 23</span>
+      <p>Evaluate <span class="m">25<sup>3/2</sup></span> and <span class="m">8<sup>−2/3</sup></span>.</p>
+      <ol class="steps">
+        <li>Denominator is the root: <span class="m">25<sup>3/2</sup> = (√25)³</span></li>
+        <li><span class="m">√25 = 5</span>, so <span class="m">5³ = 125</span></li>
+        <li>For the second, deal with the minus first: <span class="m">8<sup>−2/3</sup> = 1 / 8<sup>2/3</sup></span></li>
+        <li><span class="m">8<sup>2/3</sup> = (∛8)² = 2² = 4</span>, so the answer is <span class="m">1/4</span></li>
+      </ol>
+      <p class="answer"><span class="m">25<sup>3/2</sup> = 125</span> and <span class="m">8<sup>−2/3</sup> = 0.25</span></p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>Write <span class="m">√a</span> as <span class="m">a<sup>1/2</sup></span> and <span class="m">∛a</span> as <span class="m">a<sup>1/3</sup></span> whenever you need to combine it with other powers. Everything then runs on the same six laws.</div>
+    <div class="box warn"><span class="label">Exam trap</span>You can only add powers when <strong>multiplying</strong> like bases, and only if the base is identical: <span class="m">x³ × x⁴ = x⁷</span> but <span class="m">x³ + x⁴</span> cannot be simplified at all. <span class="m">(3x)² = 9x²</span>, not <span class="m">3x²</span>.</div>
+  </section>
+
+  <section id="inequalities" data-reveal>
+    <h2>9. Inequalities</h2>
+    <p>An inequality is like an equation, but the answer is a <strong>range</strong> of values rather than one number.</p>
+    <table>
+      <tr><th>Symbol</th><th>Reads as</th><th>Includes the endpoint?</th></tr>
+      <tr><td><span class="m">&lt;</span></td><td>less than</td><td>No</td></tr>
+      <tr><td><span class="m">&gt;</span></td><td>greater than</td><td>No</td></tr>
+      <tr><td><span class="m">≤</span></td><td>less than or equal to</td><td>Yes</td></tr>
+      <tr><td><span class="m">≥</span></td><td>greater than or equal to</td><td>Yes</td></tr>
+    </table>
+
+    <h3>9.1 Solving like an equation</h3>
+    <p>Add or subtract from both sides exactly as with an equation. The one extra rule is the <strong>flip rule</strong>.</p>
+    <div class="formula"><code>When you multiply or divide BOTH sides by a NEGATIVE number, FLIP the inequality sign.</code></div>
+    <div class="example glass">
+      <span class="label">Worked example 24</span>
+      <p>Solve <span class="m">3x − 4 &gt; 11</span> and <span class="m">−2x ≤ 6</span>.</p>
+      <ol class="steps">
+        <li>First: add 4, <span class="m">3x &gt; 15</span></li>
+        <li>Divide by +3 (positive, no flip): <span class="m">x &gt; 5</span></li>
+        <li>Second: divide by −2, which is negative, so <strong>flip the sign</strong></li>
+        <li><span class="m">x ≥ −3</span></li>
+        <li>Check with <span class="m">x = −4</span>, which is not in the solution: <span class="m">−2(−4) = 8</span>, and 8 is not ≤ 6 ✓ (so −4 is correctly excluded)</li>
+      </ol>
+      <p class="answer"><span class="m">x &gt; 5</span> and <span class="m">x ≥ −3</span></p>
+    </div>
+
+    <h3>9.2 Drawing the solution on a number line</h3>
+    <ul>
+      <li><strong>Solid (filled) dot</strong> for <span class="m">≤</span> and <span class="m">≥</span> because the endpoint is included.</li>
+      <li><strong>Hollow (open) circle</strong> for <span class="m">&lt;</span> and <span class="m">&gt;</span> because the endpoint is excluded.</li>
+      <li>Shade or draw the line in the direction the inequality points: <span class="m">x &gt; 5</span> shades to the <strong>right</strong> of 5.</li>
+    </ul>
+
+    <h3>9.3 Double inequalities</h3>
+    <p>Treat all three parts at once, doing the same thing to each part. Never flip only the middle.</p>
+    <div class="example glass">
+      <span class="label">Worked example 25</span>
+      <p>Solve <span class="m">−1 &lt; 2x + 3 ≤ 7</span> and describe the number-line picture.</p>
+      <ol class="steps">
+        <li>Subtract 3 from all three parts: <span class="m">−4 &lt; 2x ≤ 4</span></li>
+        <li>Divide all three parts by +2 (positive, so no flip): <span class="m">−2 &lt; x ≤ 2</span></li>
+        <li>Number line: hollow circle at −2, solid dot at 2, line shaded between them</li>
+      </ol>
+      <p class="answer"><span class="m">−2 &lt; x ≤ 2</span>: open at −2, closed at 2, shaded in between</p>
+    </div>
+    <div class="box warn"><span class="label">Exam trap</span>Multiplying or dividing by a variable you <em>assume</em> is positive is not allowed without justification. Only flip when the number you divide by is definitely negative. If you ever multiply a bracket by −1, flip the sign in the same line.</div>
+    <div class="box good"><span class="label">Exam tip</span>Fix the symbol names in your head: open circle means "not included", filled dot means "included". The question "write down the inequality shown on this number line" is usually one easy mark, so read the dot type first.</div>
+  </section>
+
+  <section id="proportion" data-reveal>
+    <h2>10. Proportionality</h2>
+    <p>Proportion questions describe a relationship in words. Translate the words into a formula, use the given pair of values to find <span class="m">k</span>, then use <span class="m">k</span> to answer the question.</p>
+    <table>
+      <tr><th>Exam wording</th><th>Formula</th></tr>
+      <tr><td>y is directly proportional to x</td><td><span class="m">y = kx</span></td></tr>
+      <tr><td>y is proportional to the square of x</td><td><span class="m">y = kx²</span></td></tr>
+      <tr><td>y is proportional to the cube root of x</td><td><span class="m">y = k x<sup>1/3</sup></span></td></tr>
+      <tr><td>y is inversely proportional to x</td><td><span class="m">y = k/x</span></td></tr>
+      <tr><td>y is inversely proportional to the square of x</td><td><span class="m">y = k/x²</span></td></tr>
+    </table>
+    <div class="formula"><code>y = kx  (direct)  ·  y = k/x  (inverse)  ·  k = y ÷ x  or  k = y × x</code></div>
+
+    <h3>10.1 Direct proportion</h3>
+    <div class="example glass">
+      <span class="label">Worked example 26</span>
+      <p><span class="m">y</span> is proportional to the square of <span class="m">x</span>. Given <span class="m">y = 20</span> when <span class="m">x = 2</span>, find <span class="m">y</span> when <span class="m">x = 4</span>.</p>
+      <ol class="steps">
+        <li>Translate: <span class="m">y = kx²</span></li>
+        <li>Substitute the known pair: <span class="m">20 = k(2)² = 4k</span></li>
+        <li>Find k: <span class="m">k = 5</span>, so the formula is <span class="m">y = 5x²</span></li>
+        <li>Use it: <span class="m">y = 5(4)² = 5 × 16 = 80</span></li>
+      </ol>
+      <p class="answer"><span class="m">k = 5</span> and <span class="m">y = 80</span></p>
+    </div>
+
+    <h3>10.2 Inverse proportion</h3>
+    <div class="example glass">
+      <span class="label">Worked example 27</span>
+      <p><span class="m">y</span> is inversely proportional to <span class="m">x</span>. Given <span class="m">y = 8</span> when <span class="m">x = 5</span>, find <span class="m">x</span> when <span class="m">y = 10</span>.</p>
+      <ol class="steps">
+        <li>Translate: <span class="m">y = k/x</span></li>
+        <li>Substitute: <span class="m">8 = k/5</span>, so <span class="m">k = 40</span></li>
+        <li>Formula: <span class="m">y = 40/x</span></li>
+        <li>Use it: <span class="m">10 = 40/x</span>, so <span class="m">x = 4</span></li>
+      </ol>
+      <p class="answer"><span class="m">k = 40</span> and <span class="m">x = 4</span></p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>Two marks are almost always available: one for writing <span class="m">y = kx²</span> (or the right form) and one for the value of k. State k explicitly, even if the question never asks for it.</div>
+    <div class="box warn"><span class="label">Exam trap</span>"Directly proportional" gives <span class="m">y = kx</span>, never <span class="m">y = kx + b</span>. There is no constant added in proportionality questions. And "inversely proportional to x" means <span class="m">y = k/x</span>, not <span class="m">y = −kx</span>.</div>
+  </section>
+
+  <section id="practice" data-reveal>
+    <h2>11. Practice set and answers</h2>
+    <p>Do every question on paper first. Open an answer only after you have committed to one.</p>
+
+    <h3>Set A · Simplifying, expanding, factorising</h3>
+    <div class="practice">
+      <details class="q"><summary>Simplify: <span class="m">7a + 3b − 2a + 5b − a²</span></summary><div class="ans">Collect like terms: <span class="m">7a − 2a = 5a</span> and <span class="m">3b + 5b = 8b</span>. <span class="m">a²</span> has no partner. <strong>Answer: <span class="m">5a + 8b − a²</span></strong> (tidied as <span class="m">−a² + 5a + 8b</span>).</div></details>
+      <details class="q"><summary>Expand and simplify: <span class="m">(x + 6)(x − 2)</span></summary><div class="ans">First <span class="m">x²</span>, outer <span class="m">−2x</span>, inner <span class="m">6x</span>, last <span class="m">−12</span>. <span class="m">x² + 4x − 12</span>. <strong>Answer: <span class="m">x² + 4x − 12</span></strong>.</div></details>
+      <details class="q"><summary>Expand and simplify: <span class="m">(2x − 3)²</span></summary><div class="ans">Perfect square: <span class="m">(2x)² + 2(2x)(−3) + (−3)² = 4x² − 12x + 9</span>. <strong>Answer: <span class="m">4x² − 12x + 9</span></strong>. Not <span class="m">4x² + 9</span>.</div></details>
+      <details class="q"><summary>Factorise: <span class="m">12x² − 18x</span></summary><div class="ans">Common factor of 6 and x: <strong>Answer: <span class="m">6x(2x − 3)</span></strong>.</div></details>
+      <details class="q"><summary>Factorise: <span class="m">x² − 9x + 20</span></summary><div class="ans">Multiplies to 20, adds to −9: −4 and −5. <strong>Answer: <span class="m">(x − 4)(x − 5)</span></strong>.</div></details>
+      <details class="q"><summary>Factorise: <span class="m">6x² + 7x − 3</span></summary><div class="ans"><span class="m">a × c = −18</span>, add to 7: +9 and −2. Split: <span class="m">6x² + 9x − 2x − 3 = 3x(2x + 3) − 1(2x + 3)</span>. <strong>Answer: <span class="m">(2x + 3)(3x − 1)</span></strong>.</div></details>
+      <details class="q"><summary>Factorise fully: <span class="m">5x² − 125</span></summary><div class="ans">Common factor 5 first: <span class="m">5(x² − 25)</span>, then difference of squares. <strong>Answer: <span class="m">5(x − 5)(x + 5)</span></strong>.</div></details>
+    </div>
+
+    <h3>Set B · Equations, subjects, simultaneous equations</h3>
+    <div class="practice">
+      <details class="q"><summary>Solve: <span class="m">4(x − 2) = 2x + 6</span></summary><div class="ans">Expand: <span class="m">4x − 8 = 2x + 6</span>. <span class="m">2x = 14</span>. <strong>Answer: <span class="m">x = 7</span></strong>. Check <span class="m">4(5) = 20</span> and <span class="m">2(7) + 6 = 20</span> ✓.</div></details>
+      <details class="q"><summary>Solve: <span class="m">(3x − 1)/4 = (x + 5)/6</span></summary><div class="ans">LCD 12: <span class="m">3(3x − 1) = 2(x + 5)</span> → <span class="m">9x − 3 = 2x + 10</span> → <span class="m">7x = 13</span>. <strong>Answer: <span class="m">x = 13/7</span></strong> (about 1.86).</div></details>
+      <details class="q"><summary>Make <span class="m">t</span> the subject of <span class="m">v = u + at</span></summary><div class="ans">Subtract u: <span class="m">v − u = at</span>. Divide by a. <strong>Answer: <span class="m">t = (v − u)/a</span></strong>.</div></details>
+      <details class="q"><summary>Make <span class="m">x</span> the subject of <span class="m">y = 3x/(x − 2)</span></summary><div class="ans">Multiply: <span class="m">y(x − 2) = 3x</span> → <span class="m">yx − 2y = 3x</span> → collect x: <span class="m">−2y = 3x − yx = x(3 − y)</span> → divide. <strong>Answer: <span class="m">x = −2y/(3 − y)</span></strong>, which also equals <span class="m">2y/(y − 3)</span>.</div></details>
+      <details class="q"><summary>Solve: <span class="m">x + y = 7</span> and <span class="m">3x − y = 5</span></summary><div class="ans">Add the equations: <span class="m">4x = 12</span>, so <span class="m">x = 3</span>. Then <span class="m">y = 4</span>. Check <span class="m">3(3) − 4 = 5</span> ✓. <strong>Answer: <span class="m">x = 3, y = 4</span></strong>.</div></details>
+      <details class="q"><summary>Solve: <span class="m">y = x + 1</span> and <span class="m">2x + 3y = 16</span></summary><div class="ans">Substitute: <span class="m">2x + 3(x + 1) = 16</span> → <span class="m">5x + 3 = 16</span> → <span class="m">5x = 13</span>, so <span class="m">x = 2.6</span> and <span class="m">y = 3.6</span>. Check: <span class="m">2(2.6) + 3(3.6) = 5.2 + 10.8 = 16</span> ✓. <strong>Answer: <span class="m">x = 2.6, y = 3.6</span></strong>.</div></details>
+    </div>
+
+    <h3>Set C · Quadratics, indices, inequalities, proportion</h3>
+    <div class="practice">
+      <details class="q"><summary>Solve: <span class="m">x² − 7x + 12 = 0</span></summary><div class="ans">Multiplies to 12, adds to −7: −3 and −4. <span class="m">(x − 3)(x − 4) = 0</span>. <strong>Answer: <span class="m">x = 3</span> or <span class="m">x = 4</span></strong>.</div></details>
+      <details class="q"><summary>Solve to 3 significant figures: <span class="m">x² + 4x − 3 = 0</span></summary><div class="ans">Not factorisable. <span class="m">a = 1, b = 4, c = −3</span>, discriminant <span class="m">16 + 12 = 28</span>, <span class="m">√28 = 5.292</span>. <span class="m">x = (−4 ± 5.292)/2</span>. <strong>Answer: <span class="m">x = 0.646</span> or <span class="m">x = −4.646</span></strong> (so <span class="m">x = 0.646</span> or <span class="m">x = −4.65</span> to 3 s.f.).</div></details>
+      <details class="q"><summary>How many real roots does <span class="m">3x² − 2x + 5 = 0</span> have?</summary><div class="ans"><span class="m">b² − 4ac = 4 − 4(3)(5) = 4 − 60 = −56</span>, which is negative. <strong>Answer: no real roots</strong>.</div></details>
+      <details class="q"><summary>Simplify: <span class="m">x⁵ × x³ ÷ x⁴</span></summary><div class="ans">Add then subtract powers: <span class="m">x<sup>8</sup> ÷ x⁴ = x⁴</span>. <strong>Answer: <span class="m">x⁴</span></strong>.</div></details>
+      <details class="q"><summary>Evaluate: <span class="m">16<sup>3/4</sup></span></summary><div class="ans">Fourth root first: <span class="m">16<sup>1/4</sup> = 2</span>, then cube: <span class="m">2³ = 8</span>. <strong>Answer: 8</strong>.</div></details>
+      <details class="q"><summary>Solve: <span class="m">−3x + 2 &lt; 11</span>, and show it on a number line</summary><div class="ans">Subtract 2: <span class="m">−3x &lt; 9</span>. Divide by −3 and <strong>flip</strong>: <strong>Answer: <span class="m">x &gt; −3</span></strong>. Hollow circle at −3, shaded to the right.</div></details>
+      <details class="q"><summary><span class="m">y</span> is inversely proportional to <span class="m">x</span>. <span class="m">y = 12</span> when <span class="m">x = 3</span>. Find y when x = 8.</summary><div class="ans"><span class="m">y = k/x</span> → <span class="m">12 = k/3</span> → <span class="m">k = 36</span>. So <span class="m">y = 36/8 = 4.5</span>. <strong>Answer: <span class="m">y = 4.5</span></strong>.</div></details>
+      <details class="q"><summary><span class="m">A</span> is proportional to <span class="m">b²</span>. <span class="m">A = 45</span> when <span class="m">b = 3</span>. Find b when A = 200.</summary><div class="ans"><span class="m">A = kb²</span> → <span class="m">45 = 9k</span> → <span class="m">k = 5</span>. So <span class="m">200 = 5b²</span> → <span class="m">b² = 40</span> → <span class="m">b = √40 = 6.32</span> to 3 s.f. <strong>Answer: <span class="m">b = 6.32</span></strong>.</div></details>
+      <details class="q"><summary>For <span class="m">y = −2x² + 8x − 3</span>, state the y-intercept, the direction of opening and the axis of symmetry.</summary><div class="ans"><span class="m">a = −2 &lt; 0</span> so it <strong>opens downwards</strong>. y-intercept is <span class="m">c = −3</span>. Axis: <span class="m">x = −b/(2a) = −8/(−4) = 2</span>. <strong>Answer: crosses the y-axis at −3, opens down, axis <span class="m">x = 2</span></strong>.</div></details>
+      <details class="q"><summary>Three t-shirts and one hoodie cost £42. One t-shirt and two hoodies cost £46. Find each price.</summary><div class="ans">Let t-shirt = <span class="m">t</span>, hoodie = <span class="m">h</span>: <span class="m">3t + h = 42</span> and <span class="m">t + 2h = 46</span>. From the first, <span class="m">h = 42 − 3t</span>. Substitute: <span class="m">t + 2(42 − 3t) = 46</span> → <span class="m">84 − 5t = 46</span> → <span class="m">5t = 38</span> → <span class="m">t = 7.60</span>. Then <span class="m">h = 42 − 22.80 = 19.20</span>. Check: <span class="m">7.60 + 38.40 = 46</span> ✓. <strong>Answer: T-shirt £7.60, hoodie £19.20</strong>.</div></details>
+    </div>
+  </section>
+
+  <section id="checklist" data-reveal>
+    <h2>12. Exam checklist</h2>
+    <ul class="checklist">
+      <li>Collected only like terms, and left unlike terms alone.</li>
+      <li>Substituted with brackets and did powers before multiplying.</li>
+      <li>Expanded every term in the bracket, then tidied up.</li>
+      <li>Wrote <span class="m">(x + a)² = x² + 2ax + a²</span> with the middle term, not just two terms.</li>
+      <li>Factorised the common factor first, then looked for a pattern, then a pair of brackets.</li>
+      <li>Used "multiply to c, add to b" (or <span class="m">a × c</span> for non-monic) and checked by expanding.</li>
+      <li>Set the equation to zero before factorising a quadratic.</li>
+      <li>Set each bracket equal to zero and gave <strong>both</strong> roots.</li>
+      <li>Used the quadratic formula with <span class="m">b</span> taken <em>with its sign</em>, and gave answers to the accuracy asked for.</li>
+      <li>Checked <span class="m">b² − 4ac</span> when asked how many roots, and used "no real roots" for a negative value.</li>
+      <li>Multiplied an equation with fractions by the LCD, including the terms without fractions.</li>
+      <li>Read the command word: factorise means brackets, solve means find x.</li>
+      <li>When making the subject, collected the subject's terms on one side and factorised it out.</li>
+      <li>Checked simultaneous equation pairs in <strong>both</strong> original equations.</li>
+      <li>Flipped the inequality sign only when multiplying or dividing by a negative.</li>
+      <li>Drew solid dots for <span class="m">≤</span> and <span class="m">≥</span>, hollow circles for <span class="m">&lt;</span> and <span class="m">&gt;</span>.</li>
+      <li>Translated proportion wording into <span class="m">y = kxⁿ</span> or <span class="m">y = k/xⁿ</span> before substituting.</li>
+      <li>Gave answers in context with units on word problems.</li>
+    </ul>
+  </section>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <span>Chapter 03 · Algebra</span>
+  <span><a href="index.html">All chapters</a> · Next: <a href="coordinate-geometry.html">Coordinate Geometry</a></span>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

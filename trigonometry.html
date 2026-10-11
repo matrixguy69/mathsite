@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trigonometry · Maths Notes</title>
+<meta name="description" content="O Level trigonometry notes: Pythagoras, SOH CAH TOA, exact values, sine rule, cosine rule, area of a triangle, angles of elevation and depression, and bearings.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,750&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav glass">
+  <a class="brand" href="index.html"><span class="mark">∑</span><span class="word">Maths Notes</span></a>
+  <nav class="nav-links">
+    <a href="statistics.html">Statistics</a>
+    <a href="trigonometry.html" aria-current="page">Trigonometry</a>
+    <a href="algebra.html">Algebra</a>
+    <a href="coordinate-geometry.html">Coordinate Geometry</a>
+  </nav>
+  <button class="nav-calc" data-calc-open>Calculator</button>
+</header>
+
+<div class="page">
+<aside class="toc glass" aria-label="Chapter contents">
+  <div class="toc-title">On this page</div>
+  <a href="#triangles">1. Triangles you must know</a>
+  <a href="#pythagoras">2. Pythagoras theorem</a>
+  <a href="#ratios">3. Trig ratios (SOH CAH TOA)</a>
+  <a href="#practice-ratios">4. Trig ratio practice</a>
+  <a href="#sine-rule">5. Sine rule</a>
+  <a href="#cosine-rule">6. Cosine rule</a>
+  <a href="#area">7. Area of a triangle</a>
+  <a href="#elevation">8. Elevation &amp; depression</a>
+  <a href="#bearings">9. Bearings</a>
+  <a href="#practice">10. Practice &amp; answers</a>
+  <a href="#checklist">11. Exam checklist</a>
+</aside>
+
+<main class="chapter">
+  <div class="chapter-hero glass" data-reveal>
+    <span class="eyebrow">Chapter 02 · Trigonometry</span>
+    <h1>Pythagoras, SOH CAH TOA and the sine and cosine rules</h1>
+    <p class="meta">Everything from the eight Zainematics trigonometry lessons, worked in full: special triangles, Pythagoras, the three trig ratios and their exact values, the sine and cosine rules, the area formula, angles of elevation and depression, and bearings.</p>
+    <div class="chips">
+      <a class="chip" href="https://www.youtube.com/playlist?list=PLLyqGZba3Xv2weVSJSWU2GFElqWJ51DK2">Equilateral &amp; isosceles</a>
+      <a class="chip" href="https://www.youtube.com/playlist?list=PLLyqGZba3Xv2weVSJSWU2GFElqWJ51DK2">Right-angle triangles &amp; Pythagoras</a>
+      <a class="chip" href="https://www.youtube.com/playlist?list=PLLyqGZba3Xv2weVSJSWU2GFElqWJ51DK2">Trig ratios + practice</a>
+      <a class="chip" href="https://www.youtube.com/playlist?list=PLLyqGZba3Xv2weVSJSWU2GFElqWJ51DK2">Sine rule</a>
+      <a class="chip" href="https://www.youtube.com/playlist?list=PLLyqGZba3Xv2weVSJSWU2GFElqWJ51DK2">Cosine rule</a>
+      <a class="chip" href="https://www.youtube.com/playlist?list=PLLyqGZba3Xv2weVSJSWU2GFElqWJ51DK2">Area of a triangle</a>
+      <a class="chip" href="https://www.youtube.com/playlist?list=PLLyqGZba3Xv2weVSJSWU2GFElqWJ51DK2">Elevation &amp; depression</a>
+      <a class="chip" href="https://www.youtube.com/playlist?list=PLLyqGZba3Xv2weVSJSWU2GFElqWJ51DK2">Bearings</a>
+    </div>
+  </div>
+
+  <section id="triangles" data-reveal>
+    <h2>1. Triangles you must know</h2>
+    <p>Every trigonometry question is built on triangles. Before you touch sin, cos or tan, you must be able to name the triangle you have and find any missing angle in it. There are three facts that never change.</p>
+    <div class="formula"><code>angles in a triangle add up to 180°</code></div>
+    <div class="formula"><code>a straight line adds up to 180° · angles at a point add up to 360°</code></div>
+
+    <h3>1.1 Equilateral triangles</h3>
+    <ul>
+      <li>All <strong>three sides equal</strong>, all <strong>three angles equal</strong>.</li>
+      <li>Each angle is <span class="m">180° ÷ 3 = 60°</span>.</li>
+      <li>If each side is <span class="m">a</span>, the vertical height is <span class="m">a√3 / 2</span> (drop a perpendicular from the top vertex: it splits the triangle into two 30-60-90 right triangles).</li>
+    </ul>
+    <div class="example glass">
+      <span class="label">Worked example 1</span>
+      <p>An equilateral triangle has side 14 cm. Find all three angles and its vertical height.</p>
+      <ol class="steps">
+        <li>All three angles are equal and add to 180°: each is <span class="m">60°</span>.</li>
+        <li>Height: split it down the middle to get a right triangle with hypotenuse 7 cm.</li>
+        <li><span class="m">h² + 7² = 14²</span>, so <span class="m">h² = 196 − 49 = 147</span> and <span class="m">h = √147 = 7√3</span></li>
+        <li><span class="m">7 × 1.732 ≈ 12.1</span></li>
+      </ol>
+      <p class="answer">All angles 60°, height = 7√3 ≈ 12.1 cm</p>
+    </div>
+
+    <h3>1.2 Isosceles triangles</h3>
+    <ul>
+      <li>Two <strong>equal sides</strong>, and the two <strong>base angles</strong> (the angles between a equal side and the base) are equal.</li>
+      <li>Given one base angle, double it and subtract from 180° to get the top (vertex) angle.</li>
+      <li>Given the vertex angle, subtract it from 180° and halve to get each base angle.</li>
+    </ul>
+    <div class="example glass">
+      <span class="label">Worked example 2</span>
+      <p>An isosceles triangle has two equal sides of length 9 cm and 9 cm, and the angle between them is 40°. Find the two base angles.</p>
+      <ol class="steps">
+        <li>The angle between the equal sides is the vertex angle: <span class="m">40°</span>.</li>
+        <li>Remaining angle for the two equal base angles: <span class="m">180° − 40° = 140°</span></li>
+        <li>They are equal, so each is <span class="m">140° ÷ 2 = 70°</span></li>
+      </ol>
+      <p class="answer">Both base angles are 70°</p>
+    </div>
+    <div class="box warn"><span class="label">Exam trap</span>Not every triangle with two equal-looking angles in a diagram is isosceles. Only assume equal angles when they are marked, stated in the question, or forced by the geometry (for example, a radius to a chord creating equal base angles).</div>
+
+    <h3>1.3 Scalene and right-angled triangles</h3>
+    <ul>
+      <li>A <strong>scalene</strong> triangle has no equal sides and no equal angles. You always need one more fact (a side and an angle) before trig kicks in.</li>
+      <li>A <strong>right-angled</strong> triangle has one angle of 90°, so the two acute angles add to 90°. That single fact solves many one-mark questions on its own.</li>
+    </ul>
+    <div class="example glass">
+      <span class="label">Worked example 3</span>
+      <p>A right-angled triangle has one acute angle of 37°. Find the other acute angle.</p>
+      <ol class="steps">
+        <li>The three angles sum to 180° and one of them is 90°.</li>
+        <li>The two acute angles sum to <span class="m">90°</span>.</li>
+        <li><span class="m">90° − 37° = 53°</span></li>
+      </ol>
+      <p class="answer">The other acute angle is 53°</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>Whenever a diagram shows a triangle inside a rectangle, a ladder against a wall, or a pole against the ground, look for the hidden right angle first. Right angles unlock both Pythagoras and SOH CAH TOA.</div>
+  </section>
+
+  <section id="pythagoras" data-reveal>
+    <h2>2. Pythagoras theorem</h2>
+    <p>In any <strong>right-angled triangle</strong>, the square of the hypotenuse (the longest side, always opposite the 90° angle) equals the sum of the squares of the other two sides.</p>
+    <div class="formula"><code>a² + b² = c² &nbsp;&nbsp; (c = hypotenuse)</code></div>
+    <ul>
+      <li><strong>Hypotenuse:</strong> opposite the right angle, always the longest side. Label it <span class="m">c</span> first, before anything else.</li>
+      <li><strong>Finding the hypotenuse:</strong> add the two squares, then square root.</li>
+      <li><strong>Finding a shorter side:</strong> subtract. If <span class="m">c</span> is known, use <span class="m">a² = c² − b²</span>.</li>
+    </ul>
+
+    <h3>2.1 Finding the hypotenuse</h3>
+    <div class="example glass">
+      <span class="label">Worked example 4</span>
+      <p>A right-angled triangle has shorter sides 9 cm and 12 cm. Find the hypotenuse.</p>
+      <ol class="steps">
+        <li>Label the hypotenuse <span class="m">c</span> (it is opposite the right angle).</li>
+        <li><span class="m">c² = 9² + 12² = 81 + 144 = 225</span></li>
+        <li><span class="m">c = √225 = 15</span></li>
+      </ol>
+      <p class="answer">Hypotenuse = 15 cm</p>
+    </div>
+
+    <h3>2.2 Finding a shorter side</h3>
+    <div class="example glass">
+      <span class="label">Worked example 5</span>
+      <p>A ladder is 13 m long and its foot stands 5 m from the base of a wall. How far up the wall does it reach?</p>
+      <ol class="steps">
+        <li>The ladder is the hypotenuse: <span class="m">c = 13</span>. Let <span class="m">h</span> be the height up the wall.</li>
+        <li><span class="m">h² + 5² = 13²</span></li>
+        <li><span class="m">h² = 169 − 25 = 144</span></li>
+        <li><span class="m">h = √144 = 12</span></li>
+      </ol>
+      <p class="answer">The ladder reaches 12 m up the wall</p>
+    </div>
+
+    <h3>2.3 When NOT to use Pythagoras</h3>
+    <div class="box warn"><span class="label">Exam trap</span>Pythagoras only works in triangles that contain a <strong>right angle</strong>. If the triangle is scalene or obtuse with no 90° marked, you need the <strong>sine rule</strong> or the <strong>cosine rule</strong> instead. Substituting into a² + b² = c² in a non-right triangle is a guaranteed lost mark.</div>
+
+    <h3>2.4 Classic exam setups</h3>
+    <table>
+      <tr><th>Setup</th><th>How to see the right angle</th><th>Typical working</th></tr>
+      <tr><td>Diagonal of a rectangle (sides 6 and 8)</td><td>Corners of a rectangle are 90°</td><td><span class="m">d² = 6² + 8² = 100</span>, so <span class="m">d = 10</span></td></tr>
+      <tr><td>Ladder against a wall</td><td>Wall meets the ground at 90°</td><td>Ladder = hypotenuse, ground and wall = shorter sides</td></tr>
+      <tr><td>Line from a vertex perpendicular to the opposite side</td><td>That perpendicular is drawn in the question</td><td>Splits the triangle into two right triangles</td></tr>
+      <tr><td>Distance across a diagonal field marked on a map</td><td>Right angle given or implied by a rectangle</td><td>Label, then a² + b² = c²</td></tr>
+    </table>
+    <div class="box good"><span class="label">Exam tip</span>The 3-4-5 family (3, 4, 5 and multiples such as 6-8-10, 9-12-15, 15-20-25) and the 5-12-13 family appear constantly. Spotting them saves calculator time.</div>
+  </section>
+
+  <section id="ratios" data-reveal>
+    <h2>3. Trigonometric ratios in right-angled triangles</h2>
+    <p>The three trig ratios connect an <strong>angle</strong> in a right triangle to <strong>ratios of its sides</strong>. Every ratio depends on which angle you are standing at, so labelling comes first.</p>
+
+    <h3>3.1 Labelling the sides (relative to your angle θ)</h3>
+    <table>
+      <tr><th>Side</th><th>How to identify it</th></tr>
+      <tr><td><strong>Hypotenuse</strong></td><td>Opposite the right angle. Always the longest side.</td></tr>
+      <tr><td><strong>Opposite</strong></td><td>Opposite your angle θ (the side that does not touch θ).</td></tr>
+      <tr><td><strong>Adjacent</strong></td><td>Next to θ, and not the hypotenuse (the other side that touches θ).</td></tr>
+    </table>
+    <div class="formula"><label class="label">SOH CAH TOA</label><code>sin θ = <span class="frac"><span>opposite</span><span>hypotenuse</span></span> &nbsp;·&nbsp; cos θ = <span class="frac"><span>adjacent</span><span>hypotenuse</span></span> &nbsp;·&nbsp; tan θ = <span class="frac"><span>opposite</span><span>adjacent</span></span></code></div>
+    <ul>
+      <li><strong>SOH:</strong> Sine = Opposite over Hypotenuse</li>
+      <li><strong>CAH:</strong> Cosine = Adjacent over Hypotenuse</li>
+      <li><strong>TOA:</strong> Tangent = Opposite over Adjacent</li>
+    </ul>
+
+    <h3>3.2 Exact values you must memorise</h3>
+    <table>
+      <tr><th>Angle</th><th>sin</th><th>cos</th><th>tan</th></tr>
+      <tr><td><strong>30°</strong></td><td><span class="m">1/2</span></td><td><span class="m">√3/2 ≈ 0.87</span></td><td><span class="m">1/√3 ≈ 0.58</span></td></tr>
+      <tr><td><strong>45°</strong></td><td><span class="m">√2/2 ≈ 0.71</span></td><td><span class="m">√2/2 ≈ 0.71</span></td><td><span class="m">1</span></td></tr>
+      <tr><td><strong>60°</strong></td><td><span class="m">√3/2 ≈ 0.87</span></td><td><span class="m">1/2</span></td><td><span class="m">√3 ≈ 1.73</span></td></tr>
+    </table>
+    <div class="box"><span class="label">How to remember it</span>sin 30° = 1/2 and sin 60° = √3/2, and they swap for cos (cos 30° = √3/2, cos 60° = 1/2). tan 45° = 1 because opposite and adjacent are equal in a 45-45-90 triangle. If a question allows exact answers, give the surd form, not the decimal.</div>
+
+    <h3>3.3 Finding a side (multiply or divide)</h3>
+    <p>If the side you want is <strong>on top</strong> of the ratio, multiply. If it is <strong>underneath</strong>, divide. The pattern is always: <span class="m">unknown = (known side) ÷ (or ×) (the ratio)</span>.</p>
+    <div class="example glass">
+      <span class="label">Worked example 6</span>
+      <p>A right triangle has an angle of 30°. The side opposite the 30° angle is 6 cm. Find the adjacent side.</p>
+      <ol class="steps">
+        <li>We have opposite and want adjacent: use <strong>TOA</strong>, <span class="m">tan θ = opposite / adjacent</span>.</li>
+        <li><span class="m">tan 30° = 6 / x</span></li>
+        <li>Rearrange: <span class="m">x = 6 / tan 30° = 6 / 0.5774</span></li>
+        <li><span class="m">x ≈ 10.39</span></li>
+      </ol>
+      <p class="answer">Adjacent side ≈ 10.4 cm (exact: 6√3)</p>
+    </div>
+
+    <h3>3.4 Finding an angle (inverse sin, cos, tan)</h3>
+    <p>To get an angle back from a ratio, use the inverse button: <span class="m">sin<sup>−1</sup></span>, <span class="m">cos<sup>−1</sup></span> or <span class="m">tan<sup>−1</sup></span> (on many calculators it is shift + sin, shift + cos, shift + tan).</p>
+    <div class="example glass">
+      <span class="label">Worked example 7</span>
+      <p>In a right triangle the side opposite angle A is 5 cm and the hypotenuse is 10 cm. Find angle A.</p>
+      <ol class="steps">
+        <li>Opposite and hypotenuse: use <strong>SOH</strong>.</li>
+        <li><span class="m">sin A = 5 / 10 = 0.5</span></li>
+        <li><span class="m">A = sin<sup>−1</sup>(0.5)</span></li>
+        <li>Exact value: <span class="m">A = 30°</span></li>
+      </ol>
+      <p class="answer">Angle A = 30°</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>Every O Level trigonometry question assumes your calculator is in <strong>DEGREES mode</strong>, not radians. Check the little D indicator on screen before every calculation. A radian-mode answer like 0.52 instead of 30° costs the whole question.</div>
+    <div class="box warn"><span class="label">Exam trap</span><span class="m">sin<sup>−1</sup>(0.5) = 30°</span> is an angle. <span class="m">(sin 0.5)<sup>−1</sup></span> or <span class="m">1 / sin 0.5</span> is something else entirely. Press the inverse button <em>first</em>, then the ratio.</div>
+  </section>
+
+  <section id="practice-ratios" data-reveal>
+    <h2>4. Trig ratio practice: multi-step problems</h2>
+    <p>Real exam questions rarely stop after one step. The common patterns are: Pythagoras <em>then</em> a ratio, two right triangles sharing a side, and word problems where you must draw and label the triangle yourself.</p>
+
+    <div class="example glass">
+      <span class="label">Worked example 8</span>
+      <p>A ladder 6.5 m long leans against a vertical wall. Its foot is 2.5 m from the base of the wall. Find the angle the ladder makes with the ground, to 1 dp.</p>
+      <ol class="steps">
+        <li>Draw the right triangle: wall, ground, ladder as hypotenuse. Height up the wall is <span class="m">h</span>.</li>
+        <li>Pythagoras first: <span class="m">h² = 6.5² − 2.5² = 42.25 − 6.25 = 36</span>, so <span class="m">h = 6 m</span></li>
+        <li>At the ground angle θ: opposite = 6, hypotenuse = 6.5 (or adjacent = 2.5).</li>
+        <li><span class="m">tan θ = 6 / 2.5 = 2.4</span></li>
+        <li><span class="m">θ = tan<sup>−1</sup>(2.4) ≈ 67.4°</span></li>
+      </ol>
+      <p class="answer">The ladder leans at about 67.4° to the ground</p>
+    </div>
+
+    <div class="example glass">
+      <span class="label">Worked example 9</span>
+      <p>A kite string is 25 m long and makes an angle of 55° with the horizontal ground. Find the height of the kite and its horizontal distance from the person holding it.</p>
+      <ol class="steps">
+        <li>Right triangle: string = hypotenuse (25 m), angle with the ground = 55°.</li>
+        <li>Height is the opposite side: <span class="m">sin 55° = h / 25</span></li>
+        <li><span class="m">h = 25 × sin 55° = 25 × 0.8192 ≈ 20.5</span></li>
+        <li>Horizontal distance is the adjacent side: <span class="m">d = 25 × cos 55° = 25 × 0.5736 ≈ 14.3</span></li>
+      </ol>
+      <p class="answer">Height ≈ 20.5 m, horizontal distance ≈ 14.3 m</p>
+    </div>
+
+    <div class="example glass">
+      <span class="label">Worked example 10</span>
+      <p>A rectangle measures 7 cm by 9 cm. Find the length of its diagonal and the angle the diagonal makes with the longer side.</p>
+      <ol class="steps">
+        <li>Corners of a rectangle are 90°, so the diagonal is a hypotenuse.</li>
+        <li><span class="m">d² = 7² + 9² = 49 + 81 = 130</span>, so <span class="m">d = √130 ≈ 11.4</span></li>
+        <li>The angle with the longer (9 cm) side has opposite = 7.</li>
+        <li><span class="m">tan θ = 7 / 9 ≈ 0.7778</span></li>
+        <li><span class="m">θ = tan<sup>−1</sup>(0.7778) ≈ 37.9°</span></li>
+      </ol>
+      <p class="answer">Diagonal ≈ 11.4 cm, angle with the long side ≈ 37.9°</p>
+    </div>
+
+    <h3>Practice set</h3>
+    <div class="practice">
+      <details class="q"><summary>A right triangle has shorter sides 5 cm and 11 cm. Find the hypotenuse.</summary><div class="ans"><span class="m">c² = 25 + 121 = 146</span>, so <span class="m">c = √146 ≈ 12.1 cm</span>.</div></details>
+      <details class="q"><summary>A right triangle has hypotenuse 15 cm and one side 9 cm. Find the angle between them, to 1 dp.</summary><div class="ans">Adjacent 9, hypotenuse 15: <span class="m">cos θ = 9/15 = 0.6</span>, so <span class="m">θ = cos<sup>−1</sup>(0.6) ≈ 53.1°</span>.</div></details>
+      <details class="q"><summary>A ramp 4 m long reaches a step 1.5 m high. Find its angle of elevation, to 1 dp.</summary><div class="ans">Opposite 1.5, hypotenuse 4: <span class="m">sin θ = 1.5/4 = 0.375</span>, so <span class="m">θ = sin<sup>−1</sup>(0.375) ≈ 22.0°</span>.</div></details>
+      <details class="q"><summary>A ship sails 12 km due east, then 5 km due north. Find its direct distance from the start, and the bearing it would need to sail home.</summary><div class="ans">Distance <span class="m">= √(12² + 5²) = √169 = 13 km</span>. From the ship, home is 12 km west and 5 km south, so the bearing is <span class="m">180° + tan<sup>−1</sup>(12/5) ≈ 180° + 67.4° = 247°</span> (to the nearest degree).</div></details>
+    </div>
+  </section>
+
+  <section id="sine-rule" data-reveal>
+    <h2>5. The sine rule</h2>
+    <p>Right-triangle trig only works when a 90° angle exists. The <strong>sine rule</strong> works in <em>any</em> triangle, and it links each side to the angle opposite it.</p>
+    <div class="formula"><code>a / sin A = b / sin B = c / sin C</code></div>
+    <p>Here <span class="m">a</span> is the side opposite angle <span class="m">A</span>, <span class="m">b</span> opposite <span class="m">B</span>, and <span class="m">c</span> opposite <span class="m">C</span>. To find an <strong>angle</strong>, flip the fractions:</p>
+    <div class="formula"><code>sin A / a = sin B / b = sin C / c</code></div>
+
+    <h3>5.1 When to use it</h3>
+    <div class="box"><span class="label">The sine rule test</span>Use the sine rule when you have (or want) <strong>a matching pair</strong>: a side and the angle directly opposite it. With one complete pair plus one extra side or angle, the sine rule is the right tool. If no pair exists, use the cosine rule instead.</div>
+
+    <h3>5.2 Finding a side</h3>
+    <div class="example glass">
+      <span class="label">Worked example 11</span>
+      <p>Triangle ABC has <span class="m">A = 50°</span>, <span class="m">a = 10 cm</span> and <span class="m">B = 60°</span>. Find side <span class="m">b</span> to 1 dp.</p>
+      <ol class="steps">
+        <li>Pair: angle A = 50° with side a = 10 opposite it. Good for sine rule.</li>
+        <li><span class="m">a / sin A = b / sin B</span></li>
+        <li><span class="m">10 / sin 50° = b / sin 60°</span></li>
+        <li><span class="m">b = (10 × sin 60°) / sin 50° = (10 × 0.8660) / 0.7660</span></li>
+        <li><span class="m">b = 8.660 / 0.7660 ≈ 11.31</span></li>
+      </ol>
+      <p class="answer">b ≈ 11.3 cm</p>
+    </div>
+
+    <h3>5.3 Finding an angle</h3>
+    <div class="example glass">
+      <span class="label">Worked example 12</span>
+      <p>Triangle ABC has <span class="m">A = 52°</span>, <span class="m">a = 8 m</span> and <span class="m">b = 10 m</span>. Find angle <span class="m">B</span>.</p>
+      <ol class="steps">
+        <li>Use the angle form: <span class="m">sin B / b = sin A / a</span></li>
+        <li><span class="m">sin B = (b × sin A) / a = (10 × sin 52°) / 8</span></li>
+        <li><span class="m">sin B = (10 × 0.7880) / 8 = 7.880 / 8 = 0.9850</span></li>
+        <li><span class="m">B = sin<sup>−1</sup>(0.9850) ≈ 80.0°</span></li>
+        <li>Or the obtuse alternative: <span class="m">180° − 80.0° = 100.0°</span></li>
+      </ol>
+      <p class="answer">B ≈ 80.0° or 100.0° (check the diagram for which fits)</p>
+    </div>
+    <div class="box warn"><span class="label">The obtuse alternative</span>Since <span class="m">sin(180° − θ) = sin θ</span>, a sine-rule angle can have <strong>two</strong> valid answers: <span class="m">θ</span> and <span class="m">180° − θ</span>. Both are possible unless the diagram or the other angles rule one out (a triangle can only have one angle of 90° or more). Write both when the question is ambiguous, and always give the answer the diagram supports.</div>
+  </section>
+
+  <section id="cosine-rule" data-reveal>
+    <h2>6. The cosine rule</h2>
+    <p>The cosine rule is Pythagoras for triangles that are <strong>not</strong> right-angled. It has two forms: one to find a side, one to find an angle.</p>
+    <div class="formula"><code>a² = b² + c² − 2bc cos A</code></div>
+    <div class="formula"><code>cos A = (b² + c² − a²) / (2bc)</code></div>
+    <p>Angle <span class="m">A</span> must sit <strong>between</strong> sides <span class="m">b</span> and <span class="m">c</span>, and side <span class="m">a</span> is the one <strong>opposite</strong> that angle. When <span class="m">A = 90°</span>, <span class="m">cos A = 0</span> and the formula collapses back to Pythagoras.</p>
+
+    <h3>6.1 Which rule? The decision rule</h3>
+    <table>
+      <tr><th>What you are given</th><th>Matched pair (side + opposite angle)?</th><th>Use</th></tr>
+      <tr><td>Two angles + a side, or two sides + one of their opposite angles</td><td>Yes</td><td><strong>Sine rule</strong></td></tr>
+      <tr><td>Two sides + the angle <strong>between</strong> them (SAS)</td><td>No</td><td><strong>Cosine rule</strong> (side form)</td></tr>
+      <tr><td>All three sides (SSS)</td><td>No</td><td><strong>Cosine rule</strong> (angle form)</td></tr>
+    </table>
+
+    <h3>6.2 Finding a side (SAS)</h3>
+    <div class="example glass">
+      <span class="label">Worked example 13</span>
+      <p>Triangle ABC has <span class="m">b = 5 cm</span>, <span class="m">c = 7 cm</span> and the angle between them <span class="m">A = 60°</span>. Find side <span class="m">a</span>.</p>
+      <ol class="steps">
+        <li>Two sides and the included angle: cosine rule, side form.</li>
+        <li><span class="m">a² = 5² + 7² − 2 × 5 × 7 × cos 60°</span></li>
+        <li><span class="m">a² = 25 + 49 − 70 × 0.5</span></li>
+        <li><span class="m">a² = 74 − 35 = 39</span></li>
+        <li><span class="m">a = √39 ≈ 6.24</span></li>
+      </ol>
+      <p class="answer">a ≈ 6.2 cm</p>
+    </div>
+
+    <h3>6.3 Finding an angle (SSS)</h3>
+    <div class="example glass">
+      <span class="label">Worked example 14</span>
+      <p>A triangle has sides 7 cm, 8 cm and 9 cm. Find the largest angle, to 1 dp.</p>
+      <ol class="steps">
+        <li>The largest angle sits opposite the longest side (9 cm).</li>
+        <li><span class="m">cos A = (7² + 8² − 9²) / (2 × 7 × 8)</span></li>
+        <li><span class="m">cos A = (49 + 64 − 81) / 112 = 32 / 112 ≈ 0.2857</span></li>
+        <li><span class="m">A = cos<sup>−1</sup>(0.2857) ≈ 73.4°</span></li>
+      </ol>
+      <p class="answer">Largest angle ≈ 73.4°</p>
+    </div>
+    <div class="box warn"><span class="label">Exam trap</span>In <span class="m">a² = b² + c² − 2bc cos A</span>, always subtract <span class="m">2bc cos A</span> as one chunk. Typing <span class="m">b² + c² − 2bc</span> then <span class="m">× cos A</span> on a calculator multiplies only the last term. Work out <span class="m">2bc</span> first, then the product, then subtract.</div>
+    <div class="box good"><span class="label">Exam tip</span>The cosine rule angle form only gives <strong>one</strong> answer between 0° and 180° from <span class="m">cos<sup>−1</sup></span>, and that answer is the correct one. The ambiguous two-angle situation belongs to the sine rule only.</div>
+  </section>
+
+  <section id="area" data-reveal>
+    <h2>7. Area of a triangle</h2>
+    <p>You already know the basic formula. Trigonometry gives you a second formula that works for <em>any</em> triangle when you know two sides and the angle between them.</p>
+    <div class="formula"><code>area = ½ × base × height &nbsp;&nbsp;(when the height is known)</code></div>
+    <div class="formula"><code>area = ½ ab sin C</code></div>
+    <p>In <span class="m">½ ab sin C</span>, sides <span class="m">a</span> and <span class="m">b</span> are the two sides you know, and <span class="m">C</span> is the angle <strong>between</strong> them (the included angle). If the angle is 90°, <span class="m">sin 90° = 1</span> and the formula becomes ½ × base × height again.</p>
+    <div class="example glass">
+      <span class="label">Worked example 15</span>
+      <p>A triangle has sides 9 cm and 12 cm with an included angle of 38°. Find its area.</p>
+      <ol class="steps">
+        <li>Two sides and the angle between them: use <span class="m">½ ab sin C</span>.</li>
+        <li><span class="m">area = ½ × 9 × 12 × sin 38°</span></li>
+        <li><span class="m">= 54 × 0.6157</span></li>
+        <li><span class="m">≈ 33.25</span></li>
+      </ol>
+      <p class="answer">Area ≈ 33.2 cm² (1 dp)</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>Area answers need <strong>square units</strong>: cm², m², km². And check the angle is the one <em>between</em> the two given sides before you substitute.</div>
+  </section>
+
+  <section id="elevation" data-reveal>
+    <h2>8. Angles of elevation and depression</h2>
+    <p>These questions put a right triangle into a real-world scene. Both angles are measured <strong>from the horizontal</strong>, never from the vertical.</p>
+    <table>
+      <tr><th>Term</th><th>Definition</th></tr>
+      <tr><td><strong>Angle of elevation</strong></td><td>Looking <em>up</em> from the horizontal to an object above you (e.g. the top of a tower).</td></tr>
+      <tr><td><strong>Angle of depression</strong></td><td>Looking <em>down</em> from the horizontal to an object below you (e.g. a boat from a cliff top).</td></tr>
+    </table>
+    <div class="box"><span class="label">The key theorem</span>The angle of depression from A down to B equals the angle of elevation from B up to A. The reason is <strong>alternate angles</strong>: the two horizontal lines of sight are parallel, and the line of sight between A and B is the transversal cutting them. So you can always convert a depression problem into the (usually easier) elevation picture.</div>
+
+    <div class="example glass">
+      <span class="label">Worked example 16</span>
+      <p>From a point on the ground 35 m from the base of a tower, the angle of elevation to the top is 60°. Find the height of the tower.</p>
+      <ol class="steps">
+        <li>Right triangle: ground distance 35 m is the adjacent side, height <span class="m">h</span> is the opposite side, angle 60°.</li>
+        <li><span class="m">tan 60° = h / 35</span></li>
+        <li><span class="m">h = 35 × tan 60° = 35 × √3 = 35 × 1.732</span></li>
+        <li><span class="m">h ≈ 60.6</span></li>
+      </ol>
+      <p class="answer">Tower height ≈ 60.6 m</p>
+    </div>
+
+    <div class="example glass">
+      <span class="label">Worked example 17</span>
+      <p>A cliff is 45 m high. From the top, the angle of depression to a car on the road below is 28°. How far is the car from the base of the cliff?</p>
+      <ol class="steps">
+        <li>Angle of depression 28° from the horizontal at the top equals the angle of elevation of the cliff top from the car (alternate angles): 28°.</li>
+        <li>Now the triangle at the car: opposite = 45 m, adjacent = <span class="m">d</span> (distance from the base).</li>
+        <li><span class="m">tan 28° = 45 / d</span></li>
+        <li><span class="m">d = 45 / tan 28° = 45 / 0.5317 ≈ 84.6</span></li>
+      </ol>
+      <p class="answer">The car is about 84.6 m from the base of the cliff</p>
+    </div>
+    <div class="box warn"><span class="label">Exam trap</span>Do not put the angle of elevation or depression inside the triangle at the wrong corner. It always sits at the <strong>observer's eye</strong>, measured from the horizontal line through the eye. Draw a small horizontal dashed line at the eye before you place the angle.</div>
+  </section>
+
+  <section id="bearings" data-reveal>
+    <h2>9. Bearings</h2>
+    <p>Bearings describe direction. There are two systems, and the three-figure true bearing is the one the exam uses in calculations.</p>
+
+    <h3>9.1 Three-figure (true) bearings</h3>
+    <ul>
+      <li>Measured <strong>clockwise from north</strong> (from the direction marked N on the diagram).</li>
+      <li>Always written with <strong>three digits</strong>, including leading zeros: <span class="m">075°</span>, <span class="m">008°</span>, <span class="m">240°</span>.</li>
+      <li>North itself is 000°, east is 090°, south is 180°, west is 270°.</li>
+      <li>The bearing of B from A is measured at A: draw a north line at A, then measure clockwise to the line AB.</li>
+    </ul>
+
+    <h3>9.2 Compass bearings</h3>
+    <table>
+      <tr><th>Compass bearing</th><th>Meaning</th><th>True bearing</th></tr>
+      <tr><td>N 40° E</td><td>From north, 40° towards east</td><td><span class="m">040°</span></td></tr>
+      <tr><td>S 20° E</td><td>From south, 20° towards east</td><td><span class="m">180° − 20° = 160°</span></td></tr>
+      <tr><td>S 70° W</td><td>From south, 70° towards west</td><td><span class="m">180° + 70° = 250°</span></td></tr>
+      <tr><td>N 15° W</td><td>From north, 15° towards west</td><td><span class="m">360° − 15° = 345°</span></td></tr>
+    </table>
+
+    <h3>9.3 How to work a bearings problem</h3>
+    <ol>
+      <li><strong>Draw a north line at every point</strong> mentioned. All north lines are parallel, so alternate and co-interior angles give you extra angles for free.</li>
+      <li>Write in every angle you can deduce <strong>before</strong> you pick a rule.</li>
+      <li>Look for a triangle you can solve with the <strong>sine rule</strong> (a matched pair) or the <strong>cosine rule</strong> (SAS or SSS). Bearings problems often build an isosceles triangle somewhere.</li>
+      <li>Give final bearings to the nearest degree, in three figures.</li>
+    </ol>
+
+    <div class="example glass">
+      <span class="label">Worked example 18</span>
+      <p>A ship sails from port P on a bearing of 070° for 12 km to point Q, then changes course and sails on a bearing of 150° for 8 km to point R. Find the distance PR and the bearing of R from P.</p>
+      <ol class="steps">
+        <li>Draw north lines at P, Q and R. Mark PQ at 070°, QR at 150°, with <span class="m">PQ = 12</span> and <span class="m">QR = 8</span>.</li>
+        <li>At Q, the back-bearing of P is <span class="m">070° + 180° = 250°</span>. The angle between QP (250°) and QR (150°) is <span class="m">250° − 150° = 100°</span>, so <span class="m">∠PQR = 100°</span>.</li>
+        <li>Two sides and the included angle: cosine rule for PR. <span class="m">PR² = 12² + 8² − 2 × 12 × 8 × cos 100°</span></li>
+        <li><span class="m">PR² = 144 + 64 − 192 × (−0.1736) = 208 + 33.3 = 241.3</span>, so <span class="m">PR ≈ 15.5 km</span></li>
+        <li>For the bearing, find angle QPR with the sine rule: <span class="m">sin QPR / 8 = sin 100° / 15.535</span></li>
+        <li><span class="m">sin QPR = (8 × 0.9848) / 15.535 ≈ 0.507</span>, so <span class="m">QPR ≈ 30.5°</span></li>
+        <li>Bearing of R from P = <span class="m">070° + 30.5° ≈ 100°</span></li>
+      </ol>
+      <p class="answer">PR ≈ 15.5 km, bearing of R from P = 100°</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>A back-bearing is always <span class="m">+180°</span> (or <span class="m">−180°</span> if the answer would exceed 360°). The bearing of A from B and the bearing of B from A differ by exactly 180°. Write the north lines first and this falls out automatically.</div>
+  </section>
+
+  <section id="practice" data-reveal>
+    <h2>10. Mixed practice set and answers</h2>
+    <p>Do every question on paper first. Open an answer only after you have committed to one.</p>
+    <div class="practice">
+      <details class="q"><summary>An isosceles triangle has a vertex angle of 100°. Find each base angle.</summary><div class="ans">Remaining angle <span class="m">= 180° − 100° = 80°</span>, split equally between the two base angles. Each base angle is <strong>40°</strong>.</div></details>
+      <details class="q"><summary>A right triangle has hypotenuse 17 cm and one side 8 cm. Find the other side.</summary><div class="ans"><span class="m">x² = 17² − 8² = 289 − 64 = 225</span>, so <span class="m">x = √225 = 15 cm</span>.</div></details>
+      <details class="q"><summary>In a right triangle, the side opposite angle θ is 7.5 cm and the adjacent side is 10 cm. Find θ to 1 dp.</summary><div class="ans"><span class="m">tan θ = 7.5 / 10 = 0.75</span>, so <span class="m">θ = tan<sup>−1</sup>(0.75) ≈ 36.9°</span>.</div></details>
+      <details class="q"><summary>Triangle ABC has A = 45°, a = 6 cm and B = 75°. Find side b to 1 dp using the sine rule.</summary><div class="ans"><span class="m">b = (6 × sin 75°) / sin 45° = (6 × 0.9659) / 0.7071 ≈ 5.80 / 0.7071 ≈ 8.2 cm</span>.</div></details>
+      <details class="q"><summary>A triangle has sides 5 cm, 6 cm and 8 cm. Find the angle opposite the 8 cm side, to 1 dp.</summary><div class="ans"><span class="m">cos A = (5² + 6² − 8²) / (2 × 5 × 6) = (25 + 36 − 64) / 60 = −3 / 60 = −0.05</span>. So <span class="m">A = cos<sup>−1</sup>(−0.05) ≈ 92.9°</span>. Note the answer is obtuse, which makes sense: 8 is longer than 5 and 6, so its opposite angle is the largest.</div></details>
+      <details class="q"><summary>Two sides of a triangle are 10 cm and 14 cm with an included angle of 52°. Find the area to 1 dp.</summary><div class="ans"><span class="m">area = ½ × 10 × 14 × sin 52° = 70 × 0.7880 ≈ 55.2 cm²</span>.</div></details>
+      <details class="q"><summary>Write these as three-figure bearings: (a) N 65° E, (b) S 20° E, (c) due west.</summary><div class="ans">(a) <strong>065°</strong> (from north, 65° towards east). (b) <span class="m">180° − 20° = 160°</span>, so <strong>160°</strong>. (c) Due west is <strong>270°</strong>.</div></details>
+      <details class="q"><summary>From 30 m away from the base of a tower, the angle of elevation to the top is 45°. Find the height of the tower.</summary><div class="ans">Opposite over adjacent with tan: <span class="m">tan 45° = h / 30</span> and <span class="m">tan 45° = 1</span>, so <strong>h = 30 m</strong>. (Whenever the elevation is 45°, height equals distance: the triangle is isosceles.)</div></details>
+      <details class="q"><summary>A rectangle is 12 m by 5 m. Find the length of its diagonal and the angle between the diagonal and the 12 m side, to 1 dp.</summary><div class="ans"><span class="m">d = √(12² + 5²) = √169 = 13 m</span>. Then <span class="m">tan θ = 5 / 12 ≈ 0.4167</span>, so <span class="m">θ ≈ 22.6°</span>.</div></details>
+      <details class="q"><summary>In a triangle, sin of one of its angles is 0.4. List every possible size of that angle, to 1 dp.</summary><div class="ans"><span class="m">θ = sin<sup>−1</sup>(0.4) ≈ 23.6°</span>, or the obtuse alternative <span class="m">180° − 23.6° = 156.4°</span>. Both are possible angles of a triangle (the obtuse one only if the other two angles can fit in the remaining 23.6°).</div></details>
+    </div>
+  </section>
+
+  <section id="checklist" data-reveal>
+    <h2>11. Exam checklist</h2>
+    <ul class="checklist">
+      <li>Calculator is in <strong>DEGREES</strong> mode before every trig calculation.</li>
+      <li>Labelled the hypotenuse, opposite and adjacent <strong>relative to the stated angle</strong> before choosing SOH, CAH or TOA.</li>
+      <li>Checked for a right angle before using Pythagoras or a ratio; used the sine or cosine rule when there is none.</li>
+      <li>Matched a side with the angle directly <strong>opposite</strong> it before reaching for the sine rule.</li>
+      <li>Checked the sine rule angle for the obtuse alternative <span class="m">180° − θ</span> when the diagram allows it.</li>
+      <li>Used the cosine rule when given SAS (two sides + included angle) or SSS (all three sides), and subtracted <span class="m">2bc cos A</span> as one term.</li>
+      <li>For area, used ½ ab sin C only with the angle <strong>between</strong> the two known sides, and gave square units.</li>
+      <li>Measured angles of elevation and depression <strong>from the horizontal</strong>, at the observer's eye.</li>
+      <li>Drew a north line at every point in a bearings problem and wrote bearings as three digits with a leading zero (075°, 240°).</li>
+      <li>Rounded final answers sensibly (usually 1 dp) and stated units on every answer.</li>
+    </ul>
+  </section>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <span>Chapter 02 · Trigonometry</span>
+  <span><a href="index.html">All chapters</a> · Next: <a href="algebra.html">Algebra</a></span>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>
