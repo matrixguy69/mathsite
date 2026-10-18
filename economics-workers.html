@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workers · Economics Notes</title>
+<meta name="description" content="O Level economics notes on workers: wage and non-wage factors, derived demand and supply of labour, labour market equilibrium, PED and PES of labour, minimum wage, wage differentials and the division of labour.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,750&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav glass">
+  <a class="brand" href="index.html"><span class="mark">∑</span><span class="word">O Level Notes</span></a>
+  <nav class="nav-links">
+    <a href="maths.html">Maths</a>
+    <a href="economics.html" aria-current="page">Economics</a>
+  </nav>
+  <button class="nav-calc" data-calc-open>Calculator</button>
+</header>
+
+<div class="page">
+<aside class="toc glass" aria-label="Chapter contents">
+  <div class="toc-title">On this page</div>
+  <a href="#wages">1. Wage factors</a>
+  <a href="#nonwage">2. Non-wage factors</a>
+  <a href="#demand">3. Demand for labour</a>
+  <a href="#supply">4. Supply of labour</a>
+  <a href="#market">5. The labour market</a>
+  <a href="#elasticity">6. PED &amp; PES of labour</a>
+  <a href="#minwage">7. Bargaining power &amp; minimum wage</a>
+  <a href="#differentials">8. Wage differentials</a>
+  <a href="#division">9. Division of labour</a>
+  <a href="#quiz">10. Quick quiz</a>
+  <a href="#practice">11. Practice &amp; answers</a>
+  <a href="#checklist">12. Exam checklist</a>
+</aside>
+
+<main class="chapter">
+  <div class="chapter-hero glass" data-reveal>
+    <span class="eyebrow">Chapter 07 · Economics</span>
+    <h1>Workers: wages, the labour market and specialisation</h1>
+    <p class="meta">The full workers topic: wage and non-wage factors, derived demand, supply of labour, labour market diagrams, elasticity of labour, bargaining power, minimum wage, wage differentials and the division of labour.</p>
+    <div class="chips">
+      <span class="chip">CAIE 2281</span>
+      <span class="chip">IGCSE 0455</span>
+    </div>
+  </div>
+
+  <section id="wages" data-reveal>
+    <h2>1. Wage factors: the financial payments</h2>
+    <p>The <strong>occupational choice</strong> of a worker is decided by weighing <strong>wage factors</strong> against <strong>non-wage factors</strong>. Wage factors are the financial payments a worker receives for their labour. Learn every row of this table: the exam asks you to identify which type of pay a scenario describes, or to calculate with it.</p>
+    <table>
+      <tr><th>Wage factor</th><th>How it works (with the example you should be able to calculate)</th></tr>
+      <tr><td><strong>Wages</strong></td><td>An agreed amount per hour, calculated from hours worked. A student working 6 hours a day, 5 days a week at $10/hour earns 6 × 5 × $10 = <strong>$300 a week</strong>.</td></tr>
+      <tr><td><strong>Salary</strong></td><td>An agreed <strong>annual</strong> figure, divided by 12 and paid monthly (in the USA often divided by 24 and paid fortnightly). Hours may vary each month, the pay never does.</td></tr>
+      <tr><td><strong>Commission</strong></td><td>A <strong>percentage of the value of the sale</strong>. Estate agents typically receive 3 to 7% of a property's selling price. It motivates employees to maximise sales.</td></tr>
+      <tr><td><strong>Bonus</strong></td><td>Money paid <strong>on top of salary</strong>, usually a single annual payment, often when the firm makes high profits or as a reward for exceptional performance.</td></tr>
+      <tr><td><strong>Piece rate pay</strong></td><td>A fixed amount for <strong>each completed item</strong>, e.g. 25 rupees for every pair of socks a worker produces.</td></tr>
+      <tr><td><strong>Performance related pay (PRP)</strong></td><td>Payment based on how well the worker performs. People doing <strong>exactly the same job</strong> can receive different pay for different outcomes.</td></tr>
+      <tr><td><strong>Share options</strong></td><td>Shares in the company, usually in addition to salary. Their value on any day is <span class="m">number of shares × share price</span>.</td></tr>
+    </table>
+    <div class="formula"><code>weekly wage = hourly wage × hours per day × days per week &nbsp;·&nbsp; value of shares = number of shares × share price</code></div>
+    <div class="example glass">
+      <span class="label">Worked example 1</span>
+      <p>A worker on a salary of $24,000 a year also holds 800 share options. The share price rises from $3.50 to $5.20 during the year. Calculate her total pay from both sources this year.</p>
+      <ol class="steps">
+        <li>Salary is fixed: <span class="m">$24,000</span> regardless of hours worked</li>
+        <li>Value of shares at the new price: <span class="m">800 × $5.20 = $4,160</span></li>
+        <li>Total: <span class="m">$24,000 + $4,160 = $28,160</span></li>
+      </ol>
+      <p class="answer">$28,160 ($24,000 salary + $4,160 in shares)</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>When a question describes pay that "varies with output" or "is paid per unit", it is a <strong>piece rate</strong> or <strong>commission</strong>. When it is "a share of profit paid once a year on top of salary", it is a <strong>bonus</strong>. Name the factor before you explain it: one mark is usually for the label.</div>
+  </section>
+
+  <section id="nonwage" data-reveal>
+    <h2>2. Non-wage factors: everything else that matters</h2>
+    <p>Non-wage factors are the influences outside the pay packet that still change whether a worker accepts, stays in or leaves a job. They are the reason two jobs with identical wages are never really identical.</p>
+    <table>
+      <tr><th>Non-wage factor</th><th>Why it influences occupational choice</th></tr>
+      <tr><td><strong>Fringe benefits</strong></td><td>Childcare, free lunches, gym membership or a company car, provided on top of salary. They can be worth thousands and sway a decision on their own.</td></tr>
+      <tr><td><strong>Length of training or education</strong></td><td>The longer the study or training, the fewer people enter that occupation. It usually takes seven years to qualify as a lawyer.</td></tr>
+      <tr><td><strong>Job security</strong></td><td>Contracts differ by industry: some run for one to four years. A long contract (or a permanent post) reduces the risk of losing income.</td></tr>
+      <tr><td><strong>Job satisfaction</strong></td><td>Enjoying the work itself is a large part of job satisfaction, and workers will often change career to get more of it.</td></tr>
+      <tr><td><strong>Career prospects</strong></td><td>A defined pathway for promotion, with salary increases attached, makes a job far more attractive.</td></tr>
+      <tr><td><strong>Level of challenge</strong></td><td>Some workers choose an occupation for the challenge of the role, e.g. firefighters.</td></tr>
+      <tr><td><strong>Status</strong></td><td>Jobs with high recognition in society appeal to many workers: doctors, surgeons and lawyers.</td></tr>
+    </table>
+    <div class="box warn"><span class="label">Exam trap</span>"A high wage means everyone will take the job." No. Long training, poor security or low status can repel workers even at high pay, and a low-paid job with great benefits and security can still attract. In "discuss" questions, always weigh both sides of the wage vs non-wage balance.</div>
+    <div class="box"><span class="label">Model sentence</span>"Although the salary is lower, the generous fringe benefits (on-site childcare) and higher job security mean the non-wage factors outweigh the wage factor for this worker."</div>
+  </section>
+
+  <section id="demand" data-reveal>
+    <h2>3. The demand for labour is a derived demand</h2>
+    <p>The <strong>labour market</strong> has two sides: <strong>households</strong> sell labour, <strong>firms</strong> buy it. Workers supply labour, firms demand labour. Crucially, the demand for labour is a <strong>derived demand</strong>: it exists only because there is demand for the good or service the labour produces. If demand for the product rises, demand for labour rises, and vice versa.</p>
+    <table>
+      <tr><th>Determinant</th><th>Chain of analysis</th></tr>
+      <tr><td><strong>The price of the product being produced</strong></td><td>Selling price rises → firm is incentivised to supply more → <strong>demand for labour rises</strong>.</td></tr>
+      <tr><td><strong>The demand for the final product</strong></td><td>Booming economy → demand for most goods and services high → demand for labour high. Recession → demand falls → demand for labour falls.</td></tr>
+      <tr><td><strong>Ability to substitute capital for labour</strong></td><td>Firms constantly ask whether machines are cheaper than workers. If switching to capital is more cost effective, <strong>demand for labour falls</strong>.</td></tr>
+      <tr><td><strong>The productivity of labour</strong></td><td>Training raises productivity → average costs fall → firm expands and <strong>demand for labour rises</strong>.</td></tr>
+    </table>
+    <div class="example glass">
+      <span class="label">Worked example 2</span>
+      <p>Air travel demand surges after a recession ends. Using the concept of derived demand, analyse what happens to the labour market for airline pilots.</p>
+      <ol class="steps">
+        <li>Demand for air travel (the product) rises, so airlines need more flights.</li>
+        <li>Demand for labour is derived from product demand, so <strong>the demand for pilots shifts to the right</strong>.</li>
+        <li>At the old wage there is now excess demand for pilots, so the <strong>wage rate rises</strong> and the <strong>quantity of labour employed rises</strong>.</li>
+        <li>Context: pilot training takes years, so supply barely moves in the short run and most of the adjustment appears as a higher wage.</li>
+      </ol>
+      <p class="answer">Derived demand shifts DL right → higher equilibrium wage and higher employment of pilots.</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>Any "explain why demand for X workers changed" question starts with the product: product demand or product price first, labour second. Never begin with the wage.</div>
+  </section>
+
+  <section id="supply" data-reveal>
+    <h2>4. Factors influencing the supply of labour</h2>
+    <p>Supply of labour to an industry is the number of workers willing and able to work in it at each wage. Eight determinants appear in the syllabus. Learn them as <strong>chains</strong>, not as a list of words.</p>
+    <table>
+      <tr><th>Factor</th><th>Effect on supply of labour</th></tr>
+      <tr><td><strong>Training period</strong></td><td>Long, costly training acts as a <strong>barrier to entry</strong>, excluding many households from those occupations.</td></tr>
+      <tr><td><strong>Wages in other occupations</strong></td><td>Comparative wage rates in substitute labour markets pull workers across. It is getting harder to recruit economics teachers because the private sector pays more for their skills.</td></tr>
+      <tr><td><strong>Migration policy</strong></td><td>Policies that raise the net migration rate increase supply to certain industries. In 2022, migrants made up 36% of Singapore's labour force.</td></tr>
+      <tr><td><strong>Income tax levels</strong></td><td>At a certain level tax becomes a disincentive. As income tax rises, labour supply falls (and vice versa).</td></tr>
+      <tr><td><strong>Working conditions</strong></td><td>Good conditions and non-wage benefits attract workers, e.g. tech firms known for laid-back environments, on-site childcare and restaurants.</td></tr>
+      <tr><td><strong>Trade union power</strong></td><td>Unions can <strong>increase</strong> supply to an industry when workers value belonging: higher wages and a safer workplace.</td></tr>
+      <tr><td><strong>Level of welfare benefits</strong></td><td>The higher the benefits, the lower the incentive for low-skilled workers to offer their labour.</td></tr>
+      <tr><td><strong>Social trends</strong></td><td>Major changes in society shift supply, e.g. working from home during Covid changed the labour market, and not all workers returned when economies reopened.</td></tr>
+    </table>
+    <div class="box warn"><span class="label">Exam trap</span>Trade unions are usually written as a wage factor, but in this syllabus union membership sits in <strong>supply</strong> (workers choose to join) and in <strong>bargaining power</strong> (section 7). Read what the question is asking for before you place it.</div>
+  </section>
+
+  <section id="market" data-reveal>
+    <h2>5. The labour market diagram</h2>
+    <p>The labour market is a <strong>factor market</strong>, and factor markets follow exactly the same rules as product markets: they respond to price, to demand and supply, and to the price elasticity of demand and supply.</p>
+    <ul>
+      <li><strong>Equilibrium</strong> occurs where demand for labour (<span class="m">DL</span>) equals supply of labour (<span class="m">SL</span>).</li>
+      <li><strong>DL slopes down</strong>: firms demand more labour as the wage rate falls.</li>
+      <li><strong>SL slopes up</strong>: workers supply more labour as the wage rate rises.</li>
+      <li>Individual firms are <strong>price takers</strong>: they must accept the industry wage. Offer less and you struggle to recruit; offer more and huge numbers apply.</li>
+    </ul>
+    <figure class="fig glass" data-reveal>
+      <span class="label">Figure 1</span>
+      <svg viewBox="0 0 340 200" class="draw" fill="none" aria-hidden="true">
+        <line class="stroke" x1="44" y1="172" x2="326" y2="172" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
+        <line class="stroke d1" x1="44" y1="172" x2="44" y2="18" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
+        <line class="stroke d2" x1="60" y1="40" x2="300" y2="150" stroke="#f0b429" stroke-width="2.5"/>
+        <line class="stroke d3" x1="60" y1="150" x2="300" y2="40" stroke="#7bd8a8" stroke-width="2"/>
+        <line class="stroke d3" x1="44" y1="95" x2="180" y2="95" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="4 5"/>
+        <line class="stroke d3" x1="180" y1="95" x2="180" y2="172" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="4 5"/>
+        <circle class="dot-pop p3" cx="180" cy="95" r="4.5" fill="#f0b429"/>
+        <text x="20" y="30" fill="#9a9a93" font-size="12">W</text>
+        <text x="318" y="190" fill="#9a9a93" font-size="12">Q</text>
+        <text x="306" y="158" fill="#9a9a93" font-size="12">DL</text>
+        <text x="306" y="34" fill="#9a9a93" font-size="12">SL</text>
+        <text x="24" y="99" fill="#9a9a93" font-size="12">We</text>
+        <text x="172" y="188" fill="#9a9a93" font-size="12">Qe</text>
+      </svg>
+      <figcaption>Labour market equilibrium: DL = SL at wage We and quantity of labour Qe.</figcaption>
+    </figure>
+    <p>In the market for graphic designers the equilibrium wage is <span class="m">W</span> and the equilibrium quantity is <span class="m">Q</span>, where DL = SL.</p>
+    <div class="box"><span class="label">Diagram analysis, copy this structure</span>
+      <ul style="margin:.3rem 0">
+        <li>The market for graphic designers is in equilibrium where <strong>DL = SL</strong>.</li>
+        <li>The equilibrium wage is <strong>We</strong> and the quantity of labour is <strong>Qe</strong>.</li>
+        <li>There is <strong>no excess supply</strong> of labour and <strong>no excess demand</strong> for labour at this wage.</li>
+      </ul>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>Label the axes <strong>Wage rate</strong> and <strong>Quantity of labour</strong>, and write DL and SL (not plain D and S). Mark the equilibrium with a point and dashed lines to both axes, then name the wage and quantity.</div>
+  </section>
+
+  <section id="elasticity" data-reveal>
+    <h2>6. The price elasticity of demand and supply of labour</h2>
+    <p>Factor markets obey the elasticity rules you met for products, applied to the wage rate:</p>
+    <div class="formula"><code>PED of labour = %Δ quantity of labour demanded ÷ %Δ wage rate &nbsp;·&nbsp; PES of labour = %Δ quantity of labour supplied ÷ %Δ wage rate</code></div>
+    <h3>6.1 Price inelastic demand and supply: NBA players</h3>
+    <p>In 2022 LeBron James received a salary of $45m. Demand for highly skilled players is <strong>very price inelastic</strong> because clubs want the very best players almost irrespective of what they cost. Supply is also <strong>price inelastic</strong>: a large rise in the wage would barely change the quantity supplied, because it takes years to develop that level of skill. The equilibrium sits at <span class="m">W1Q1</span>: a <strong>high wage and a relatively low quantity</strong> of workers.</p>
+    <h3>6.2 Price elastic demand and supply: building site labourers</h3>
+    <p>For unskilled labourers the <strong>demand is price elastic</strong>: a small drop in wages leads firms to employ many more workers quickly. <strong>Supply is price elastic</strong> too: because no long training is needed, a small rise in wages brings a large increase in workers willing to do the job. The equilibrium at <span class="m">W1Q1</span> is a <strong>low wage and a relatively high quantity</strong>.</p>
+    <table>
+      <tr><th></th><th>Inelastic labour market (skilled)</th><th>Elastic labour market (unskilled)</th></tr>
+      <tr><td><strong>Demand</strong></td><td>Clubs hire the best regardless of cost</td><td>Firms respond quickly to a small wage change</td></tr>
+      <tr><td><strong>Supply</strong></td><td>Years of training, few candidates</td><td>No training barrier, many candidates</td></tr>
+      <tr><td><strong>Equilibrium</strong></td><td>High wage, low quantity</td><td>Low wage, high quantity</td></tr>
+    </table>
+    <div class="box good"><span class="label">Exam tip</span>The steepness of the curves is the whole answer. For inelastic labour draw <strong>steep</strong> DL and SL; for elastic labour draw <strong>flat</strong> ones, then read off the wage and quantity. See <a href="economics-ped.html">chapter 05 (PED)</a> and <a href="economics-pes.html">chapter 06 (PES)</a> for the general rules.</div>
+  </section>
+
+  <section id="minwage" data-reveal>
+    <h2>7. Bargaining power and the minimum wage</h2>
+    <h3>7.1 Relative bargaining power</h3>
+    <p>Bargaining power is the worker's ability to negotiate a higher wage. Five factors set it:</p>
+    <ul>
+      <li><strong>Trade union membership:</strong> unions represent workers in negotiations, and members frequently earn more than non-members.</li>
+      <li><strong>Age and experience:</strong> young, inexperienced workers have little power; as workers age, eventually age itself counts against them.</li>
+      <li><strong>Level of education:</strong> education brings skill and specialisation, raising power relative to unskilled workers.</li>
+      <li><strong>Current supply conditions:</strong> a shortage of willing workers raises power. Before Brexit, hotel workers had little power; the shortage that followed pushed hotel wages up.</li>
+      <li><strong>Government policy:</strong> a minimum wage sets a legal floor under negotiations.</li>
+    </ul>
+    <h3>7.2 The national minimum wage</h3>
+    <p>Governments intervene to <strong>improve equity</strong> and avoid the <strong>exploitation</strong> of workers. A <strong>minimum wage</strong> is a legally imposed wage level that employers must pay, set <strong>above</strong> the market rate, and it often varies with the worker's age.</p>
+    <figure class="fig glass" data-reveal>
+      <span class="label">Figure 2</span>
+      <svg viewBox="0 0 340 200" class="draw" fill="none" aria-hidden="true">
+        <line class="stroke" x1="44" y1="172" x2="326" y2="172" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
+        <line class="stroke d1" x1="44" y1="172" x2="44" y2="18" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
+        <line class="stroke d2" x1="60" y1="40" x2="300" y2="150" stroke="#f0b429" stroke-width="2.5"/>
+        <line class="stroke d3" x1="60" y1="150" x2="300" y2="40" stroke="#7bd8a8" stroke-width="2"/>
+        <line class="stroke d3" x1="44" y1="60" x2="300" y2="60" stroke="#ffffff" stroke-opacity="0.75" stroke-width="2"/>
+        <line class="stroke d3" x1="104" y1="60" x2="104" y2="172" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="4 5"/>
+        <line class="stroke d3" x1="256" y1="60" x2="256" y2="172" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="4 5"/>
+        <line class="stroke d3" x1="180" y1="95" x2="180" y2="172" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="4 5"/>
+        <circle class="dot-pop p3" cx="180" cy="95" r="4.5" fill="#f0b429"/>
+        <circle class="dot-pop p4" cx="104" cy="60" r="4.5" fill="#e8927c"/>
+        <circle class="dot-pop p5" cx="256" cy="60" r="4.5" fill="#e8927c"/>
+        <text x="20" y="30" fill="#9a9a93" font-size="12">W</text>
+        <text x="318" y="190" fill="#9a9a93" font-size="12">Q</text>
+        <text x="306" y="158" fill="#9a9a93" font-size="12">DL</text>
+        <text x="306" y="34" fill="#9a9a93" font-size="12">SL</text>
+        <text x="22" y="64" fill="#9a9a93" font-size="12">W1</text>
+        <text x="26" y="99" fill="#9a9a93" font-size="12">We</text>
+        <text x="92" y="188" fill="#9a9a93" font-size="12">Qd</text>
+        <text x="172" y="188" fill="#9a9a93" font-size="12">Qe</text>
+        <text x="246" y="188" fill="#9a9a93" font-size="12">Qs</text>
+        <text x="180" y="50" text-anchor="middle" fill="#e8927c" font-size="11">excess supply</text>
+      </svg>
+      <figcaption>A national minimum wage (W1) set above the equilibrium wage (We): excess supply of labour, equal to QdQs, which is unemployment.</figcaption>
+    </figure>
+    <div class="example glass">
+      <span class="label">Worked example 3</span>
+      <p>The market for UK truck drivers is in equilibrium at <span class="m">WeQe</span>. The government imposes a national minimum wage at <span class="m">W1</span>. Analyse the effects using the diagram.</p>
+      <ol class="steps">
+        <li>The minimum wage sits above the equilibrium: <span class="m">W1 &gt; We</span>.</li>
+        <li>Incentivised by the higher wage, the <strong>supply of labour rises from Qe to Qs</strong>.</li>
+        <li>Facing higher production costs, the <strong>demand for labour falls from Qe to Qd</strong>.</li>
+        <li>At W1 there is now <strong>excess supply of labour of QdQs</strong>, which is unemployment, because more people want to drive trucks than firms want to hire.</li>
+      </ol>
+      <p class="answer">W1 above We → Qs on the supply curve, Qd on the demand curve → excess supply QdQs = unemployment.</p>
+    </div>
+    <div class="box warn"><span class="label">Exam trap</span>Excess supply, not excess demand: a minimum wage <strong>above</strong> equilibrium always pushes quantity supplied above quantity demanded. And a minimum wage set <strong>below</strong> the equilibrium has <strong>no effect at all</strong>, because the market wage is already higher. Also, unemployment caused this way grows if demand for that labour is price elastic (firms cut jobs sharply for a small wage rise).</div>
+    <div class="box good"><span class="label">Evaluation point</span>For the discuss question: winners are the workers still in jobs (higher wage, more equity), losers are those pushed out of work (Qe to Qd) and firms facing higher costs, who may raise prices. Mention the <a href="economics-price-changes.html">government price intervention</a> logic from chapter 04.</div>
+  </section>
+
+  <section id="differentials" data-reveal>
+    <h2>8. Why pay differs: wage differentials</h2>
+    <p>A <strong>wage differential</strong> is a difference in pay between workers. Four categories of difference are examined, and for each you must be able to give reasons.</p>
+    <table>
+      <tr><th>Differential</th><th>Reasons</th></tr>
+      <tr><td><strong>Men and women</strong></td><td>Men usually work full-time while women often work part-time to meet childcare demands; women more often have interrupted careers and miss advancement chances; women may accept work below their skill level to fit family needs. The <strong>gender pay gap</strong> is discrimination: a woman paid less than a man doing <strong>exactly the same job</strong>.</td></tr>
+      <tr><td><strong>Industrial sector (primary, secondary, tertiary)</strong></td><td>Primary sector pay is low: jobs are often unskilled and raw materials earn the lowest profits in the chain. Secondary sector workers <strong>add value</strong> to raw materials, so products sell for higher profits and wages rise. Tertiary pay is highest: skills take years to acquire and services can be complex and expensive, e.g. artificial intelligence coders.</td></tr>
+      <tr><td><strong>Private and public sector</strong></td><td>See the comparison below. Private pay is set by markets and profit, public pay is set by government.</td></tr>
+      <tr><td><strong>Skilled and unskilled</strong></td><td>Unskilled labour is in high supply, so employers can push wages down (there is always someone willing to work for less). Skill takes time and money to build, so the supply of specific skillsets is limited and those wages are higher.</td></tr>
+    </table>
+    <table>
+      <tr><th>Private sector workers</th><th>Public sector workers</th></tr>
+      <tr><td>Salaries can be extremely high when the value of output is high and workers are productive</td><td>Wages reach a maximum ceiling, often below what the private sector offers, e.g. public school teachers earn less than private school teachers</td></tr>
+      <tr><td>Some salaries are very low as firms cut costs to maximise profits, e.g. garment workers in Bangladesh</td><td>Wages rarely fall as low as the worst private sector jobs, because many public workers belong to trade unions</td></tr>
+      <tr><td>Wage benefits tend to be better: bonuses and share options</td><td>Job security is high, giving long careers with defined promotion pathways</td></tr>
+      <tr><td>Pay can be volatile with profits</td><td>Pensions are often very good, though limited compared with the best private pensions</td></tr>
+    </table>
+    <div class="box good"><span class="label">Exam tip</span>Link differentials back to demand and supply for full marks. Skilled workers: restricted supply + high derived demand = high wage. Unskilled workers: huge supply + elastic demand = low wage. That single link usually carries the evaluation mark.</div>
+    <div class="example glass">
+      <span class="label">Worked example 4</span>
+      <p>Explain why a tertiary-sector software engineer earns more than a primary-sector farm labourer.</p>
+      <ol class="steps">
+        <li>Supply: the engineer's skills took years to acquire, so the supply of qualified engineers is limited; supply of unskilled farm labour is abundant.</li>
+        <li>Demand: demand for AI-related services is a derived demand from a high-value product, while farm output generates low profits in the production chain.</li>
+        <li>Conclusion: limited supply plus high-value derived demand gives a high equilibrium wage for the engineer, and abundant supply plus low-value output gives a low wage for the labourer.</li>
+      </ol>
+      <p class="answer">Differentials come from differences in supply (skill, training) and differences in derived demand (value of the product).</p>
+    </div>
+  </section>
+
+  <section id="division" data-reveal>
+    <h2>9. The division of labour and specialisation</h2>
+    <p>Observing a pin factory, Adam Smith noted that one worker performing all 18 processes (cutting the wire, sharpening the end, stamping the head and so on) made no more than <strong>20 pins a day</strong>. Split the tasks and let workers <strong>specialise</strong> in one, and he estimated <strong>10 workers could produce 48,000 pins a day</strong>.</p>
+    <ul>
+      <li><strong>Division of labour:</strong> a task is broken up into several component tasks.</li>
+      <li><strong>Specialisation:</strong> workers focus on one (or a few) components, gaining significant skill in it, which raises output per worker and productivity.</li>
+      <li>It happens at four levels: <strong>individual</strong>; <strong>business</strong> (one firm making only drill bits for concrete); <strong>regional</strong> (Silicon Valley in tech); <strong>global</strong> (Bangladesh specialising in textiles for export).</li>
+    </ul>
+    <table>
+      <tr><th>Stakeholder</th><th>Pros</th><th>Cons</th></tr>
+      <tr><td><strong>Worker</strong></td><td>Can acquire the single skill quickly; gains recognition and status for performing the skill well</td><td>Work can be repetitive and boring; limited chance to gain extra skills; if the firm replaces labour with capital, a narrow skill base makes finding new work difficult</td></tr>
+      <tr><td><strong>Firm</strong></td><td>Training time for new workers is short; increased output raises sales and profit; higher productivity lowers cost per unit, making goods more competitive in exports</td><td>Productivity can fall through boredom and lower motivation; staff turnover may be high as workers seek interesting jobs elsewhere; firms unable to compete globally may go out of business</td></tr>
+      <tr><td><strong>Economy</strong></td><td>Higher exports cause economic growth, raising income and living standards; export income buys imports, increasing the variety of goods available</td><td>Over-dependency on other countries' resources, e.g. Europe's reliance on Russian natural gas during the Ukraine crisis; specialisation accelerates depletion of a country's own resources; entire industries may close, causing <strong>structural unemployment</strong></td></tr>
+    </table>
+    <div class="box warn"><span class="label">Exam trap</span>"Division of labour always raises productivity" is not a full answer. Boredom, motivation and structural unemployment are the cons, and a discuss question wants both sides weighed with a judgement at the end.</div>
+    <div class="box good"><span class="label">Exam tip</span>The stakeholder table is your answer plan: workers, firms, economy. In a 6-mark question, give one pro and one con per stakeholder, then judge which outweighs the other in the specific scenario.</div>
+  </section>
+
+  <section id="quiz" data-reveal>
+    <h2>10. Quick quiz</h2>
+    <p>Click an option to check your answer.</p>
+    <div class="mcq-set">
+      <div class="mcq glass" data-answer="c">
+        <p class="mcq-q"><span class="mcq-tag">MCQ 1</span> The demand for labour is described as "derived" because it depends on the</p>
+        <div class="mcq-opts">
+          <button type="button" data-opt="a">wage rate paid in other industries</button>
+          <button type="button" data-opt="b">level of income tax</button>
+          <button type="button" data-opt="c">demand for the good or service produced</button>
+          <button type="button" data-opt="d">strength of the trade union</button>
+        </div>
+        <p class="mcq-exp"><strong>Answer: C.</strong> Derived demand means labour is demanded only to produce a product, so product demand drives labour demand.</p>
+      </div>
+      <div class="mcq glass" data-answer="b">
+        <p class="mcq-q"><span class="mcq-tag">MCQ 2</span> An estate agent receives 5% of the selling price of every house sold. This is</p>
+        <div class="mcq-opts">
+          <button type="button" data-opt="a">a piece rate</button>
+          <button type="button" data-opt="b">commission</button>
+          <button type="button" data-opt="c">a bonus</button>
+          <button type="button" data-opt="d">performance related pay</button>
+        </div>
+        <p class="mcq-exp"><strong>Answer: B.</strong> Commission is a percentage of the value of the transaction, which is exactly what a 5% share of the sale price is.</p>
+      </div>
+      <div class="mcq glass" data-answer="d">
+        <p class="mcq-q"><span class="mcq-tag">MCQ 3</span> A minimum wage is set above the equilibrium wage. The diagram must show</p>
+        <div class="mcq-opts">
+          <button type="button" data-opt="a">excess demand for labour</button>
+          <button type="button" data-opt="b">a rise in the demand for labour</button>
+          <button type="button" data-opt="c">equilibrium unchanged</button>
+          <button type="button" data-opt="d">excess supply of labour</button>
+        </div>
+        <p class="mcq-exp"><strong>Answer: D.</strong> At a wage above equilibrium, quantity supplied exceeds quantity demanded, and the gap is unemployment.</p>
+      </div>
+      <div class="mcq glass" data-answer="a">
+        <p class="mcq-q"><span class="mcq-tag">MCQ 4</span> Which change would most likely reduce the supply of labour to low-skilled occupations?</p>
+        <div class="mcq-opts">
+          <button type="button" data-opt="a">an increase in welfare benefits</button>
+          <button type="button" data-opt="b">a loosening of migration policy</button>
+          <button type="button" data-opt="c">a fall in income tax</button>
+          <button type="button" data-opt="d">an improvement in working conditions</button>
+        </div>
+        <p class="mcq-exp"><strong>Answer: A.</strong> Higher welfare benefits reduce the incentive for low-skilled workers to offer their labour at all.</p>
+      </div>
+      <div class="mcq glass" data-answer="c">
+        <p class="mcq-q"><span class="mcq-tag">MCQ 5</span> The demand for NBA basketball players is price inelastic mainly because</p>
+        <div class="mcq-opts">
+          <button type="button" data-opt="a">there are many qualified players</button>
+          <button type="button" data-opt="b">clubs are price takers in the labour market</button>
+          <button type="button" data-opt="c">clubs want the best players almost whatever they cost</button>
+          <button type="button" data-opt="d">players are covered by a national minimum wage</button>
+        </div>
+        <p class="mcq-exp"><strong>Answer: C.</strong> When buyers care little about price, quantity demanded barely responds to a wage change: that is inelastic demand.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="practice" data-reveal>
+    <h2>11. Practice set and answers</h2>
+    <p>Do every question on paper first. Open an answer only after you have committed to one.</p>
+
+    <h3>Set A · Wage factors, demand and supply of labour</h3>
+    <div class="practice">
+      <details class="q"><summary>Define derived demand.</summary><div class="ans">Demand for a factor of production that exists because there is demand for the good or service it helps to produce. The demand for labour depends on the demand for the firm's product.</div></details>
+      <details class="q"><summary>A salesperson earns a basic salary plus 3% of every sale. Identify the two wage factors involved and explain how the payment structure should affect output.</summary><div class="ans"><strong>Salary</strong> (fixed annual pay, divided by 12) and <strong>commission</strong> (3% of the transaction value). The commission gives a direct incentive to maximise sales, so output and revenue per worker rise.</div></details>
+      <details class="q"><summary>A worker completes 40 items a day and is paid 25 rupees per item. Identify the wage factor and calculate daily pay.</summary><div class="ans"><strong>Piece rate pay</strong>. 40 × 25 = <strong>1,000 rupees a day</strong>.</div></details>
+      <details class="q"><summary>Explain two factors that would reduce the supply of labour into the teaching profession.</summary><div class="ans">(i) <strong>Wages in other occupations</strong>: the private sector pays more for the same skills, pulling teachers out (comparative wage rates). (ii) <strong>Income tax or long training</strong>: higher tax reduces the incentive to work, and long training deters entry. Either chain, clearly explained, earns the marks.</div></details>
+      <details class="q"><summary>Explain how a recession would affect the labour market for construction workers.</summary><div class="ans">Recession → demand for new buildings and renovation (the product) falls → since demand for labour is derived, <strong>DL shifts left</strong> → at the old wage there is excess demand for jobs, so the <strong>wage rate falls</strong> and <strong>employment falls</strong>.</div></details>
+    </div>
+
+    <h3>Set B · Diagrams, differentials and specialisation</h3>
+    <div class="practice">
+      <details class="q"><summary>The diagram shows a labour market in equilibrium at WeQe. The government sets a minimum wage above We. Analyse the effects on employment and unemployment.</summary><div class="ans">At the minimum wage (W1) supply rises along SL from Qe to Qs while demand falls along DL from Qe to Qd, so employment falls to Qd. The gap between quantity supplied and quantity demanded, <strong>QdQs</strong>, is excess supply of labour, i.e. <strong>unemployment</strong>. The size of the job loss is bigger when demand for that labour is price elastic.</div></details>
+      <details class="q"><summary>Explain why the demand for nurses is likely to be price inelastic while the demand for luxury car washers is price elastic.</summary><div class="ans">Demand for labour is derived. Hospitals cannot substitute machines for much of nursing care and the product (healthcare) has few substitutes, so wages can rise with little fall in quantity demanded (inelastic). Luxury car washing has substitutes (machines, self-service) and discretionary product demand, so a small wage rise cuts quantity demanded sharply (elastic).</div></details>
+      <details class="q"><summary>Explain why skilled workers generally earn more than unskilled workers.</summary><div class="ans">Becoming skilled takes time and money, so the <strong>supply</strong> of specific skillsets is limited. Unskilled labour is in high supply, so employers can push wages down. Meanwhile derived demand for skilled output tends to be high-value, so the equilibrium wage for skilled workers is higher.</div></details>
+      <details class="q"><summary>Discuss whether a national minimum wage always helps workers.</summary><div class="ans">For: workers still employed get a higher wage, equity improves, exploitation falls. Against: employment falls from Qe to Qd, creating unemployment QdQs; firms face higher costs which may be passed into higher prices; only those with inelastic demand keep jobs. <strong>Judgement</strong>: it helps in low-wage markets with inelastic demand for labour, but harms those priced out of work.</div></details>
+      <details class="q"><summary>Discuss the advantages and disadvantages of specialisation for a firm.</summary><div class="ans">Advantages: short training time, higher output, higher productivity lowering cost per unit and boosting export competitiveness. Disadvantages: boredom lowers motivation and productivity, high staff turnover, and firms that cannot compete globally may close. <strong>Judgement</strong>: the balance depends on whether productivity gains outweigh turnover and whether demand for the specialised product holds up.</div></details>
+    </div>
+  </section>
+
+  <section id="checklist" data-reveal>
+    <h2>12. Exam checklist</h2>
+    <ul class="checklist">
+      <li>Named the exact wage factor in the scenario (wages, salary, commission, bonus, piece rate, PRP, share options).</li>
+      <li>Balanced wage against non-wage factors in every "which job would you choose" answer.</li>
+      <li>Opened every labour demand answer with <strong>derived demand</strong> and the product before the wage.</li>
+      <li>Explained supply factors as chains (change → incentive → supply up or down), not as a bare list.</li>
+      <li>Drawn the labour market with <strong>Wage rate</strong> and <strong>Quantity of labour</strong> axes, DL and SL curves, and a labelled equilibrium point.</li>
+      <li>Shown the minimum wage <strong>above</strong> We, with quantity demanded (Qd) and supplied (Qs) marked and excess supply QdQs labelled as unemployment.</li>
+      <li>Linked wage differentials to supply of skill and to the value of derived demand.</li>
+      <li>Given division of labour pros <strong>and</strong> cons for worker, firm and economy, with a closing judgement.</li>
+    </ul>
+  </section>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <span>Chapter 07 · Economics</span>
+  <span><a href="economics.html">All economics chapters</a></span>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

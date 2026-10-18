@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coordinate Geometry · Maths Notes</title>
+<meta name="description" content="O Level coordinate geometry notes: the coordinate plane, distance, midpoint, gradient, y = mx + c, parallel and perpendicular lines, and where two lines meet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,750&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav glass">
+  <a class="brand" href="index.html"><span class="mark">∑</span><span class="word">O Level Notes</span></a>
+  <nav class="nav-links">
+    <a href="maths.html" aria-current="page">Maths</a>
+    <a href="economics.html">Economics</a>
+  </nav>
+  <button class="nav-calc" data-calc-open>Calculator</button>
+</header>
+
+<div class="page">
+<aside class="toc glass" aria-label="Chapter contents">
+  <div class="toc-title">On this page</div>
+  <a href="#basics">1. The coordinate plane</a>
+  <a href="#distance">2. Distance between points</a>
+  <a href="#midpoint">3. Midpoint</a>
+  <a href="#gradient">4. Gradient</a>
+  <a href="#ymxc">5. The equation y = mx + c</a>
+  <a href="#pointgradient">6. Gradient and a point</a>
+  <a href="#parallel">7. Parallel lines</a>
+  <a href="#perpendicular">8. Perpendicular lines</a>
+  <a href="#intersection">9. Where two lines meet</a>
+  <a href="#practice">10. Practice &amp; answers</a>
+  <a href="#checklist">11. Exam checklist</a>
+</aside>
+
+<main class="chapter">
+  <div class="chapter-hero glass" data-reveal>
+    <span class="eyebrow">Chapter 04 · Coordinate Geometry</span>
+    <h1>Distance, gradient and the equation of a line</h1>
+    <p class="meta">Everything in the 43-minute Zainematics coordinate geometry lesson, worked in full, for Cambridge O Level 4024 and IGCSE 0580: plotting points, distance, midpoint, gradient, y = mx + c, parallel and perpendicular lines, and finding where two lines cross.</p>
+    <div class="chips">
+      <a class="chip" href="https://www.youtube.com/watch?v=pCQ87WQWaQg">Lesson · 43 min</a>
+      <a class="chip" href="https://www.youtube.com/watch?v=pCQ87WQWaQg">Coordinates</a>
+      <a class="chip" href="https://www.youtube.com/watch?v=pCQ87WQWaQg">Distance</a>
+      <a class="chip" href="https://www.youtube.com/watch?v=pCQ87WQWaQg">Midpoint</a>
+      <a class="chip" href="https://www.youtube.com/watch?v=pCQ87WQWaQg">Gradient</a>
+      <a class="chip" href="https://www.youtube.com/watch?v=pCQ87WQWaQg">y = mx + c</a>
+      <a class="chip" href="https://www.youtube.com/watch?v=pCQ87WQWaQg">Parallel lines</a>
+      <a class="chip" href="https://www.youtube.com/watch?v=pCQ87WQWaQg">Perpendicular lines</a>
+    </div>
+  </div>
+
+  <section id="basics" data-reveal>
+    <h2>1. The coordinate plane</h2>
+    <p>Every point on a flat surface is located by a pair of numbers. Two number lines cross at right angles to make the <strong>coordinate plane</strong>:</p>
+    <table>
+      <tr><th>Part of the plane</th><th>What it is</th></tr>
+      <tr><td><strong>x-axis</strong></td><td>The horizontal number line. It tells you how far <em>across</em> to go.</td></tr>
+      <tr><td><strong>y-axis</strong></td><td>The vertical number line. It tells you how far <em>up</em> to go.</td></tr>
+      <tr><td><strong>Origin</strong></td><td>The point where the axes cross, written <span class="m">(0, 0)</span>.</td></tr>
+      <tr><td><strong>Point</strong></td><td>Written <span class="m">(x, y)</span>: always across first, then up.</td></tr>
+    </table>
+    <p>Every point splits the plane into <strong>four quadrants</strong>, named anticlockwise from the top right:</p>
+    <table>
+      <tr><th>Quadrant</th><th>Signs of (x, y)</th><th>Example point</th></tr>
+      <tr><td><strong>Quadrant I</strong> (top right)</td><td><span class="m">(+, +)</span></td><td><span class="m">(3, 4)</span></td></tr>
+      <tr><td><strong>Quadrant II</strong> (top left)</td><td><span class="m">(−, +)</span></td><td><span class="m">(−3, 4)</span></td></tr>
+      <tr><td><strong>Quadrant III</strong> (bottom left)</td><td><span class="m">(−, −)</span></td><td><span class="m">(−3, −4)</span></td></tr>
+      <tr><td><strong>Quadrant IV</strong> (bottom right)</td><td><span class="m">(+, −)</span></td><td><span class="m">(3, −4)</span></td></tr>
+    </table>
+    <h3>1.1 Horizontal and vertical lines</h3>
+    <p>Special lines have equations you should recognise instantly:</p>
+    <ul>
+      <li><strong>Horizontal line:</strong> every point on it has the same y-value, so its equation is <span class="m">y = constant</span>. Its gradient is <strong>0</strong>. The line through <span class="m">(0, 3)</span> and <span class="m">(5, 3)</span> is <span class="m">y = 3</span>.</li>
+      <li><strong>Vertical line:</strong> every point on it has the same x-value, so its equation is <span class="m">x = constant</span>. It has <strong>no gradient</strong> (the gradient is undefined). The line through <span class="m">(−2, 0)</span> and <span class="m">(−2, 7)</span> is <span class="m">x = −2</span>.</li>
+    </ul>
+    <div class="example glass">
+      <span class="label">Worked example 1</span>
+      <p>Plot and name the points <span class="m">A(3, 2)</span>, <span class="m">B(−4, 5)</span>, <span class="m">C(0, −3)</span> and <span class="m">D(−1, −6)</span>. Which quadrant is each point in?</p>
+      <ol class="steps">
+        <li><span class="m">A(3, 2)</span>: 3 across (right), 2 up. Both positive, so <strong>quadrant I</strong>.</li>
+        <li><span class="m">B(−4, 5)</span>: 4 across (left), 5 up. x negative, y positive, so <strong>quadrant II</strong>.</li>
+        <li><span class="m">C(0, −3)</span>: x is 0, so it sits <strong>on the y-axis</strong>, 3 down. It is not inside any quadrant.</li>
+        <li><span class="m">D(−1, −6)</span>: 1 left, 6 down. Both negative, so <strong>quadrant III</strong>.</li>
+      </ol>
+      <p class="answer">A: quadrant I · B: quadrant II · C: on the y-axis · D: quadrant III</p>
+    </div>
+    <div class="box warn"><span class="label">Exam trap</span>Points with a zero coordinate sit <strong>on an axis</strong>, not in a quadrant. Also, the order is always across then up: <span class="m">(3, 2)</span> is not the same point as <span class="m">(2, 3)</span>.</div>
+  </section>
+
+  <section id="distance" data-reveal>
+    <h2>2. Distance between two points</h2>
+    <p>Take any two points <span class="m">P(x₁, y₁)</span> and <span class="m">Q(x₂, y₂)</span>. The horizontal gap between them is <span class="m">x₂ − x₁</span> and the vertical gap is <span class="m">y₂ − y₁</span>. These two gaps are the legs of a right-angled triangle with the line <span class="m">PQ</span> as its hypotenuse, so <strong>the distance formula is just Pythagoras</strong> applied to those gaps.</p>
+    <div class="formula"><code>distance = <span class="m">√[(x₂ − x₁)² + (y₂ − y₁)²]</span></code></div>
+    <p>Subtract in any order you like: squaring kills the sign, so <span class="m">(x₂ − x₁)²</span> is the same as <span class="m">(x₁ − x₂)²</span>. Just make sure you pair the x-values together and the y-values together.</p>
+    <div class="example glass">
+      <span class="label">Worked example 2</span>
+      <p>Find the distance between <span class="m">A(1, 3)</span> and <span class="m">B(4, 5)</span>.</p>
+      <ol class="steps">
+        <li>Horizontal gap: <span class="m">4 − 1 = 3</span></li>
+        <li>Vertical gap: <span class="m">5 − 3 = 2</span></li>
+        <li>Apply Pythagoras: <span class="m">d = √(3² + 2²) = √(9 + 4) = √13</span></li>
+      </ol>
+      <p class="answer">Distance = <span class="m">√13 ≈ 3.61</span> units</p>
+    </div>
+    <div class="example glass">
+      <span class="label">Worked example 3</span>
+      <p>Find the distance between <span class="m">P(−2, −3)</span> and <span class="m">Q(4, 5)</span>.</p>
+      <ol class="steps">
+        <li>Horizontal gap: <span class="m">4 − (−2) = 6</span></li>
+        <li>Vertical gap: <span class="m">5 − (−3) = 8</span></li>
+        <li><span class="m">d = √(6² + 8²) = √(36 + 64) = √100</span></li>
+      </ol>
+      <p class="answer">Distance = 10 units</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>The gaps 6 and 8 are a scaled-up 3-4-5 triangle, which is why the answer is a whole number. If the gaps are 3 and 4, the distance is 5; if they are 9 and 12, it is 15. Keep the common triples handy to save calculator time.</div>
+    <div class="box warn"><span class="label">Exam trap</span>Do not stop at <span class="m">√100</span>. Write the final distance as a number (10), and give units ("10 units" or "10 cm") if the question provides them.</div>
+  </section>
+
+  <section id="midpoint" data-reveal>
+    <h2>3. Midpoint of a line segment</h2>
+    <p>The midpoint is the point exactly halfway along the segment joining <span class="m">(x₁, y₁)</span> and <span class="m">(x₂, y₂)</span>. It is simply <strong>the average of each coordinate</strong>: add the two x-values and halve, add the two y-values and halve.</p>
+    <div class="formula"><code>midpoint = <span class="frac"><span>x₁ + x₂</span><span>2</span></span>, <span class="frac"><span>y₁ + y₂</span><span>2</span></span></code></div>
+    <div class="example glass">
+      <span class="label">Worked example 4</span>
+      <p>Find the midpoint of the segment joining <span class="m">A(2, 7)</span> and <span class="m">B(6, 3)</span>.</p>
+      <ol class="steps">
+        <li>Average the x-values: <span class="m">(2 + 6) / 2 = 8 / 2 = 4</span></li>
+        <li>Average the y-values: <span class="m">(7 + 3) / 2 = 10 / 2 = 5</span></li>
+        <li>Write the pair as a point</li>
+      </ol>
+      <p class="answer">Midpoint = <span class="m">(4, 5)</span></p>
+    </div>
+    <div class="box"><span class="label">Why it works</span>Averaging the x-values slides you halfway across, and averaging the y-values slides you halfway up. You can check the answer by working the distance from the midpoint to each end: it must be equal on both sides.</div>
+    <div class="box warn"><span class="label">Exam trap</span>Midpoint is a <strong>point</strong>, so the answer needs brackets and a comma: <span class="m">(4, 5)</span>. A single number is only ever the answer to a distance question.</div>
+  </section>
+
+  <section id="gradient" data-reveal>
+    <h2>4. Gradient</h2>
+    <p>The gradient <span class="m">m</span> measures how steep a line is, and which way it slopes. It is the <strong>steepness</strong> of the line: how many units the y-value changes for every 1 unit you move to the right.</p>
+    <div class="formula"><code>m = <span class="frac"><span>y₂ − y₁</span><span>x₂ − x₁</span></span> = rise / run</code></div>
+    <p><strong>Rise over run:</strong> between any two points on the line, draw a right-angled triangle. The <strong>rise</strong> is the vertical side (change in y), the <strong>run</strong> is the horizontal side (change in x, always measured left to right). Gradient = rise ÷ run.</p>
+    <table>
+      <tr><th>Gradient</th><th>What the line looks like</th><th>Example</th></tr>
+      <tr><td><strong>Positive</strong> (<span class="m">m &gt; 0</span>)</td><td>Uphill, rising left to right</td><td><span class="m">y = 2x + 1</span></td></tr>
+      <tr><td><strong>Negative</strong> (<span class="m">m &lt; 0</span>)</td><td>Downhill, falling left to right</td><td><span class="m">y = −3x + 4</span></td></tr>
+      <tr><td><strong>Zero</strong> (<span class="m">m = 0</span>)</td><td>Flat, horizontal line</td><td><span class="m">y = 7</span></td></tr>
+      <tr><td><strong>Undefined</strong> (no gradient)</td><td>Vertical line, climbs infinitely steep</td><td><span class="m">x = 5</span></td></tr>
+    </table>
+    <div class="example glass">
+      <span class="label">Worked example 5</span>
+      <p>Find the gradient of the line through <span class="m">A(1, 2)</span> and <span class="m">B(4, 8)</span>.</p>
+      <ol class="steps">
+        <li>Rise (change in y): <span class="m">8 − 2 = 6</span></li>
+        <li>Run (change in x): <span class="m">4 − 1 = 3</span></li>
+        <li>Divide: <span class="m">m = 6 / 3 = 2</span></li>
+      </ol>
+      <p class="answer">Gradient m = 2 (positive, so the line goes uphill)</p>
+    </div>
+    <div class="example glass">
+      <span class="label">Worked example 6</span>
+      <p>Find the gradient of the line through <span class="m">C(0, 5)</span> and <span class="m">D(4, −3)</span>.</p>
+      <ol class="steps">
+        <li>Rise: <span class="m">−3 − 5 = −8</span></li>
+        <li>Run: <span class="m">4 − 0 = 4</span></li>
+        <li>Divide: <span class="m">m = −8 / 4 = −2</span></li>
+      </ol>
+      <p class="answer">Gradient m = −2 (negative, so the line goes downhill)</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>Always write the gradient as a number: <span class="m">m = −2</span>. If a question asks you to "state the gradient", the mark scheme wants the value, not a word like "steep" or "downhill". Negative gradients still have a number: −2, not 2.</div>
+    <div class="box warn"><span class="label">Exam trap</span>The gradient is <strong>not</strong> <span class="m">x₂ − x₁</span> over <span class="m">y₂ − y₁</span>. Y goes on top. Swap them and you get the reciprocal, which is only correct when the gradient happens to be 1 or −1.</div>
+  </section>
+
+  <section id="ymxc" data-reveal>
+    <h2>5. The equation y = mx + c</h2>
+    <p>Every straight line can be written in <strong>gradient–intercept form</strong>:</p>
+    <div class="formula"><code>y = <span class="m">m</span>x + <span class="m">c</span></code></div>
+    <table>
+      <tr><th>Letter</th><th>Stands for</th><th>Where you read it</th></tr>
+      <tr><td><span class="m">m</span></td><td><strong>Gradient</strong></td><td>The number multiplying x</td></tr>
+      <tr><td><span class="m">c</span></td><td><strong>y-intercept</strong></td><td>The number on its own; where the line crosses the y-axis</td></tr>
+    </table>
+    <p>Read both straight off the equation. For <span class="m">y = 4x − 7</span>: gradient <span class="m">m = 4</span>, y-intercept <span class="m">c = −7</span>, so the line crosses the y-axis at <span class="m">(0, −7)</span>.</p>
+    <div class="box warn"><span class="label">Exam trap</span>If the x term is negative, rewrite the equation before reading anything off. For <span class="m">y = 5 − 2x</span>, rearrange to <span class="m">y = −2x + 5</span>: now <span class="m">m = −2</span> and <span class="m">c = 5</span>. Written the other way round, it is very easy to grab the wrong signs.</div>
+    <h3>5.1 Sketching from an equation</h3>
+    <p>To sketch <span class="m">y = mx + c</span> you only need two points:</p>
+    <ol>
+      <li>Plot the y-intercept <span class="m">(0, c)</span> first.</li>
+      <li>From that point, use the gradient as <strong>rise over run</strong>: go 1 unit right, then <span class="m">m</span> units up (or down if <span class="m">m</span> is negative). Mark the second point.</li>
+      <li>Join the two points with a straight ruler line and extend it.</li>
+    </ol>
+    <div class="example glass">
+      <span class="label">Worked example 7</span>
+      <p>Find the gradient and y-intercept of <span class="m">y = 5 − 2x</span>, then describe how to sketch it.</p>
+      <ol class="steps">
+        <li>Rearrange: <span class="m">y = −2x + 5</span></li>
+        <li>Read off: gradient <span class="m">m = −2</span>, y-intercept <span class="m">c = 5</span>, so it crosses at <span class="m">(0, 5)</span></li>
+        <li>From <span class="m">(0, 5)</span>, run 1 right and go 2 down to reach <span class="m">(1, 3)</span>. Check: <span class="m">−2(1) + 5 = 3</span> ✓</li>
+        <li>Join <span class="m">(0, 5)</span> and <span class="m">(1, 3)</span> and extend. The line falls left to right, matching the negative gradient.</li>
+      </ol>
+      <p class="answer">m = −2, c = 5. Crosses the y-axis at (0, 5) and falls 2 units for every 1 unit right.</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>With a whole number gradient like 3, a convenient second point is 1 across and 3 up. With a fractional gradient like <span class="m">3/2</span>, go 2 across and 3 up so you avoid landing between grid lines.</div>
+  </section>
+
+  <section id="pointgradient" data-reveal>
+    <h2>6. Equation of a line from a gradient and a point</h2>
+    <p>Sometimes the gradient is given but the intercept is not. Use the <strong>point–gradient form</strong>, where <span class="m">(x₁, y₁)</span> is any known point on the line:</p>
+    <div class="formula"><code><span class="m">y − y₁ = m(x − x₁)</span></code></div>
+    <p>Substitute the gradient and the point, then expand and rearrange into <span class="m">y = mx + c</span>. Watch the minus signs: if the point is <span class="m">(2, −3)</span>, then <span class="m">y₁ = −3</span>, so you write <span class="m">y − (−3)</span>, which is <span class="m">y + 3</span>.</p>
+    <div class="example glass">
+      <span class="label">Worked example 8</span>
+      <p>Find the equation of the line with gradient 5 that passes through <span class="m">(2, 3)</span>. Give your answer in the form <span class="m">y = mx + c</span>.</p>
+      <ol class="steps">
+        <li>Substitute into <span class="m">y − y₁ = m(x − x₁)</span>: <span class="m">y − 3 = 5(x − 2)</span></li>
+        <li>Expand the bracket: <span class="m">y − 3 = 5x − 10</span></li>
+        <li>Add 3 to both sides: <span class="m">y = 5x − 7</span></li>
+        <li>Check with the point: <span class="m">5(2) − 7 = 3</span> ✓</li>
+      </ol>
+      <p class="answer">y = 5x − 7</p>
+    </div>
+
+    <h3>6.1 Equation from two points</h3>
+    <p>When you are only given two points on the line, build it in two stages:</p>
+    <ol>
+      <li><strong>Find the gradient first</strong> using <span class="m">m = (y₂ − y₁)/(x₂ − x₁)</span>.</li>
+      <li><strong>Substitute one point</strong> (either one, plus the gradient) into <span class="m">y − y₁ = m(x − x₁)</span> and expand.</li>
+    </ol>
+    <div class="example glass">
+      <span class="label">Worked example 9</span>
+      <p>Find the equation of the line through <span class="m">A(1, 2)</span> and <span class="m">B(3, 8)</span>.</p>
+      <ol class="steps">
+        <li>Gradient: <span class="m">m = (8 − 2) / (3 − 1) = 6 / 2 = 3</span></li>
+        <li>Use point A: <span class="m">y − 2 = 3(x − 1)</span></li>
+        <li>Expand: <span class="m">y − 2 = 3x − 3</span></li>
+        <li>Rearrange: <span class="m">y = 3x − 1</span></li>
+        <li>Check with point B: <span class="m">3(3) − 1 = 8</span> ✓</li>
+      </ol>
+      <p class="answer">y = 3x − 1</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>Always check your finished equation by substituting the <strong>other</strong> point (the one you did not use). If it fails, your gradient or your expansion is wrong, and you have caught it before the examiner did.</div>
+    <div class="box warn"><span class="label">Exam trap</span>The question says "give your answer in the form <span class="m">y = mx + c</span>". Leaving it as <span class="m">y − 2 = 3(x − 1)</span> loses the mark even though the working is correct. Expand and simplify every time.</div>
+  </section>
+
+  <section id="parallel" data-reveal>
+    <h2>7. Parallel lines</h2>
+    <p>Parallel lines never meet, which means they must climb at exactly the same rate. Their gradients are equal.</p>
+    <div class="formula"><code>lines are parallel if <span class="m">m₁ = m₂</span></code></div>
+    <p>For example, <span class="m">y = 2x + 1</span>, <span class="m">y = 2x − 5</span> and <span class="m">y = 2x</span> are all parallel: same gradient 2, different y-intercepts (three different rungs on the same ladder).</p>
+    <p>To write the equation of a line <strong>parallel to a given line through a given point</strong>:</p>
+    <ol>
+      <li>Read or find the gradient of the given line. That is your gradient too.</li>
+      <li>Substitute that gradient and the given point into <span class="m">y − y₁ = m(x − x₁)</span>.</li>
+      <li>Expand and rearrange to <span class="m">y = mx + c</span>.</li>
+    </ol>
+    <div class="example glass">
+      <span class="label">Worked example 10</span>
+      <p>Find the equation of the line parallel to <span class="m">y = 2x + 3</span> that passes through <span class="m">(4, 5)</span>.</p>
+      <ol class="steps">
+        <li>Gradient of the given line is <span class="m">m = 2</span>, so our line also has <span class="m">m = 2</span>.</li>
+        <li>Substitute point <span class="m">(4, 5)</span>: <span class="m">y − 5 = 2(x − 4)</span></li>
+        <li>Expand: <span class="m">y − 5 = 2x − 8</span></li>
+        <li>Add 5: <span class="m">y = 2x − 3</span></li>
+        <li>Check: <span class="m">2(4) − 3 = 5</span> ✓ and the gradient is 2, same as the original ✓</li>
+      </ol>
+      <p class="answer">y = 2x − 3</p>
+    </div>
+    <div class="box warn"><span class="label">Exam trap</span>Parallel lines have the <strong>same gradient but a different y-intercept</strong>. If your answer comes out identical to the original line, you have found the same line, not a parallel one, because the point you used must lie on the original.</div>
+  </section>
+
+  <section id="perpendicular" data-reveal>
+    <h2>8. Perpendicular lines</h2>
+    <p>Perpendicular lines meet at a <strong>right angle (90°)</strong>. Their gradients are linked by one rule: multiply them together and you always get −1.</p>
+    <div class="formula"><code>lines are perpendicular if <span class="m">m₁ × m₂ = −1</span>, so <span class="m">m₂ = −1 / m₁</span></code></div>
+    <p>Read it as: <strong>flip the gradient and change the sign</strong>.</p>
+    <table>
+      <tr><th>Gradient of first line</th><th>Gradient of the perpendicular line</th></tr>
+      <tr><td><span class="m">2</span></td><td><span class="m">−1/2</span></td></tr>
+      <tr><td><span class="m">3/4</span></td><td><span class="m">−4/3</span></td></tr>
+      <tr><td><span class="m">−5</span></td><td><span class="m">1/5</span></td></tr>
+      <tr><td><span class="m">1</span></td><td><span class="m">−1</span></td></tr>
+    </table>
+    <p>Check each row: <span class="m">2 × (−1/2) = −1</span>, <span class="m">3/4 × (−4/3) = −1</span>, and so on. A useful special case is the <strong>perpendicular bisector</strong>: the line that cuts a segment in half at 90°. Find the midpoint of the segment, find the negative reciprocal of its gradient, then use point–gradient form.</p>
+    <div class="example glass">
+      <span class="label">Worked example 11</span>
+      <p>Find the equation of the perpendicular bisector of the segment joining <span class="m">A(1, 3)</span> and <span class="m">B(5, 5)</span>. Give your answer as <span class="m">y = mx + c</span>.</p>
+      <ol class="steps">
+        <li>Midpoint of AB: <span class="m">((1 + 5)/2, (3 + 5)/2) = (3, 4)</span></li>
+        <li>Gradient of AB: <span class="m">(5 − 3)/(5 − 1) = 2/4 = 1/2</span></li>
+        <li>Perpendicular gradient: flip and change sign: <span class="m">m = −2</span> (check: <span class="m">1/2 × −2 = −1</span> ✓)</li>
+        <li>Through <span class="m">(3, 4)</span>: <span class="m">y − 4 = −2(x − 3)</span></li>
+        <li>Expand: <span class="m">y − 4 = −2x + 6</span>, so <span class="m">y = −2x + 10</span></li>
+      </ol>
+      <p class="answer">y = −2x + 10 (perpendicular to AB, through its midpoint (3, 4))</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>Two quick sanity checks on any perpendicular answer: the gradients must multiply to −1, and the line must pass through your point. Both take five seconds and catch most slips.</div>
+    <div class="box warn"><span class="label">Exam trap</span>Do not just stick a minus sign on the original gradient. The perpendicular to <span class="m">y = 2x + 1</span> is <span class="m">y = −½x + c</span>, <strong>not</strong> <span class="m">y = −2x + c</span>. Flip <em>and</em> change the sign. And remember both lines meet at exactly 90°.</div>
+  </section>
+
+  <section id="intersection" data-reveal>
+    <h2>9. Finding where two lines meet</h2>
+    <p>The point where two lines cross is the single point that satisfies <strong>both</strong> equations. Since both expressions equal <span class="m">y</span>, set them equal to each other, exactly like a pair of simultaneous equations.</p>
+    <div class="formula"><code>set the two expressions for y equal, solve for x, then substitute back for y</code></div>
+    <div class="example glass">
+      <span class="label">Worked example 12</span>
+      <p>Find the coordinates where <span class="m">y = 2x + 1</span> and <span class="m">y = −x + 7</span> intersect.</p>
+      <ol class="steps">
+        <li>Set them equal: <span class="m">2x + 1 = −x + 7</span></li>
+        <li>Add <span class="m">x</span> to both sides: <span class="m">3x + 1 = 7</span></li>
+        <li>Subtract 1: <span class="m">3x = 6</span>, so <span class="m">x = 2</span></li>
+        <li>Substitute back into either equation: <span class="m">y = 2(2) + 1 = 5</span></li>
+        <li>Check in the <strong>other</strong> equation: <span class="m">y = −(2) + 7 = 5</span> ✓</li>
+      </ol>
+      <p class="answer">The lines meet at (2, 5)</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>If the equations are not both in the form <span class="m">y = ...</span>, rearrange one of them first, or use elimination in the usual simultaneous-equations way. The intersection is just simultaneous equations with a coordinate meaning.</div>
+    <div class="box warn"><span class="label">Exam trap</span>A partial answer of <span class="m">x = 2</span> is not the point of intersection. Give the full coordinate pair <span class="m">(2, 5)</span>, and always substitute into the second equation to confirm both y-values match.</div>
+  </section>
+
+  <section id="practice" data-reveal>
+    <h2>10. Practice set and answers</h2>
+    <p>Do every question on paper first. Open an answer only after you have committed to one.</p>
+
+    <h3>Set A · Coordinates, distance and midpoint</h3>
+    <div class="practice">
+      <details class="q"><summary>Write the equation of the horizontal line through (2, 5) and the vertical line through (−1, 3). State the gradient of each.</summary><div class="ans">Horizontal line: <strong>y = 5</strong>, gradient <strong>m = 0</strong>. Vertical line: <strong>x = −1</strong>, it has <strong>no gradient</strong> (undefined).</div></details>
+      <details class="q"><summary>Find the distance between A(−2, 5) and B(4, −1).</summary><div class="ans">Horizontal gap: 4 − (−2) = 6. Vertical gap: −1 − 5 = −6. d = √(6² + (−6)²) = √(36 + 36) = √72 = <strong>6√2 ≈ 8.49 units</strong>.</div></details>
+      <details class="q"><summary>Find the midpoint of the segment joining (−3, 7) and (5, −1).</summary><div class="ans">x: (−3 + 5) ÷ 2 = 1. y: (7 + (−1)) ÷ 2 = 3. Midpoint = <strong>(1, 3)</strong>.</div></details>
+      <details class="q"><summary>P(−2, −3) and Q(4, 5) are joined. Find the length of PQ and the coordinates of its midpoint.</summary><div class="ans">Length: gaps are 6 and 8, so PQ = √(36 + 64) = √100 = <strong>10 units</strong>. Midpoint: ((−2 + 4)/2, (−3 + 5)/2) = <strong>(1, 1)</strong>.</div></details>
+    </div>
+
+    <h3>Set B · Gradient and y = mx + c</h3>
+    <div class="practice">
+      <details class="q"><summary>Find the gradient of the line through (−1, 4) and (3, −6).</summary><div class="ans">m = (−6 − 4) ÷ (3 − (−1)) = −10 ÷ 4 = <strong>m = −2.5</strong> (or −5/2). The line goes downhill.</div></details>
+      <details class="q"><summary>State the gradient and y-intercept of y = 4x − 1, and give the coordinates where it crosses the y-axis.</summary><div class="ans"><strong>m = 4</strong>, <strong>c = −1</strong>, crossing the y-axis at <strong>(0, −1)</strong>.</div></details>
+      <details class="q"><summary>Write the equation of the line with gradient −3 and y-intercept 7.</summary><div class="ans">Substitute straight into y = mx + c: <strong>y = −3x + 7</strong>.</div></details>
+      <details class="q"><summary>A line has equation y = 3 − 4x. Give its gradient and y-intercept.</summary><div class="ans">Rearrange first: y = −4x + 3. So <strong>m = −4</strong> and <strong>c = 3</strong>, crossing at (0, 3).</div></details>
+    </div>
+
+    <h3>Set C · Equations of lines</h3>
+    <div class="practice">
+      <details class="q"><summary>Find the equation of the line with gradient 3 through (2, 7). Give your answer as y = mx + c.</summary><div class="ans">y − 7 = 3(x − 2) → y − 7 = 3x − 6 → <strong>y = 3x + 1</strong>. Check: 3(2) + 1 = 7 ✓</div></details>
+      <details class="q"><summary>Find the equation of the line through (−1, 4) and (3, 16).</summary><div class="ans">Gradient: m = (16 − 4) ÷ (3 − (−1)) = 12 ÷ 4 = 3. Then y − 4 = 3(x + 1) → y − 4 = 3x + 3 → <strong>y = 3x + 7</strong>. Check: 3(3) + 7 = 16 ✓</div></details>
+      <details class="q"><summary>Find the equation of the line parallel to y = −2x + 5 through (3, 1).</summary><div class="ans">Parallel means the same gradient, so m = −2. y − 1 = −2(x − 3) → y − 1 = −2x + 6 → <strong>y = −2x + 7</strong>. Check: −2(3) + 7 = 1 ✓</div></details>
+      <details class="q"><summary>Find the equation of the line perpendicular to y = ½x + 3 through (4, 4).</summary><div class="ans">Perpendicular gradient: flip and change sign, m = −2 (check: ½ × −2 = −1 ✓). y − 4 = −2(x − 4) → y − 4 = −2x + 8 → <strong>y = −2x + 12</strong>. Check: −2(4) + 12 = 4 ✓</div></details>
+      <details class="q"><summary>Find where the lines y = 2x − 3 and y = x + 1 intersect.</summary><div class="ans">2x − 3 = x + 1 → x = 4. Then y = 4 + 1 = 5. Check in the first line: 2(4) − 3 = 5 ✓. Intersection at <strong>(4, 5)</strong>.</div></details>
+    </div>
+  </section>
+
+  <section id="checklist" data-reveal>
+    <h2>11. Exam checklist</h2>
+    <ul class="checklist">
+      <li>Read every point across then up: <span class="m">(x, y)</span>, and said which quadrant a point is in.</li>
+      <li>Used the distance formula as Pythagoras on the x-gap and y-gap, and gave a final number with units.</li>
+      <li>Found the midpoint by averaging each coordinate, and gave it as a bracketed point.</li>
+      <li>Stated the gradient as a value with a sign: <span class="m">m = −2</span>, not just "negative".</li>
+      <li>Put y on top in the gradient formula: <span class="m">(y₂ − y₁)/(x₂ − x₁)</span>.</li>
+      <li>Rewrote equations as <span class="m">y = mx + c</span> before reading off m and c.</li>
+      <li>Gave every final equation in the form <span class="m">y = mx + c</span>.</li>
+      <li>Used the same gradient for parallel lines, and <span class="m">m₂ = −1/m₁</span> for perpendicular lines.</li>
+      <li>Checked a perpendicular pair multiplies to −1, and that both lines meet at 90°.</li>
+      <li>Found intersections by solving simultaneous equations, then checked the point in <strong>both</strong> equations and wrote the answer as <span class="m">(x, y)</span>.</li>
+    </ul>
+  </section>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <span>Chapter 04 · Coordinate Geometry</span>
+  <span><a href="maths.html">All maths chapters</a></span>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

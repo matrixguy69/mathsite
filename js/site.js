@@ -69,6 +69,22 @@
 
   const triggers = [...document.querySelectorAll("[data-calc-open]")];
   if (triggers.length) buildCalc(triggers);
+
+  document.querySelectorAll(".mcq").forEach((m) => {
+    const ans = m.dataset.answer;
+    m.querySelectorAll(".mcq-opts button").forEach((b) => {
+      b.addEventListener("click", () => {
+        if (m.classList.contains("done")) return;
+        m.classList.add("done", "show");
+        if (b.dataset.opt === ans) b.classList.add("right");
+        else {
+          b.classList.add("wrong");
+          m.querySelector(`.mcq-opts button[data-opt="${ans}"]`)?.classList.add("right");
+        }
+      });
+    });
+  });
+
   if (!reduce && document.body.dataset.tilt) {
     addEventListener("pointermove", (e) => {
       const r = document.body.getBoundingClientRect();

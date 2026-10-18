@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Price Changes · Economics Notes</title>
+<meta name="description" content="O Level Economics notes on price changes: shifts in demand and supply, chain of analysis, surplus and shortage adjustment, and maximum and minimum prices.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,750&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav glass">
+  <a class="brand" href="index.html"><span class="mark">∑</span><span class="word">O Level Notes</span></a>
+  <nav class="nav-links">
+    <a href="maths.html">Maths</a>
+    <a href="economics.html" aria-current="page">Economics</a>
+  </nav>
+  <button class="nav-calc" data-calc-open>Calculator</button>
+</header>
+
+<div class="page">
+<aside class="toc glass" aria-label="Chapter contents">
+  <div class="toc-title">On this page</div>
+  <a href="#bigpicture">1. Shifts vs movements</a>
+  <a href="#demandshifts">2. What shifts demand</a>
+  <a href="#supplyshifts">3. What shifts supply</a>
+  <a href="#chain">4. Chain of analysis</a>
+  <a href="#adjustment">5. Surplus &amp; shortage</a>
+  <a href="#linked">6. Linked markets</a>
+  <a href="#intervention">7. Max &amp; min prices</a>
+  <a href="#practice">8. Practice &amp; answers</a>
+  <a href="#quiz">9. Quick quiz</a>
+  <a href="#checklist">10. Exam checklist</a>
+</aside>
+
+<main class="chapter">
+  <div class="chapter-hero glass" data-reveal>
+    <span class="eyebrow">Chapter 04 · Economics</span>
+    <h1>Shifts, surpluses and shortages: why market prices change</h1>
+    <p class="meta">The full chain-of-analysis toolkit: conditions that shift demand and supply, how markets return to equilibrium, and what governments do with maximum and minimum prices. Built around real past-paper questions from 2281.</p>
+    <div class="chips">
+      <span class="chip">CAIE 2281</span>
+      <span class="chip">IGCSE 0455</span>
+    </div>
+  </div>
+
+  <section id="bigpicture" data-reveal>
+    <h2>1. The big picture: shifts versus movements</h2>
+    <p>Every "what happened to the market" question is really one question: did the <strong>curves move</strong>, or did buyers and sellers only <strong>move along</strong> the curves they already had? Get this distinction right and half the marks are already yours.</p>
+    <table>
+      <tr><th></th><th>What changed</th><th>On the diagram</th><th>Caused by</th></tr>
+      <tr><td><strong>Movement along D</strong></td><td>Quantity demanded</td><td>Slide up or down the demand curve</td><td>Only a change in the price of the good itself</td></tr>
+      <tr><td><strong>Shift of D</strong></td><td>Demand itself</td><td>New curve, left or right</td><td>Income, population, tastes, related prices, expectations</td></tr>
+      <tr><td><strong>Movement along S</strong></td><td>Quantity supplied</td><td>Slide up or down the supply curve</td><td>Only a change in the price of the good itself</td></tr>
+      <tr><td><strong>Shift of S</strong></td><td>Supply itself</td><td>New curve, left or right</td><td>Costs, technology, taxes, weather, number of firms</td></tr>
+    </table>
+    <div class="box warn"><span class="label">Exam trap</span>"The price of coffee rose, so demand for coffee fell." Wrong. A price rise of the good itself causes a <strong>movement along</strong> the demand curve (a fall in quantity demanded), not a shift. Only a named condition from the table above shifts a curve.</div>
+  </section>
+
+  <section id="demandshifts" data-reveal>
+    <h2>2. The conditions that shift demand</h2>
+    <p>Demand shifts when anything other than the good's own price changes. Learn the five conditions, because every demand-side exam question is testing whether you can pick the right one and name its direction.</p>
+    <table>
+      <tr><th>Condition</th><th>Change</th><th>Effect on demand</th><th>Typical exam example</th></tr>
+      <tr><td><strong>Income</strong></td><td>Income rises</td><td>Right for normal goods, left for inferior goods</td><td>Rising income, gold or luxury perfume: demand shifts right</td></tr>
+      <tr><td><strong>Population</strong></td><td>Population rises</td><td>Right (more buyers)</td><td>Toothpaste, clothing, food: demand shifts right</td></tr>
+      <tr><td><strong>Tastes and information</strong></td><td>Product becomes more popular</td><td>Right</td><td>A health report on tomatoes or bananas: demand shifts right</td></tr>
+      <tr><td><strong>Price of related goods</strong></td><td>Substitute becomes dearer</td><td>Right</td><td>Air transport dearer: demand for sea transport shifts right</td></tr>
+      <tr><td></td><td>Complement becomes dearer</td><td>Left</td><td>Car parking dearer: demand for cars shifts left</td></tr>
+      <tr><td><strong>Expectations</strong></td><td>Expect future price rises</td><td>Right (buy now)</td><td>Buyers rush in before an expected rise</td></tr>
+    </table>
+    <figure class="fig glass" data-reveal>
+      <svg viewBox="0 0 340 200" class="draw" fill="none" aria-hidden="true">
+        <line class="stroke" x1="44" y1="172" x2="326" y2="172" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
+        <line class="stroke d1" x1="44" y1="172" x2="44" y2="18" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
+        <text x="10" y="30" fill="#9a9a93" font-size="12">P</text>
+        <text x="318" y="190" fill="#9a9a93" font-size="12">Q</text>
+        <line class="stroke d2" x1="75" y1="35" x2="305" y2="155" stroke="#f0b429" stroke-width="2.5"/>
+        <text x="296" y="170" fill="#f0b429" font-size="12">D1</text>
+        <line class="stroke d2" x1="115" y1="35" x2="322" y2="148" stroke="#f0b429" stroke-width="2.5" stroke-opacity="0.55"/>
+        <text x="300" y="120" fill="#f0b429" font-size="12">D2</text>
+        <line class="stroke d3" x1="70" y1="155" x2="305" y2="35" stroke="#7bd8a8" stroke-width="2"/>
+        <text x="298" y="30" fill="#7bd8a8" font-size="12">S</text>
+        <circle class="dot-pop p3" cx="187" cy="95" r="4.5" fill="#f0b429"/>
+        <circle class="dot-pop p3" cx="214" cy="81" r="4.5" fill="#f0b429"/>
+        <line x1="187" y1="95" x2="187" y2="172" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="4 5"/>
+        <line x1="44" y1="95" x2="187" y2="95" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="4 5"/>
+      </svg>
+      <figcaption>Demand shifts right (D1 to D2) while supply is unchanged: equilibrium price and quantity both rise.</figcaption>
+    </figure>
+    <div class="box good"><span class="label">Exam tip</span>When the question names an event ("a report says X is healthy"), translate it before you draw: which condition is this (tastes? income? related price?), and does it hit demand or supply? Write that translation down, it is usually worth a mark on its own.</div>
+  </section>
+
+  <section id="supplyshifts" data-reveal>
+    <h2>3. The conditions that shift supply</h2>
+    <p>Supply shifts when anything other than the good's own price changes. In practice, almost every supply question is about <strong>costs of production</strong>, because cost is what sits between any event and the firm's willingness to sell.</p>
+    <table>
+      <tr><th>Condition</th><th>Change</th><th>Effect on supply</th><th>Typical exam example</th></tr>
+      <tr><td><strong>Costs of production</strong></td><td>Costs rise</td><td>Left</td><td>Wood dearer: supply of furniture shifts left; wage costs up: supply of shoes shifts left</td></tr>
+      <tr><td></td><td>Costs fall</td><td>Right</td><td>Cheaper inputs: supply shifts right</td></tr>
+      <tr><td><strong>Technology</strong></td><td>New technique adopted</td><td>Right (cheaper, faster)</td><td>Advances in technology raise supply</td></tr>
+      <tr><td><strong>Taxes and subsidies</strong></td><td>Indirect tax rises</td><td>Left</td><td>Tax adds to costs</td></tr>
+      <tr><td></td><td>Subsidy rises</td><td>Right</td><td>Subsidy cuts costs</td></tr>
+      <tr><td><strong>Number of firms</strong></td><td>More firms enter</td><td>Right (market supply rises)</td><td>New firms open in the industry</td></tr>
+      <tr><td><strong>Weather / natural events</strong></td><td>Bad weather</td><td>Left (agriculture)</td><td>Prolonged bad weather cuts food supply</td></tr>
+      <tr><td><strong>Expectations</strong></td><td>Expect future price rises</td><td>Left (hold back stock now)</td><td>Producers wait for a better price</td></tr>
+    </table>
+    <figure class="fig glass" data-reveal>
+      <svg viewBox="0 0 340 200" class="draw" fill="none" aria-hidden="true">
+        <line class="stroke" x1="44" y1="172" x2="326" y2="172" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
+        <line class="stroke d1" x1="44" y1="172" x2="44" y2="18" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
+        <text x="10" y="30" fill="#9a9a93" font-size="12">P</text>
+        <text x="318" y="190" fill="#9a9a93" font-size="12">Q</text>
+        <line class="stroke d2" x1="75" y1="35" x2="305" y2="155" stroke="#f0b429" stroke-width="2.5"/>
+        <text x="296" y="170" fill="#f0b429" font-size="12">D</text>
+        <line class="stroke d3" x1="70" y1="155" x2="305" y2="35" stroke="#7bd8a8" stroke-width="2" stroke-opacity="0.4" stroke-dasharray="6 6"/>
+        <text x="298" y="30" fill="#7bd8a8" font-size="12">S1</text>
+        <line class="stroke d3" x1="115" y1="160" x2="285" y2="40" stroke="#7bd8a8" stroke-width="2"/>
+        <text x="272" y="34" fill="#7bd8a8" font-size="12">S2</text>
+        <circle class="dot-pop p3" cx="187" cy="95" r="4.5" fill="#f0b429"/>
+        <circle class="dot-pop p3" cx="160" cy="109" r="4.5" fill="#f0b429"/>
+        <line x1="187" y1="95" x2="187" y2="172" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="4 5"/>
+        <line x1="44" y1="95" x2="187" y2="95" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="4 5"/>
+      </svg>
+      <figcaption>Supply shifts left (S1 to S2) when costs rise: equilibrium price rises and equilibrium quantity falls.</figcaption>
+    </figure>
+    <div class="box"><span class="label">The one-step translation</span>Costs rise → each unit is less profitable at every price → firms cut quantity supplied at every price → the whole supply curve shifts <strong>left</strong>. If your event can be squeezed into "costs rose" or "costs fell", you have your shift.</div>
+  </section>
+
+  <section id="chain" data-reveal>
+    <h2>4. Chain of analysis: writing the diagram answer</h2>
+    <p>Diagram questions ("analyse, using a demand and supply diagram...") are marked in a fixed order. Miss a link and the chain breaks. Every full answer runs through these steps:</p>
+    <ol>
+      <li><strong>Translate the event</strong> into a named condition and say whether it hits demand, supply, or both.</li>
+      <li><strong>State the shift</strong>: demand (or supply) shifts right/left because [condition].</li>
+      <li><strong>Name the new equilibrium</strong>: the intersection of the new curve with the unchanged curve moves.</li>
+      <li><strong>State both price and quantity</strong>: equilibrium price rises/falls; equilibrium quantity rises/falls.</li>
+      <li><strong>Context sentence</strong>: finish in the language of the market ("so more steel is bought and sold at a higher price").</li>
+    </ol>
+    <div class="example glass">
+      <span class="label">Worked example 1</span>
+      <p>Analyse, using a demand and supply diagram, the effect of an increase in income on the market for gold. <span class="m">(adapted from Q3(c)/21/M/J/20)</span></p>
+      <ol class="steps">
+        <li>Gold is a normal good, so higher income is a demand-side condition.</li>
+        <li>The demand for gold shifts <strong>right</strong>: at every price, buyers now want more gold.</li>
+        <li>Supply is unchanged, so the new equilibrium sits up along the original supply curve.</li>
+        <li>Equilibrium price <strong>rises</strong> and equilibrium quantity <strong>rises</strong>.</li>
+        <li>So the market for gold clears at a higher price with more gold bought and sold.</li>
+      </ol>
+      <p class="answer">Demand shifts right; equilibrium price and quantity both rise.</p>
+    </div>
+    <div class="example glass">
+      <span class="label">Worked example 2</span>
+      <p>Analyse how advances in technology can affect demand and supply. <span class="m">(Q6(c)/22/M/J/17)</span></p>
+      <ol class="steps">
+        <li>Technology is a supply-side condition: new techniques usually cut costs of production.</li>
+        <li>Supply shifts <strong>right</strong>, so at the original price firms are willing to sell more.</li>
+        <li>The equilibrium price falls and equilibrium quantity rises.</li>
+        <li>Demand itself does not shift, but quantity demanded rises in response to the lower price (a movement along D).</li>
+        <li>If the technology also makes the product more attractive (new features, apps, functions), demand can shift right as well, which would push price back up and raise quantity further.</li>
+      </ol>
+      <p class="answer">Supply shifts right (price down, quantity up); demand may also shift right if the technology makes the product more popular.</p>
+    </div>
+    <div class="example glass">
+      <span class="label">Worked example 3</span>
+      <p>Analyse the effect on the market for food of an increase in population combined with a prolonged period of bad weather. <span class="m">(Q4(c)/23/O/N/17)</span></p>
+      <ol class="steps">
+        <li>Two conditions at once: population is a demand condition, weather is a supply condition.</li>
+        <li>More people means more buyers: demand for food shifts <strong>right</strong>.</li>
+        <li>Bad weather damages crops: supply of food shifts <strong>left</strong>.</li>
+        <li>Both shifts push the price up: demand up raises price, supply down raises price. Equilibrium price rises for certain.</li>
+        <li>Quantity is ambiguous from the shifts alone: the demand shift raises quantity, the supply shift lowers it. In practice bad weather usually dominates, so quantity falls.</li>
+      </ol>
+      <p class="answer">Equilibrium price rises definitely; equilibrium quantity depends on the relative size of the two shifts.</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>When two shifts happen together, work out the effect on price and quantity <strong>one shift at a time</strong>, then combine. If the two effects on quantity push in opposite directions, say it is "uncertain" or "depends on which shift is larger". Examiners reward that honesty with full marks.</div>
+  </section>
+
+  <section id="adjustment" data-reveal>
+    <h2>5. Surplus, shortage and market adjustment</h2>
+    <p>Equilibrium is the price where quantity demanded equals quantity supplied. Push the price away from it and market forces (the "invisible hand") push it back.</p>
+    <table>
+      <tr><th>Market state</th><th>Happens when price is...</th><th>QD vs QS</th><th>Market response</th><th>Price moves</th></tr>
+      <tr><td><strong>Surplus (excess supply)</strong></td><td>above equilibrium</td><td>QS &gt; QD, unsold stock piles up</td><td>Firms cut price to clear stock</td><td>Falls back to equilibrium</td></tr>
+      <tr><td><strong>Shortage (excess demand)</strong></td><td>below equilibrium</td><td>QD &gt; QS, buyers compete for goods</td><td>Sellers raise price; some buyers drop out</td><td>Rises back to equilibrium</td></tr>
+    </table>
+    <div class="example glass">
+      <span class="label">Worked example 4</span>
+      <p>Explain how market forces would respond to a shortage of drinking water. <span class="m">(Q6(b)/21/M/J/18)</span></p>
+      <ol class="steps">
+        <li>A shortage means quantity demanded exceeds quantity supplied at the current price.</li>
+        <li>Buyers compete for the limited supply, so sellers can raise the price.</li>
+        <li>Higher price has two effects: a movement along the supply curve (firms deliver more, including costly emergency sources) and a movement along the demand curve (some users cut back or find alternatives).</li>
+        <li>Quantity demanded falls and quantity supplied rises until they are equal: the shortage is eliminated at a higher equilibrium price.</li>
+      </ol>
+      <p class="answer">Price is bid up until quantity demanded equals quantity supplied; the shortage disappears at a higher equilibrium price.</p>
+    </div>
+    <div class="box"><span class="label">The wording that scores</span>"Market forces" or "the price mechanism" is not vague magic. Always name the two concrete movements: quantity demanded falls and quantity supplied rises as price adjusts. Those two clauses are the marks.</div>
+  </section>
+
+  <section id="linked" data-reveal>
+    <h2>6. Linked markets: substitutes and complements</h2>
+    <p>Some questions ask what an event in market A does to market B. The bridge is always the cross-price relationship.</p>
+    <table>
+      <tr><th>Goods are</th><th>Event in market A</th><th>Effect on market B</th><th>Exam examples</th></tr>
+      <tr><td><strong>Substitutes</strong> (in consumption)</td><td>Price of A falls</td><td>Demand for B shifts left</td><td>Cheaper rail transport: demand for car transport falls</td></tr>
+      <tr><td></td><td>Price of A rises</td><td>Demand for B shifts right</td><td>Dearer air transport: demand for sea transport rises</td></tr>
+      <tr><td><strong>Complements</strong> (used together)</td><td>Price of A rises</td><td>Demand for B shifts left</td><td>Dearer car parking: demand for cars falls</td></tr>
+      <tr><td></td><td>Price of A falls</td><td>Demand for B shifts right</td><td>Cheaper petrol: demand for cars rises</td></tr>
+      <tr><td><strong>Substitutes in production</strong></td><td>Demand for A rises (price of A rises)</td><td>Supply of B shifts left</td><td>Farmers switch land from basketball shirts' cotton to football shirts</td></tr>
+    </table>
+    <div class="example glass">
+      <span class="label">Worked example 5</span>
+      <p>Explain, using information from the extract and Figure 1, what happened to the market for sea transport as a result of the fall in the price of air transport. <span class="m">(Q1(f)/21/M/J/17)</span></p>
+      <ol class="steps">
+        <li>Air transport and sea transport are substitutes in consumption.</li>
+        <li>The fall in the price of air transport makes air travel relatively cheaper, so some travellers switch away from sea transport.</li>
+        <li>This shifts the <strong>demand for sea transport to the left</strong>.</li>
+        <li>With supply unchanged, the equilibrium price of sea transport falls and the equilibrium quantity falls.</li>
+      </ol>
+      <p class="answer">Demand for sea transport shifts left; both its equilibrium price and quantity fall.</p>
+    </div>
+    <div class="example glass">
+      <span class="label">Worked example 6</span>
+      <p>Analyse the effect of an increase in demand for football shirts on demand for basketball shirts. <span class="m">(Q5(c)/23/M/J/24)</span></p>
+      <ol class="steps">
+        <li>Football shirts and basketball shirts are substitutes in consumption for fans of both sports.</li>
+        <li>Higher demand for football shirts (perhaps after a successful tournament) raises their price.</li>
+        <li>Consumers see football shirts as relatively more expensive, so some switch to basketball shirts.</li>
+        <li>The <strong>demand for basketball shirts shifts right</strong>, raising their equilibrium price and quantity.</li>
+      </ol>
+      <p class="answer">Demand for basketball shirts shifts right, so their equilibrium price and quantity rise.</p>
+    </div>
+    <div class="box warn"><span class="label">Exam trap</span>Watch the direction the question gives you. If it says demand for A <em>rises</em>, consumers pay a higher price for A and switch <em>to</em> the substitute B. If it says the <em>price</em> of A falls, they switch away from B. Read which variable moved before you draw the arrow.</div>
+  </section>
+
+  <section id="intervention" data-reveal>
+    <h2>7. Introduction to maximum and minimum prices</h2>
+    <p>Free markets do not always settle where governments want. Two interventions come up again and again.</p>
+    <table>
+      <tr><th></th><th><strong>Maximum price</strong></th><th><strong>Minimum price</strong></th></tr>
+      <tr><td>Set</td><td><strong>below</strong> the equilibrium price</td><td><strong>above</strong> the equilibrium price</td></tr>
+      <tr><td>Purpose</td><td>Keep essentials affordable (rent, food, water)</td><td>Protect producers' incomes (farm wages, minimum wage)</td></tr>
+      <tr><td>Immediate effect</td><td>QD &gt; QS: a <strong>shortage</strong> (excess demand)</td><td>QS &gt; QD: a <strong>surplus</strong> (excess supply)</td></tr>
+      <tr><td>Side effects</td><td>Queues, rationing, black markets, lower quality, less incentive to supply</td><td>Unemployment (surplus of labour), unsold stock, wasted resources</td></tr>
+      <tr><td>Enforcement</td><td>Must be policed: sellers want the higher market price</td><td>Must be policed: firms want to pay less / workers want jobs at lower pay</td></tr>
+    </table>
+    <figure class="fig glass" data-reveal>
+      <svg viewBox="0 0 340 200" class="draw" fill="none" aria-hidden="true">
+        <line class="stroke" x1="44" y1="172" x2="326" y2="172" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
+        <line class="stroke d1" x1="44" y1="172" x2="44" y2="18" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
+        <text x="10" y="30" fill="#9a9a93" font-size="12">P</text>
+        <text x="318" y="190" fill="#9a9a93" font-size="12">Q</text>
+        <line class="stroke d2" x1="75" y1="35" x2="305" y2="155" stroke="#f0b429" stroke-width="2.5"/>
+        <text x="296" y="170" fill="#f0b429" font-size="12">D</text>
+        <line class="stroke d3" x1="70" y1="155" x2="305" y2="35" stroke="#7bd8a8" stroke-width="2"/>
+        <text x="298" y="30" fill="#7bd8a8" font-size="12">S</text>
+        <circle class="dot-pop p3" cx="187" cy="95" r="4.5" fill="#f0b429"/>
+        <line x1="187" y1="95" x2="187" y2="172" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="4 5"/>
+        <line x1="44" y1="95" x2="187" y2="95" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="4 5"/>
+        <line x1="52" y1="132" x2="318" y2="132" stroke="#e8927c" stroke-width="2" stroke-dasharray="6 5"/>
+        <text x="300" y="127" fill="#e8927c" font-size="12">Pmax</text>
+        <line x1="124" y1="132" x2="252" y2="132" stroke="#e8927c" stroke-width="2.5"/>
+        <text x="152" y="124" fill="#e8927c" font-size="11">shortage</text>
+      </svg>
+      <figcaption>A maximum price set below equilibrium: at Pmax, quantity demanded exceeds quantity supplied, so a shortage appears.</figcaption>
+    </figure>
+    <div class="example glass">
+      <span class="label">Worked example 7</span>
+      <p>Draw a demand and supply diagram to show how setting a maximum price below the equilibrium price will affect a market. <span class="m">(Q1(e)/21/M/J/23)</span></p>
+      <ol class="steps">
+        <li>Draw normal downward-sloping D and upward-sloping S, mark the equilibrium.</li>
+        <li>Draw a horizontal line <strong>below</strong> the equilibrium, labelled Pmax, made compulsory with a dashed or highlighted line.</li>
+        <li>At Pmax read off quantity supplied (on S) and quantity demanded (on D).</li>
+        <li>QD exceeds QS, so mark the gap as a <strong>shortage</strong> (excess demand).</li>
+        <li>Note the consequences: not everyone who wants the good can buy it at the legal price.</li>
+      </ol>
+      <p class="answer">Pmax below equilibrium creates a shortage; the price cannot rise to clear the market.</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>Always label the intervention line (Pmax or Pmin) and the gap (shortage or surplus). An unlabelled dashed line earns nothing. If asked to "analyse", add one consequence: a maximum price can lead to black markets, a minimum price to unemployment or surplus production.</div>
+  </section>
+
+  <section id="practice" data-reveal>
+    <h2>8. Practice set and answers</h2>
+    <p>Do every question on paper first. Draw the diagram where asked. Open an answer only after you have committed to one.</p>
+
+    <h3>Set A · Past-paper questions: shifts in demand</h3>
+    <div class="practice">
+      <details class="q"><summary>Analyse how a global recession could affect demand for sea transport. <span class="m">Q1(d)/21/M/J/17</span></summary><div class="ans">A recession lowers incomes. Sea transport (especially for holidays and luxury cruises) is income-elastic: demand shifts <strong>left</strong>. For freight it is less clear, since firms may switch from dearer air to cheaper sea transport, shifting that demand right. Mention both sides for full marks; lead with the most likely effect.</div></details>
+      <details class="q"><summary>Explain, using information from the extract and Figure 1, what happened to the market for diamond rings in 2015. <span class="m">Q1(f)/22/M/J/17</span></summary><div class="ans">Diamond rings are a luxury, so the recession cuts demand (leftward shift). Demand shifting left with supply unchanged lowers both the equilibrium price and quantity of diamond rings traded.</div></details>
+      <details class="q"><summary>Explain, using information from the extract and Figure 1, what happened to the market for food in 2015. <span class="m">Q1(f)/22/O/N/17</span></summary><div class="ans">Food is a necessity: demand is income-inelastic, so a recession barely shifts demand left (unlike luxuries). Prices of basic food therefore stay relatively firm compared with luxury goods; any fall in demand is small.</div></details>
+      <details class="q"><summary>Analyse, using a demand and supply diagram, the effect of an increase in income on the market for ice cream. <span class="m">Q1(c)/22/M/J/18</span></summary><div class="ans">Ice cream is a normal good: higher income shifts <strong>demand right</strong>. New equilibrium: price rises, quantity rises. If ice cream were treated as inferior, demand would shift left instead; state your assumption.</div></details>
+      <details class="q"><summary>Explain why the price of housing may increase. <span class="m">Q5(b)/22/M/J/18</span></summary><div class="ans">Demand-side: rising population and incomes shift demand right. Supply-side: land is scarce and building takes time, so supply is inelastic and shifts little or left (rising construction costs). Rightward demand against fixed supply raises the equilibrium price of housing.</div></details>
+      <details class="q"><summary>Analyse, using a demand and supply diagram, the effect a report stating that eating tomatoes is good for health will have on the market for tomatoes. <span class="m">Q3(c)/23/O/N/19</span></summary><div class="ans">The report changes tastes in favour of tomatoes: <strong>demand shifts right</strong>. Supply unchanged in the short run. Equilibrium price and quantity of tomatoes both rise.</div></details>
+      <details class="q"><summary>Analyse, using a demand and supply diagram, how a rise in income may affect the market for gold. <span class="m">Q3(c)/21/M/J/20</span></summary><div class="ans">Gold is a normal luxury: demand shifts <strong>right</strong>. Equilibrium price of gold rises and quantity bought and sold rises.</div></details>
+      <details class="q"><summary>Analyse, using a demand and supply diagram, how a greater awareness of the health benefits of eating fruit will affect the market for fruit. <span class="m">Q5(c)/21/M/J/22</span></summary><div class="ans">Awareness changes tastes: <strong>demand for fruit shifts right</strong>. Price and quantity both rise in the new equilibrium. Supply can only respond over time (trees take years to mature), so the price effect is strong in the short run.</div></details>
+      <details class="q"><summary>Analyse, using a demand and supply diagram, how an increase in income will affect the market for a luxury brand of perfume. <span class="m">Q3(c)/22/M/J/22</span></summary><div class="ans">Luxury perfume is a normal good with high income elasticity: <strong>demand shifts right</strong> strongly. Equilibrium price and quantity both rise.</div></details>
+      <details class="q"><summary>Analyse, using a demand and supply diagram, how the market for toothpaste would be affected by an increase in population. <span class="m">Q4(c)/23/O/N/22</span></summary><div class="ans">More people means more buyers at every price: <strong>demand shifts right</strong>. Toothpaste supply adjusts slowly, so price rises a little and quantity rises.</div></details>
+      <details class="q"><summary>Analyse, using a demand and supply diagram, how an increase in population size will affect the market for clothing. <span class="m">Q1(f)/22/O/N/24</span></summary><div class="ans">Population is a demand condition: <strong>demand for clothing shifts right</strong>. New equilibrium: higher price, higher quantity of clothing traded.</div></details>
+      <details class="q"><summary>Explain how improved education may affect the demand for cigarettes and for fresh fruit. <span class="m">Q2(b)/21/M/J/23</span></summary><div class="ans">Education raises awareness of health risks: demand for cigarettes shifts <strong>left</strong>. The same awareness raises demand for fresh fruit, shifting it <strong>right</strong>. Two opposite shifts from one condition, judged by taste change.</div></details>
+    </div>
+
+    <h3>Set B · Past-paper questions: shifts in supply and both curves</h3>
+    <div class="practice">
+      <details class="q"><summary>Explain, using information from the extract and Fig. 1, what might have happened to the market for steel in China in 2015. <span class="m">Q1(f)/23/O/N/17</span></summary><div class="ans">China's construction slowdown cuts demand for steel: <strong>demand shifts left</strong>. At the same time, high-cost producers may cut output. A leftward demand shift with unchanged supply lowers price and quantity; if the question hints at rising production costs too, mention both curves and the price ambiguity.</div></details>
+      <details class="q"><summary>Explain, using information from the extract and Fig. 1, what happened to the market for food in 2015. <span class="m">Q1(f)/22/O/N/17</span></summary><div class="ans">See Set A. Key points: food demand is income-inelastic, so the recession barely shifts it; any supply-side weather effects would push prices the other way. Compare with luxury goods for full marks.</div></details>
+      <details class="q"><summary>Analyse how advances in technology can affect demand and supply. <span class="m">Q6(c)/22/M/J/17</span></summary><div class="ans">Technology cuts production costs, shifting <strong>supply right</strong> (price down, quantity up). It can also raise <strong>demand</strong> if the product becomes more useful or desirable (price up, quantity up). Always analyse both curves when the question says "demand and supply".</div></details>
+      <details class="q"><summary>Analyse the effect on the market for furniture of an increase in the price of wood. <span class="m">Q4(c)/22/O/N/22</span></summary><div class="ans">Wood is an input for furniture, so production costs rise: <strong>supply shifts left</strong>. Equilibrium price of furniture rises and equilibrium quantity falls.</div></details>
+      <details class="q"><summary>Analyse, using a demand and supply diagram, how an increase in wage costs would affect the market for shoes. <span class="m">Q1(f)/22/M/J/24</span></summary><div class="ans">Wages are a major cost in shoe production: costs rise, <strong>supply shifts left</strong>. Higher equilibrium price, lower equilibrium quantity of shoes.</div></details>
+      <details class="q"><summary>Draw a demand and supply diagram to show the effect of a ban on burning stubble on the market for rice. <span class="m">Q1(e)/22/O/N/20</span></summary><div class="ans">Burning stubble is a cheap way to clear fields; a ban raises farmers' costs, so the <strong>supply of rice shifts left</strong>. Mark a higher equilibrium price and lower quantity. Draw D downward, S upward, S2 left of S1, both equilibria marked.</div></details>
+      <details class="q"><summary>Draw a demand and supply diagram to show how a report stating that bananas are good for health would affect the market for bananas. <span class="m">Q1(e)/22/O/N/23</span></summary><div class="ans">The report changes tastes: <strong>demand shifts right</strong> (D2 to the right of D1). New equilibrium: higher price, higher quantity.</div></details>
+      <details class="q"><summary>Analyse, using a demand and supply diagram, the effect on the market for food of an increase in population combined with a prolonged period of bad weather. <span class="m">Q4(c)/23/O/N/17</span></summary><div class="ans">Demand shifts right (more people), supply shifts left (bad harvests). Both push <strong>price up</strong>. Quantity: demand shift raises it, supply shift lowers it, so state it is uncertain without magnitudes.</div></details>
+    </div>
+
+    <h3>Set C · Past-paper questions: linked markets, adjustments, price controls</h3>
+    <div class="practice">
+      <details class="q"><summary>Explain how market forces would respond to a shortage of drinking water. <span class="m">Q6(b)/21/M/J/18</span></summary><div class="ans">A shortage (QD &gt; QS) bids the price up. As price rises, quantity demanded falls (conservation, alternatives) and quantity supplied rises (firms deliver more) until QD = QS at a higher equilibrium price.</div></details>
+      <details class="q"><summary>Explain, using information from the extract, two reasons why a rise in the price of vanilla might not cause an increase in the price of ice cream. <span class="m">Q1(b)/22/M/J/18</span></summary><div class="ans">(1) Vanilla may be a small share of total costs, so the cost increase barely shifts ice cream supply left. (2) Demand may be elastic or falling (substitutes, health concerns), so any supply shift cuts quantity more than price. Producers may also absorb the cost rather than pass it on.</div></details>
+      <details class="q"><summary>Draw a demand and supply diagram to show how a rise in the price of car parking could affect the market for cars in the Philippines. <span class="m">Q1(e)/23/O/N/20</span></summary><div class="ans">Parking and cars are complements. Dearer parking raises the total cost of owning a car: <strong>demand for cars shifts left</strong>. Equilibrium price and quantity of cars fall.</div></details>
+      <details class="q"><summary>Draw a demand and supply diagram to show the effect of a decrease in the price of rail transport on the market for car transport. <span class="m">Q1(e)/22/M/J/23</span></summary><div class="ans">Rail and car transport are substitutes. Cheaper rail makes driving relatively dearer: <strong>demand for car transport shifts left</strong>. Price and quantity of car transport both fall.</div></details>
+      <details class="q"><summary>Analyse the effect of an increase in demand for football shirts on demand for basketball shirts. <span class="m">Q5(c)/23/M/J/24</span></summary><div class="ans">Football shirts are substitutes for basketball shirts. Higher demand for football shirts raises their price; consumers switch to basketball shirts, so <strong>demand for basketball shirts shifts right</strong>. Price and quantity of basketball shirts rise.</div></details>
+      <details class="q"><summary>Draw a demand and supply diagram to show how setting a maximum price below the equilibrium price will affect a market. <span class="m">Q1(e)/21/M/J/23</span></summary><div class="ans">D downward, S upward, Pmax drawn <strong>below</strong> equilibrium. At Pmax, QD &gt; QS: mark the gap and label it a <strong>shortage</strong>. The price is stuck below equilibrium and cannot clear the market.</div></details>
+      <details class="q"><summary>Identify two reasons why someone may choose to train to become a dentist. <span class="m">Q3(a)/23/O/N/18</span></summary><div class="ans">Not a diagram question, but it appears on this topic sheet: expected high income, job security, helping people, social status, or a taste for science. Any two clear reasons with a short explanation.</div></details>
+      <details class="q"><summary>A government sets a minimum price for wheat above the free-market price. Explain one likely consequence. <span class="m">(own question)</span></summary><div class="ans">At Pmin, QS &gt; QD, so a <strong>surplus</strong> of wheat appears: unsold stock, government buying or storage costs, and resources wasted on wheat that nobody buys at the legal price.</div></details>
+    </div>
+  </section>
+
+  <section id="quiz" data-reveal>
+    <h2>9. Quick quiz</h2>
+    <p>Click an option to check your answer.</p>
+    <div class="mcq-set">
+      <div class="mcq glass" data-answer="c">
+        <p class="mcq-q"><span class="mcq-tag">MCQ 1</span> A rise in the price of coffee, other things equal, causes:</p>
+        <div class="mcq-opts">
+          <button type="button" data-opt="a">A leftward shift of coffee demand</button>
+          <button type="button" data-opt="b">A rightward shift of coffee demand</button>
+          <button type="button" data-opt="c">A contraction (movement up along) of coffee demand</button>
+          <button type="button" data-opt="d">A rightward shift of coffee supply</button>
+        </div>
+        <p class="mcq-exp"><strong>Answer: C.</strong> A change in the good's own price moves quantity demanded along the curve; it never shifts it.</p>
+      </div>
+      <div class="mcq glass" data-answer="b">
+        <p class="mcq-q"><span class="mcq-tag">MCQ 2</span> A bad harvest shifts the supply of wheat to the left. What happens to the equilibrium price and quantity?</p>
+        <div class="mcq-opts">
+          <button type="button" data-opt="a">Price falls, quantity rises</button>
+          <button type="button" data-opt="b">Price rises, quantity falls</button>
+          <button type="button" data-opt="c">Both rise</button>
+          <button type="button" data-opt="d">Both fall</button>
+        </div>
+        <p class="mcq-exp"><strong>Answer: B.</strong> A leftward supply shift against an unchanged demand curve raises price and cuts quantity traded.</p>
+      </div>
+      <div class="mcq glass" data-answer="a">
+        <p class="mcq-q"><span class="mcq-tag">MCQ 3</span> A maximum price is set below equilibrium. The market will show:</p>
+        <div class="mcq-opts">
+          <button type="button" data-opt="a">A shortage, because QD exceeds QS at the legal price</button>
+          <button type="button" data-opt="b">A surplus, because QS exceeds QD</button>
+          <button type="button" data-opt="c">No effect, the market clears as usual</button>
+          <button type="button" data-opt="d">A rightward shift of demand</button>
+        </div>
+        <p class="mcq-exp"><strong>Answer: A.</strong> Below equilibrium, quantity demanded is larger than quantity supplied: excess demand, or a shortage.</p>
+      </div>
+      <div class="mcq glass" data-answer="d">
+        <p class="mcq-q"><span class="mcq-tag">MCQ 4</span> The price of cinema tickets falls. What happens in the market for streaming subscriptions (a substitute)?</p>
+        <div class="mcq-opts">
+          <button type="button" data-opt="a">Demand for streaming shifts right</button>
+          <button type="button" data-opt="b">Supply of streaming shifts right</button>
+          <button type="button" data-opt="c">Quantity of streaming demanded rises</button>
+          <button type="button" data-opt="d">Demand for streaming shifts left</button>
+        </div>
+        <p class="mcq-exp"><strong>Answer: D.</strong> Cheaper cinema tickets make streaming relatively less attractive, shifting demand for the substitute to the left.</p>
+      </div>
+      <div class="mcq glass" data-answer="c">
+        <p class="mcq-q"><span class="mcq-tag">MCQ 5</span> Population rises and a drought hits at the same time in a food market. The most certain prediction is that:</p>
+        <div class="mcq-opts">
+          <button type="button" data-opt="a">Equilibrium quantity rises</button>
+          <button type="button" data-opt="b">Equilibrium quantity falls</button>
+          <button type="button" data-opt="c">Equilibrium price rises</button>
+          <button type="button" data-opt="d">Equilibrium price falls</button>
+        </div>
+        <p class="mcq-exp"><strong>Answer: C.</strong> The demand shift and the supply shift both push price up. Quantity depends on which shift is bigger.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="checklist" data-reveal>
+    <h2>10. Exam checklist</h2>
+    <ul class="checklist">
+      <li>Translated the event into a named condition (income, population, tastes, related price, costs, technology, weather) before drawing anything.</li>
+      <li>Said whether the event hits <strong>demand, supply, or both</strong>, and the direction of the shift.</li>
+      <li>Never shifted a curve for a change in the good's own price (that is a movement along).</li>
+      <li>Stated <strong>both</strong> the new equilibrium price and quantity in every diagram answer.</li>
+      <li>Finished with a context sentence in the language of the market.</li>
+      <li>For two simultaneous shifts, worked price and quantity one shift at a time, and said if quantity is uncertain.</li>
+      <li>Named the goods as substitutes or complements before linking two markets.</li>
+      <li>On max/min price diagrams: drew the line on the correct side of equilibrium and labelled the resulting shortage or surplus.</li>
+      <li>Mentioned a consequence of price controls (black market, queues, unemployment, surplus stock) when asked to analyse.</li>
+    </ul>
+  </section>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <span>Chapter 04 · Economics</span>
+  <span><a href="economics.html">All economics chapters</a> · Next: <a href="economics-ped.html">Next Chapter</a></span>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

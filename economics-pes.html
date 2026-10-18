@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Price Elasticity of Supply · Economics Notes</title>
+<meta name="description" content="O Level Economics notes on PES: definition, formula, determinants (time, spare capacity, stocks, perishability, nature of product), the 0 to infinity range, and effects on producers and consumers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,750&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav glass">
+  <a class="brand" href="index.html"><span class="mark">∑</span><span class="word">O Level Notes</span></a>
+  <nav class="nav-links">
+    <a href="maths.html">Maths</a>
+    <a href="economics.html" aria-current="page">Economics</a>
+  </nav>
+  <button class="nav-calc" data-calc-open>Calculator</button>
+</header>
+
+<div class="page">
+<aside class="toc glass" aria-label="Chapter contents">
+  <div class="toc-title">On this page</div>
+  <a href="#intro">1. What PES measures</a>
+  <a href="#calc">2. Calculating PES</a>
+  <a href="#values">3. The values of PES</a>
+  <a href="#determinants">4. The five determinants</a>
+  <a href="#diagrams">5. Elastic vs inelastic supply</a>
+  <a href="#effects">6. Effects on producers &amp; consumers</a>
+  <a href="#practice">7. Practice &amp; answers</a>
+  <a href="#quiz">8. Quick quiz</a>
+  <a href="#checklist">9. Exam checklist</a>
+</aside>
+
+<main class="chapter">
+  <div class="chapter-hero glass" data-reveal>
+    <span class="eyebrow">Chapter 06 · Economics</span>
+    <h1>Price elasticity of supply: how quickly can producers respond?</h1>
+    <p class="meta">The mirror of PED: the definition and formula of PES, its full range from zero to infinity, the five determinants (time, spare capacity, stocks, perishability, nature of the product) and what elasticity means for producers and consumers when markets are disturbed.</p>
+    <div class="chips">
+      <span class="chip">CAIE 2281</span>
+      <span class="chip">IGCSE 0455</span>
+    </div>
+  </div>
+
+  <section id="intro" data-reveal>
+    <h2>1. What PES measures</h2>
+    <p>The law of supply says that when price rises, quantity supplied rises (a movement up along the supply curve). <strong>Price elasticity of supply (PES)</strong> measures <strong>how responsive</strong> quantity supplied is to a change in price.</p>
+    <ul>
+      <li>It is always <strong>positive</strong>, because price and quantity supplied move in the same direction.</li>
+      <li>It answers a practical question: if the market price of your product rises, how quickly and how far can you deliver more of it?</li>
+      <li>Responsiveness differs hugely between products: a farmer can send more eggs to market tomorrow; a housebuilder cannot conjure new flats overnight.</li>
+    </ul>
+    <div class="box"><span class="label">PED vs PES in one breath</span>PED is about <strong>buyers</strong> switching away when price moves. PES is about <strong>sellers</strong> being able to move more output in when price moves. Same maths, different side of the market.</div>
+  </section>
+
+  <section id="calc" data-reveal>
+    <h2>2. Calculating PES</h2>
+    <div class="formula"><code>PES = <span class="frac"><span>% change in quantity supplied</span><span>% change in price</span></span> = <span class="frac"><span>%ΔQS</span><span>%ΔP</span></span></code></div>
+    <div class="formula"><code>% change = <span class="frac"><span>new value − original value</span><span>original value</span></span> × 100</code></div>
+    <div class="example glass">
+      <span class="label">Worked example 1</span>
+      <p>The price of eggs rises by 20% and farmers supply 5% more eggs. Calculate PES.</p>
+      <ol class="steps">
+        <li><span class="m">%ΔP = 20%</span></li>
+        <li><span class="m">%ΔQS = +5%</span></li>
+        <li><span class="m">PES = 5 / 20 = 0.25</span></li>
+        <li>Below 1, so supply is price-inelastic: farmers react only slightly.</li>
+      </ol>
+      <p class="answer">PES = 0.25 (price-inelastic)</p>
+    </div>
+    <div class="example glass">
+      <span class="label">Worked example 2</span>
+      <p>A T-shirt firm can raise its price by 10% and increase output by 30% within a month by adding a shift. Calculate PES.</p>
+      <ol class="steps">
+        <li><span class="m">%ΔP = 10%</span></li>
+        <li><span class="m">%ΔQS = +30%</span></li>
+        <li><span class="m">PES = 30 / 10 = 3</span></li>
+        <li>Above 1, so supply is price-elastic: output responds more than proportion to price.</li>
+      </ol>
+      <p class="answer">PES = 3 (price-elastic)</p>
+    </div>
+    <div class="box good"><span class="label">Exam tip</span>Same method as PED, but remember PES is <strong>positive</strong>: no absolute-value gymnastics needed. Show the percentage working for method marks.</div>
+  </section>
+
+  <section id="values" data-reveal>
+    <h2>3. The values of PES</h2>
+    <p>PES runs from zero to infinity. Learn what each end of the range means and one good example of each.</p>
+    <table>
+      <tr><th>Type</th><th>Value</th><th>What it means</th><th>Examples</th></tr>
+      <tr><td><strong>Perfectly inelastic</strong></td><td>0</td><td>Quantity supplied does not respond to price at all</td><td>Short-run supply of land in a fixed location; a one-off painting by a dead artist</td></tr>
+      <tr><td><strong>Relatively inelastic</strong></td><td>0 to 1</td><td>%ΔQS is smaller than %ΔP</td><td>Agriculture in the short run (crops take a season); housing while land and planning are scarce</td></tr>
+      <tr><td><strong>Unit elastic</strong></td><td>1</td><td>%ΔQS equals %ΔP</td><td>The textbook boundary case, rare in practice</td></tr>
+      <tr><td><strong>Relatively elastic</strong></td><td>greater than 1</td><td>%ΔQS is larger than %ΔP</td><td>Manufacturing with spare capacity; services that can add staff quickly</td></tr>
+      <tr><td><strong>Perfectly elastic</strong></td><td>infinity</td><td>At the market price firms will supply any amount; a hair below it and quantity supplied falls to zero</td><td>Theoretical; a single firm in perfect competition</td></tr>
+    </table>
+    <div class="box warn"><span class="label">Exam trap</span>"Supply of housing is perfectly inelastic" is too strong for real markets. Say "highly inelastic in the short run" and explain why (land, planning, build time). Reserve "zero" and "infinity" for the theoretical cases the question explicitly asks about.</div>
+  </section>
+
+  <section id="determinants" data-reveal>
+    <h2>4. The five determinants of PES</h2>
+    <p>PES is decided by how easily a firm can change its output when price moves. Five factors cover every exam question.</p>
+    <table>
+      <tr><th>Determinant</th><th>More elastic when...</th><th>Why</th><th>Exam example</th></tr>
+      <tr><td><strong>Time</strong></td><td>More time is allowed to adjust</td><td>Firms can hire, build, plant and expand only gradually</td><td>Fresh eggs respond in days; new mines take years. PES rises as the time period lengthens</td></tr>
+      <tr><td><strong>Spare capacity</strong></td><td>The firm has unused machinery, buildings or labour</td><td>Extra output can come from idle resources at little extra cost</td><td>A factory running one shift can add a second: elastic. A factory at full capacity: inelastic until new capital is bought</td></tr>
+      <tr><td><strong>Stocks</strong></td><td>Finished goods are stored easily</td><td>Stocks can be released immediately when price rises</td><td>Canned food and metals: elastic. Services like haircuts cannot be stored at all</td></tr>
+      <tr><td><strong>Perishability</strong></td><td>The product keeps for a long time</td><td>Non-perishable goods can be held back or released at will</td><td>Fresh fish and cut flowers: must be sold now, so short-run supply is inelastic and even backward-bending; tinned fish: elastic</td></tr>
+      <tr><td><strong>Nature of the product</strong></td><td>It is manufactured from standard inputs</td><td>Factory output can be scaled up; farming and natural products cannot</td><td>Car assembly: relatively elastic. Farm produce: inelastic short run (weather, biology); services and unique goods: inelastic</td></tr>
+    </table>
+    <div class="example glass">
+      <span class="label">Worked example 3</span>
+      <p>Explain why the supply of fresh strawberries is price-inelastic in the short run but more elastic in the long run. <span class="m">(own question in syllabus style)</span></p>
+      <ol class="steps">
+        <li>Strawberries are perishable and take a growing season, so within a season farmers cannot produce more just because price rose: short-run PES is low.</li>
+        <li>Given several seasons, farmers can plant more bushes, buy more land and adopt better techniques, so quantity supplied responds strongly to sustained high prices.</li>
+        <li>Therefore PES is inelastic in the short run and rises towards elastic as the time period lengthens.</li>
+      </ol>
+      <p class="answer">Short run: perishability and growing time make PES inelastic. Long run: new plantings and land make PES more elastic.</p>
+    </div>
+    <div class="example glass">
+      <span class="label">Worked example 4</span>
+      <p>Explain how spare capacity affects the price elasticity of supply of a car factory. <span class="m">(own question in syllabus style)</span></p>
+      <ol class="steps">
+        <li>If the factory is running well below maximum output, a higher car price lets it add shifts and use idle machines.</li>
+        <li>Output can rise by a large % for a small % price rise, so PES is high (elastic).</li>
+        <li>If the factory is already at full capacity, only overtime or new capital can raise output, so PES is low (inelastic) until investment happens.</li>
+      </ol>
+      <p class="answer">Spare capacity makes supply elastic; no spare capacity makes it inelastic until new capacity is built.</p>
+    </div>
+  </section>
+
+  <section id="diagrams" data-reveal>
+    <h2>5. Drawing elastic and inelastic supply</h2>
+    <p>The shape of the supply curve shows its elasticity on a given set of axes: <strong>flat means elastic, steep means inelastic</strong>.</p>
+    <figure class="fig glass" data-reveal>
+      <svg viewBox="0 0 340 200" class="draw" fill="none" aria-hidden="true">
+        <line class="stroke" x1="44" y1="172" x2="326" y2="172" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
+        <line class="stroke d1" x1="44" y1="172" x2="44" y2="18" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
+        <text x="10" y="30" fill="#9a9a93" font-size="12">P</text>
+        <text x="318" y="190" fill="#9a9a93" font-size="12">Q</text>
+        <line class="stroke d3" x1="70" y1="70" x2="310" y2="130" stroke="#7bd8a8" stroke-width="2"/>
+        <text x="302" y="148" fill="#7bd8a8" font-size="12">S</text>
+        <text x="140" y="72" fill="#9a9a93" font-size="12">relatively elastic</text>
+        <circle class="dot-pop p3" cx="120" cy="82" r="4.5" fill="#f0b429"/>
+        <circle class="dot-pop p3" cx="250" cy="115" r="4.5" fill="#f0b429"/>
+        <line x1="44" y1="82" x2="120" y2="82" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="4 5"/>
+        <line x1="44" y1="115" x2="250" y2="115" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="4 5"/>
+      </svg>
+      <figcaption>Relatively elastic supply: a flat curve. A small price rise leads to a large rise in quantity supplied.</figcaption>
+    </figure>
+    <figure class="fig glass" data-reveal>
+      <svg viewBox="0 0 340 200" class="draw" fill="none" aria-hidden="true">
+        <line class="stroke" x1="44" y1="172" x2="326" y2="172" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
+        <line class="stroke d1" x1="44" y1="172" x2="44" y2="18" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
+        <text x="10" y="30" fill="#9a9a93" font-size="12">P</text>
+        <text x="318" y="190" fill="#9a9a93" font-size="12">Q</text>
+        <line class="stroke d3" x1="150" y1="35" x2="200" y2="160" stroke="#7bd8a8" stroke-width="2"/>
+        <text x="203" y="168" fill="#7bd8a8" font-size="12">S</text>
+        <text x="215" y="55" fill="#9a9a93" font-size="12">relatively inelastic</text>
+        <circle class="dot-pop p3" cx="161" cy="62" r="4.5" fill="#f0b429"/>
+        <circle class="dot-pop p3" cx="180" cy="110" r="4.5" fill="#f0b429"/>
+        <line x1="44" y1="62" x2="161" y2="62" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="4 5"/>
+        <line x1="44" y1="110" x2="180" y2="110" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="4 5"/>
+      </svg>
+      <figcaption>Relatively inelastic supply: a steep curve. Even a large price rise brings forth only a small rise in quantity supplied.</figcaption>
+    </figure>
+    <div class="box good"><span class="label">Exam tip</span>In "analyse with a diagram" questions about time periods, you can draw two supply curves on one set of axes: S1 steep (short run) and S2 flatter (long run), then show that the same demand shift produces a bigger quantity response on S2. Label which curve is which time period.</div>
+  </section>
+
+  <section id="effects" data-reveal>
+    <h2>6. Who is affected: producers and consumers</h2>
+    <p>When demand changes, PES decides <strong>who carries the price change</strong>. This is one of the most examiner-friendly links in the whole syllabus.</p>
+    <table>
+      <tr><th>Situation</th><th>Effect on price</th><th>Effect on quantity</th><th>Who gains, who loses</th></tr>
+      <tr><td><strong>Demand rises, supply elastic</strong></td><td>Price rises only a little</td><td>Quantity rises a lot</td><td>Consumers cope well (small price hike); producers sell much more volume</td></tr>
+      <tr><td><strong>Demand rises, supply inelastic</strong></td><td>Price rises a lot</td><td>Quantity rises only a little</td><td>Consumers suffer: they bid against each other; the lucky producers of the scarce units gain</td></tr>
+      <tr><td><strong>Demand falls, supply elastic</strong></td><td>Price falls only a little</td><td>Quantity falls a lot</td><td>Producers lose heavily on volume; consumers pay almost the old price</td></tr>
+      <tr><td><strong>Demand falls, supply inelastic</strong></td><td>Price falls a lot</td><td>Quantity falls only a little</td><td>Producers suffer a big price drop; consumers enjoy the bargain</td></tr>
+    </table>
+    <div class="example glass">
+      <span class="label">Worked example 5</span>
+      <p>A harvest failure reduces the supply of tomatoes. Explain who is most affected: consumers or farmers, given that the supply of tomatoes is highly inelastic in the short run. <span class="m">(own question in syllabus style)</span></p>
+      <ol class="steps">
+        <li>A supply shift left against a given demand curve raises the equilibrium price and cuts quantity.</li>
+        <li>Because short-run supply is inelastic (perishable crop, next harvest months away), the leftward shift produces a <strong>large price rise</strong> and only a small fall in quantity traded.</li>
+        <li>Consumers pay much more for tomatoes and most of the loss hits them; the farmers who still have a crop receive a much higher price per unit.</li>
+        <li>Over the long run, farmers plant more and supply becomes more elastic, so the price falls back towards normal.</li>
+      </ol>
+      <p class="answer">Inelastic short-run supply means consumers bear most of a harvest shock through sharply higher prices.</p>
+    </div>
+    <div class="example glass">
+      <span class="label">Worked example 6</span>
+      <p>The price of a commodity rises because of a surge in world demand. Explain why the price rise is larger when supply is inelastic. <span class="m">(own question in syllabus style)</span></p>
+      <ol class="steps">
+        <li>A demand shift moves the market along the supply curve to the new equilibrium.</li>
+        <li>On a steep (inelastic) supply curve, the same horizontal demand shift translates mostly into <strong>price</strong>, barely into quantity.</li>
+        <li>On a flat (elastic) supply curve, the same shift translates mostly into <strong>quantity</strong>, only slightly into price.</li>
+        <li>So consumers of inelastic-supply goods face the worst price spikes, as with housing in land-scarce cities or oil in the short run.</li>
+      </ol>
+      <p class="answer">With inelastic supply the market cannot expand output, so the demand surge appears almost entirely as a higher price.</p>
+    </div>
+    <div class="box"><span class="label">Producer side, one summary</span>Producers love elastic supply when demand is rising (they sell volume at roughly the old price). They suffer when their own supply is inelastic and demand falls: they cannot cut output quickly, so price crashes on what they cannot sell. Time is the escape: PES rises as adjustment periods lengthen.</div>
+  </section>
+
+  <section id="practice" data-reveal>
+    <h2>7. Practice set and answers</h2>
+    <p>Do every question on paper first. Open an answer only after you have committed to one.</p>
+
+    <h3>Set A · Definition, calculation and values</h3>
+    <div class="practice">
+      <details class="q"><summary>Define price elasticity of supply and state its formula. <span class="m">(own question)</span></summary><div class="ans"><strong>PES measures the responsiveness of quantity supplied to a change in price.</strong> PES = %ΔQS ÷ %ΔP. Its value is always zero or positive.</div></details>
+      <details class="q"><summary>The world price of rubber rises by 25% and plantations increase sales by 10%. Calculate PES and classify it. <span class="m">(own question)</span></summary><div class="ans">PES = 10 ÷ 25 = <strong>0.4</strong>. Below 1, so supply is price-inelastic: trees take years to mature, so output barely responds.</div></details>
+      <details class="q"><summary>A bakery raises prices by 8% and increases production by 24%. Calculate PES and classify it. <span class="m">(own question)</span></summary><div class="ans">PES = 24 ÷ 8 = <strong>3</strong>. Above 1, so supply is price-elastic: the bakery has spare ovens and can buy flour immediately.</div></details>
+      <details class="q"><summary>Explain what is meant by perfectly inelastic supply and give one example. <span class="m">(own question)</span></summary><div class="ans">PES = 0: quantity supplied does not change at all when price changes. Example: a fixed plot of land in a city centre, or a unique painting by a dead artist, whatever the price offered.</div></details>
+      <details class="q"><summary>State the full range of values for price elasticity of supply. <span class="m">(own question)</span></summary><div class="ans">From <strong>0</strong> (perfectly inelastic) through values between 0 and 1 (relatively inelastic), 1 (unit elastic) and above 1 (relatively elastic), up to <strong>infinity</strong> (perfectly elastic). Unlike PED, PES never goes negative.</div></details>
+    </div>
+
+    <h3>Set B · Determinants</h3>
+    <div class="practice">
+      <details class="q"><summary>Explain two factors that determine the price elasticity of supply of a product. <span class="m">(own question in the style of 2281)</span></summary><div class="ans">(1) <strong>Time</strong>: firms need time to hire, build and plant, so PES rises as the adjustment period lengthens. (2) <strong>Spare capacity</strong>: with idle machines and labour, output can expand quickly (elastic); at full capacity, supply is inelastic until new capital is installed. Alternatives: stocks, perishability, nature of the product.</div></details>
+      <details class="q"><summary>Explain why the supply of fresh fish is more price-inelastic than the supply of frozen fish. <span class="m">(own question)</span></summary><div class="ans">Fresh fish is highly perishable: it must be sold within days, and catches cannot be stored to wait for better prices. Frozen fish can be stockpiled and released when price rises, so quantity supplied responds much more: higher PES.</div></details>
+      <details class="q"><summary>Explain how the price elasticity of supply of housing changes over time. <span class="m">(own question)</span></summary><div class="ans">In the short run the stock of houses is almost fixed (land, planning, build time), so PES is very low: higher prices cannot create homes quickly. Over years, new construction and conversions raise quantity supplied strongly, so PES becomes much higher.</div></details>
+      <details class="q"><summary>Explain why the supply of printed T-shirts is more elastic than the supply of oil. <span class="m">(own question)</span></summary><div class="ans">T-shirts are manufactured from standard inputs with spare capacity and easy fabrics: firms can scale output up quickly, so PES is high. Oil requires drilling, rigs and years of investment, so a price rise brings only a small extra quantity in the short run: PES is low.</div></details>
+      <details class="q"><summary>"Services have lower PES than manufactured goods." Explain why. <span class="m">(own question)</span></summary><div class="ans">Services cannot be stored as stock (you cannot bottle a haircut), and extra output usually needs more trained workers hired and trained. Manufactured goods can be produced in batches, stored, and expanded using existing machinery, so PES is higher.</div></details>
+    </div>
+
+    <h3>Set C · Effects and diagram work</h3>
+    <div class="practice">
+      <details class="q"><summary>Draw a demand and supply diagram showing the effect of an increase in demand when supply is price-inelastic. Explain the effect on price and quantity. <span class="m">(own question)</span></summary><div class="ans">Draw D and a <strong>steep</strong> S curve, then D2 shifted right. The new equilibrium has a <strong>large rise in price</strong> and only a <strong>small rise in quantity</strong>. Because firms cannot expand output quickly, buyers bid up the price of the limited stock.</div></details>
+      <details class="q"><summary>Explain why a surge in demand for tickets to a one-night concert causes a huge price rise. <span class="m">(own question)</span></summary><div class="ans">The seat capacity is fixed on the night, so supply is perfectly (or almost perfectly) inelastic. A rightward demand shift therefore appears almost entirely as a higher price, with no extra seats. This is why ticket prices on resale markets explode.</div></details>
+      <details class="q"><summary>Explain the likely effect on consumers of a rise in demand for strawberries when the supply of strawberries is elastic. <span class="m">(own question)</span></summary><div class="ans">With elastic supply, producers expand output in response to the higher demand, so the equilibrium quantity rises substantially and the price rises only slightly. Consumers are barely worse off per unit and get more strawberries overall.</div></details>
+      <details class="q"><summary>Discuss whether a farmer benefits more from a rise in demand when the supply of the crop is elastic or inelastic. <span class="m">(own question)</span></summary><div class="ans">With <strong>inelastic</strong> supply the price soars but quantity sold barely changes, so farm revenue usually jumps. With <strong>elastic</strong> supply, quantity sold expands a lot but price rises little, so revenue rises less. Inelastic supply benefits the farmer more from a demand surge, but the same inelasticity hurts farmers when demand falls.</div></details>
+      <details class="q"><summary>A government subsidises housing construction. Explain how this changes the supply of housing and who gains. <span class="m">(own question)</span></summary><div class="ans">The subsidy cuts builders' costs, shifting supply right. A rightward supply shift lowers the equilibrium price and raises quantity: <strong>consumers gain</strong> from cheaper housing and more units available. Builders gain too through higher sales volume at manageable costs, funded partly by the taxpayer.</div></details>
+    </div>
+  </section>
+
+  <section id="quiz" data-reveal>
+    <h2>8. Quick quiz</h2>
+    <p>Click an option to check your answer.</p>
+    <div class="mcq-set">
+      <div class="mcq glass" data-answer="c">
+        <p class="mcq-q"><span class="mcq-tag">MCQ 1</span> Price rises by 15% and quantity supplied rises by 45%. PES is:</p>
+        <div class="mcq-opts">
+          <button type="button" data-opt="a">0.33, so supply is inelastic</button>
+          <button type="button" data-opt="b">1, so supply is unit elastic</button>
+          <button type="button" data-opt="c">3, so supply is elastic</button>
+          <button type="button" data-opt="d">−3, so supply is inelastic</button>
+        </div>
+        <p class="mcq-exp"><strong>Answer: C.</strong> PES = 45 ÷ 15 = 3. PES is positive, and a value above 1 means quantity supplied responds more than proportion to price.</p>
+      </div>
+      <div class="mcq glass" data-answer="a">
+        <p class="mcq-q"><span class="mcq-tag">MCQ 2</span> Which product has the most price-inelastic supply in the short run?</p>
+        <div class="mcq-opts">
+          <button type="button" data-opt="a">Fresh milk, highly perishable</button>
+          <button type="button" data-opt="b">Canned soup, easily stored</button>
+          <button type="button" data-opt="c">T-shirts from a factory with spare capacity</button>
+          <button type="button" data-opt="d">Printed posters from digital files</button>
+        </div>
+        <p class="mcq-exp"><strong>Answer: A.</strong> Perishable products cannot be stored or expanded quickly, so quantity supplied barely responds to price in the short run.</p>
+      </div>
+      <div class="mcq glass" data-answer="b">
+        <p class="mcq-q"><span class="mcq-tag">MCQ 3</span> Demand for a product rises. If its supply is perfectly inelastic, the result is:</p>
+        <div class="mcq-opts">
+          <button type="button" data-opt="a">A large rise in quantity, no change in price</button>
+          <button type="button" data-opt="b">A large rise in price, no change in quantity</button>
+          <button type="button" data-opt="c">No change in price or quantity</button>
+          <button type="button" data-opt="d">A fall in price and a rise in quantity</button>
+        </div>
+        <p class="mcq-exp"><strong>Answer: B.</strong> Quantity supplied is fixed, so the demand shift is absorbed entirely by price, such as concert seats on the night.</p>
+      </div>
+      <div class="mcq glass" data-answer="d">
+        <p class="mcq-q"><span class="mcq-tag">MCQ 4</span> Which factor always makes supply more elastic?</p>
+        <div class="mcq-opts">
+          <button type="button" data-opt="a">A shorter time period</button>
+          <button type="button" data-opt="b">Greater perishability of the product</button>
+          <button type="button" data-opt="c">The absence of spare capacity</button>
+          <button type="button" data-opt="d">A longer time period to adjust</button>
+        </div>
+        <p class="mcq-exp"><strong>Answer: D.</strong> Given more time, firms can hire, build and plant, so quantity supplied responds more to price. Shorter time, perishability and no spare capacity all reduce elasticity.</p>
+      </div>
+      <div class="mcq glass" data-answer="a">
+        <p class="mcq-q"><span class="mcq-tag">MCQ 5</span> Demand for housing in a land-scarce city rises. Because supply is inelastic, the main effect is:</p>
+        <div class="mcq-opts">
+          <button type="button" data-opt="a">A large rise in house prices</button>
+          <button type="button" data-opt="b">A large rise in the number of houses sold</button>
+          <button type="button" data-opt="c">A fall in house prices</button>
+          <button type="button" data-opt="d">No change in the housing market</button>
+        </div>
+        <p class="mcq-exp"><strong>Answer: A.</strong> Builders cannot add homes quickly, so the extra demand appears mostly as higher prices rather than more houses.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="checklist" data-reveal>
+    <h2>9. Exam checklist</h2>
+    <ul class="checklist">
+      <li>Defined PES as the responsiveness of <strong>quantity supplied</strong> to a change in price.</li>
+      <li>Used %ΔQS ÷ %ΔP with the original value as the base, and kept PES <strong>positive</strong>.</li>
+      <li>Quoted the full range of PES: 0 through inelastic, unit, elastic, up to infinity.</li>
+      <li>Named the determinant (time, spare capacity, stocks, perishability, nature of product) with a one-line link to responsiveness.</li>
+      <li>Argued that PES <strong>rises as the time period lengthens</strong> whenever a question mentions short run versus long run.</li>
+      <li>Drawn steep S for inelastic and flat S for elastic, with axes, labels and equilibrium points marked.</li>
+      <li>Linked inelastic supply to large price changes and elastic supply to large quantity changes when demand shifts.</li>
+      <li>Said who gains and loses: consumers bear the price spike when supply is inelastic; producers suffer when demand falls against inelastic supply.</li>
+      <li>Used context language (crop seasons, build times, stockrooms) instead of bare "PES is low".</li>
+    </ul>
+  </section>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <span>Chapter 06 · Economics</span>
+  <span><a href="economics.html">All economics chapters</a></span>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>
