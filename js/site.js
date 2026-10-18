@@ -62,6 +62,8 @@
     wrap.className = "tscroll";
     t.replaceWith(wrap);
     wrap.appendChild(t);
+    const cols = Math.max(...[...t.rows].slice(0, 3).map((r) => r.cells.length));
+    if (cols >= 3) wrap.classList.add("tscroll-wide");
   });
   addEventListener("beforeprint", () =>
     document.querySelectorAll("details").forEach((d) => (d.open = true))
